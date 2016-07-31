@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: shadow 4.0.3\n"
 "Report-Msgid-Bugs-To: pkg-shadow-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2014-05-09 12:52+0200\n"
+"POT-Creation-Date: 2016-03-16 17:19-0700\n"
 "PO-Revision-Date: 2004-11-20 03:28+0100\n"
 "Last-Translator: Elian Myftiu <pinguini AT fastwebnet DOT it>\n"
 "Language-Team: Albanian <gnome-albanian-perkthyesit@lists.sourceforge.net>\n"
@@ -1018,6 +1018,11 @@ msgstr ""
 msgid "%s: Cannot setup cleanup service.\n"
 msgstr "Kujdes: grup i panjohur %s\n"
 
+msgid ""
+"  -f, --force                   delete group even if it is the primary group "
+"of a user\n"
+msgstr ""
+
 #, c-format
 msgid "%s: cannot remove entry '%s' from %s\n"
 msgstr ""
@@ -1225,6 +1230,16 @@ msgid ""
 msgstr ""
 
 msgid ""
+"  -C, --clear                   clear lastlog record of an user (usable only "
+"with -u)\n"
+msgstr ""
+
+msgid ""
+"  -S, --set                     set lastlog record to current time (usable "
+"only with -u)\n"
+msgstr ""
+
+msgid ""
 "  -t, --time DAYS               print only lastlog records more recent than "
 "DAYS\n"
 msgstr ""
@@ -1240,6 +1255,22 @@ msgid "Username                Port     Latest"
 msgstr ""
 
 msgid "**Never logged in**"
+msgstr ""
+
+#, fuzzy, c-format
+msgid "%s: Failed to update the entry for UID %lu\n"
+msgstr "Kujdes: grup i panjohur %s\n"
+
+#, fuzzy, c-format
+msgid "%s: Failed to update the lastlog file\n"
+msgstr "Kujdes: grup i panjohur %s\n"
+
+#, c-format
+msgid "%s: Option -C cannot be used together with option -S\n"
+msgstr ""
+
+#, c-format
+msgid "%s: Options -C and -S require option -u to specify the user\n"
 msgstr ""
 
 #, c-format
@@ -2182,22 +2213,6 @@ msgstr ""
 msgid "%s: %s does not exist, you cannot use the flags %s or %s\n"
 msgstr ""
 
-#, fuzzy, c-format
-msgid "%s: failed to remove uid range %lu-%lu from '%s'\n"
-msgstr "Kujdes: grup i panjohur %s\n"
-
-#, c-format
-msgid "%s: failed to add uid range %lu-%lu from '%s'\n"
-msgstr ""
-
-#, fuzzy, c-format
-msgid "%s: failed to remove gid range %lu-%lu from '%s'\n"
-msgstr "Kujdes: grup i panjohur %s\n"
-
-#, c-format
-msgid "%s: failed to add gid range %lu-%lu from '%s'\n"
-msgstr ""
-
 #, c-format
 msgid "%s: directory %s exists\n"
 msgstr ""
@@ -2236,6 +2251,22 @@ msgid "failed to change mailbox owner"
 msgstr ""
 
 msgid "failed to rename mailbox"
+msgstr ""
+
+#, fuzzy, c-format
+msgid "%s: failed to remove uid range %lu-%lu from '%s'\n"
+msgstr "Kujdes: grup i panjohur %s\n"
+
+#, c-format
+msgid "%s: failed to add uid range %lu-%lu from '%s'\n"
+msgstr ""
+
+#, fuzzy, c-format
+msgid "%s: failed to remove gid range %lu-%lu from '%s'\n"
+msgstr "Kujdes: grup i panjohur %s\n"
+
+#, c-format
+msgid "%s: failed to add gid range %lu-%lu from '%s'\n"
 msgstr ""
 
 #, c-format

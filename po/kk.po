@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: shadowutils\n"
 "Report-Msgid-Bugs-To: pkg-shadow-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2014-05-09 12:52+0200\n"
+"POT-Creation-Date: 2016-03-16 17:19-0700\n"
 "PO-Revision-Date: 2012-01-20 21:16+0600\n"
 "Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
 "Language-Team: Kazakh <kk_KZ@googlegroups.com>\n"
@@ -1096,6 +1096,14 @@ msgstr "%s: GID '%lu' бар болып тұр\n"
 msgid "%s: Cannot setup cleanup service.\n"
 msgstr "%s: Тазарту қызметін орнату мүмкін емес.\n"
 
+#, fuzzy
+#| msgid ""
+#| "  -r, --reset                   reset the counters of login failures\n"
+msgid ""
+"  -f, --force                   delete group even if it is the primary group "
+"of a user\n"
+msgstr "  -r, --reset                   сәтсіз кіру талап санағышын нөлдеу\n"
+
 #, c-format
 msgid "%s: cannot remove entry '%s' from %s\n"
 msgstr "%s: '%s' жазбасын %s ішінен өшіру мүмкін емес\n"
@@ -1322,6 +1330,26 @@ msgstr ""
 "  -b, --before КҮН              мерзімі КҮНнен үлкен ғана lastlog жазбаларын "
 "көрсету\n"
 
+#, fuzzy
+#| msgid ""
+#| "  -a, --all                     display faillog records for all users\n"
+msgid ""
+"  -C, --clear                   clear lastlog record of an user (usable only "
+"with -u)\n"
+msgstr ""
+"  -a, --all                     барлық пайдаланушылар үшін faillog "
+"жазбаларын көрсету\n"
+
+#, fuzzy
+#| msgid ""
+#| "  -a, --all                     display faillog records for all users\n"
+msgid ""
+"  -S, --set                     set lastlog record to current time (usable "
+"only with -u)\n"
+msgstr ""
+"  -a, --all                     барлық пайдаланушылар үшін faillog "
+"жазбаларын көрсету\n"
+
 msgid ""
 "  -t, --time DAYS               print only lastlog records more recent than "
 "DAYS\n"
@@ -1343,6 +1371,24 @@ msgstr "Пайдаланушы             Порт     Соңғы"
 
 msgid "**Never logged in**"
 msgstr "**Жүйеге ешқашан кірмеген**"
+
+#, fuzzy, c-format
+#| msgid "%s: Failed to get the entry for UID %lu\n"
+msgid "%s: Failed to update the entry for UID %lu\n"
+msgstr "%s: UID %lu үшін жазбаны алу мүмкін емес\n"
+
+#, fuzzy, c-format
+#| msgid "%s: failed to reset the lastlog entry of UID %lu: %s\n"
+msgid "%s: Failed to update the lastlog file\n"
+msgstr "%s: %lu UID-і үшін lastlog жазбасын нөлдеу сәтсіз: %s\n"
+
+#, c-format
+msgid "%s: Option -C cannot be used together with option -S\n"
+msgstr ""
+
+#, c-format
+msgid "%s: Options -C and -S require option -u to specify the user\n"
+msgstr ""
 
 #, c-format
 msgid "Usage: %s [-p] [name]\n"
@@ -2422,26 +2468,6 @@ msgstr "%s: '%lu' UID-і бар болып тұр\n"
 msgid "%s: %s does not exist, you cannot use the flags %s or %s\n"
 msgstr "%s: %s пайдаланушының %s үшін паролді өзгертуге құқығы жоқ\n"
 
-#, fuzzy, c-format
-#| msgid "%s: failed to prepare the new %s entry '%s'\n"
-msgid "%s: failed to remove uid range %lu-%lu from '%s'\n"
-msgstr "%s: жаңа %s '%s' жазбаны дайындау мүмкін емес\n"
-
-#, fuzzy, c-format
-#| msgid "%s: failed to prepare the new %s entry '%s'\n"
-msgid "%s: failed to add uid range %lu-%lu from '%s'\n"
-msgstr "%s: жаңа %s '%s' жазбаны дайындау мүмкін емес\n"
-
-#, fuzzy, c-format
-#| msgid "%s: failed to prepare the new %s entry '%s'\n"
-msgid "%s: failed to remove gid range %lu-%lu from '%s'\n"
-msgstr "%s: жаңа %s '%s' жазбаны дайындау мүмкін емес\n"
-
-#, fuzzy, c-format
-#| msgid "%s: failed to prepare the new %s entry '%s'\n"
-msgid "%s: failed to add gid range %lu-%lu from '%s'\n"
-msgstr "%s: жаңа %s '%s' жазбаны дайындау мүмкін емес\n"
-
 #, c-format
 msgid "%s: directory %s exists\n"
 msgstr "%s: %s бумасы бар болып тұр\n"
@@ -2485,6 +2511,26 @@ msgstr "mailbox иесін ауыстыру қатемен аяқталды"
 
 msgid "failed to rename mailbox"
 msgstr "mailbox атын ауыстыру қатемен аяқталды"
+
+#, fuzzy, c-format
+#| msgid "%s: failed to prepare the new %s entry '%s'\n"
+msgid "%s: failed to remove uid range %lu-%lu from '%s'\n"
+msgstr "%s: жаңа %s '%s' жазбаны дайындау мүмкін емес\n"
+
+#, fuzzy, c-format
+#| msgid "%s: failed to prepare the new %s entry '%s'\n"
+msgid "%s: failed to add uid range %lu-%lu from '%s'\n"
+msgstr "%s: жаңа %s '%s' жазбаны дайындау мүмкін емес\n"
+
+#, fuzzy, c-format
+#| msgid "%s: failed to prepare the new %s entry '%s'\n"
+msgid "%s: failed to remove gid range %lu-%lu from '%s'\n"
+msgstr "%s: жаңа %s '%s' жазбаны дайындау мүмкін емес\n"
+
+#, fuzzy, c-format
+#| msgid "%s: failed to prepare the new %s entry '%s'\n"
+msgid "%s: failed to add gid range %lu-%lu from '%s'\n"
+msgstr "%s: жаңа %s '%s' жазбаны дайындау мүмкін емес\n"
 
 #, c-format
 msgid ""

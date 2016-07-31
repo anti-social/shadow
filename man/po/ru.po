@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 1:4.0.18.2-1\n"
-"POT-Creation-Date: 2014-05-09 12:53+0200\n"
+"POT-Creation-Date: 2016-03-16 17:20-0700\n"
 "PO-Revision-Date: 2013-08-23 01:39+0200\n"
 "Last-Translator: Yuri Kozlov <yuray@komyakino.ru>\n"
 "Language-Team: Russian <debian-l10n-russian@lists.debian.org>\n"
@@ -55,16 +55,15 @@ msgstr ""
 #: useradd.8.xml:62(surname) suauth.5.xml:45(surname) su.1.xml:62(surname)
 #: sg.1.xml:46(surname) shadow.5.xml:45(surname) shadow.3.xml:45(surname)
 #: pwconv.8.xml:51(surname) pwck.8.xml:51(surname) porttime.5.xml:45(surname)
-#: passwd.5.xml:45(surname) passwd.1.xml:52(surname)
-#: newusers.8.xml:60(surname) newgrp.1.xml:46(surname)
-#: logoutd.8.xml:45(surname) login.defs.5.xml:110(surname)
-#: login.access.5.xml:46(surname) login.1.xml:78(surname)
-#: limits.5.xml:47(surname) lastlog.8.xml:46(surname) grpck.8.xml:46(surname)
-#: groups.1.xml:45(surname) groupmod.8.xml:46(surname)
+#: passwd.5.xml:45(surname) passwd.1.xml:52(surname) newusers.8.xml:60(surname)
+#: newgrp.1.xml:46(surname) logoutd.8.xml:45(surname)
+#: login.defs.5.xml:110(surname) login.access.5.xml:46(surname)
+#: login.1.xml:78(surname) limits.5.xml:47(surname) lastlog.8.xml:46(surname)
+#: grpck.8.xml:46(surname) groups.1.xml:45(surname) groupmod.8.xml:46(surname)
 #: groupmems.8.xml:49(surname) groupdel.8.xml:46(surname)
 #: groupadd.8.xml:48(surname) gpasswd.1.xml:50(surname)
-#: faillog.8.xml:45(surname) faillog.5.xml:45(surname)
-#: expiry.1.xml:49(surname) chsh.1.xml:48(surname) chpasswd.8.xml:49(surname)
+#: faillog.8.xml:45(surname) faillog.5.xml:45(surname) expiry.1.xml:49(surname)
+#: chsh.1.xml:48(surname) chpasswd.8.xml:49(surname)
 #: chgpasswd.8.xml:45(surname) chfn.1.xml:48(surname) chage.1.xml:46(surname)
 msgid "Kłoczko"
 msgstr ""
@@ -89,17 +88,16 @@ msgstr ""
 #: useradd.8.xml:64(contrib) suauth.5.xml:47(contrib) su.1.xml:64(contrib)
 #: sg.1.xml:48(contrib) shadow.5.xml:47(contrib) shadow.3.xml:47(contrib)
 #: pwconv.8.xml:53(contrib) pwck.8.xml:53(contrib) porttime.5.xml:47(contrib)
-#: passwd.5.xml:47(contrib) passwd.1.xml:54(contrib)
-#: newusers.8.xml:62(contrib) newgrp.1.xml:48(contrib)
-#: logoutd.8.xml:47(contrib) login.defs.5.xml:112(contrib)
-#: login.access.5.xml:48(contrib) login.1.xml:80(contrib)
-#: limits.5.xml:49(contrib) lastlog.8.xml:48(contrib) grpck.8.xml:48(contrib)
-#: groups.1.xml:47(contrib) groupmod.8.xml:48(contrib)
+#: passwd.5.xml:47(contrib) passwd.1.xml:54(contrib) newusers.8.xml:62(contrib)
+#: newgrp.1.xml:48(contrib) logoutd.8.xml:47(contrib)
+#: login.defs.5.xml:112(contrib) login.access.5.xml:48(contrib)
+#: login.1.xml:80(contrib) limits.5.xml:49(contrib) lastlog.8.xml:48(contrib)
+#: grpck.8.xml:48(contrib) groups.1.xml:47(contrib) groupmod.8.xml:48(contrib)
 #: groupmems.8.xml:51(contrib) groupdel.8.xml:48(contrib)
 #: groupadd.8.xml:50(contrib) gpasswd.1.xml:52(contrib)
-#: faillog.8.xml:47(contrib) faillog.5.xml:47(contrib)
-#: expiry.1.xml:51(contrib) chsh.1.xml:50(contrib) chpasswd.8.xml:51(contrib)
-#: chfn.1.xml:50(contrib) chage.1.xml:48(contrib)
+#: faillog.8.xml:47(contrib) faillog.5.xml:47(contrib) expiry.1.xml:51(contrib)
+#: chsh.1.xml:50(contrib) chpasswd.8.xml:51(contrib) chfn.1.xml:50(contrib)
+#: chage.1.xml:48(contrib)
 msgid "shadow-utils maintainer, 2000 - 2007"
 msgstr ""
 
@@ -133,14 +131,13 @@ msgstr ""
 #: newusers.8.xml:66(surname) newgrp.1.xml:52(surname)
 #: logoutd.8.xml:51(surname) login.defs.5.xml:116(surname)
 #: login.access.5.xml:52(surname) login.1.xml:84(surname)
-#: limits.5.xml:53(surname) lastlog.8.xml:52(surname)
-#: gshadow.5.xml:39(surname) grpck.8.xml:52(surname) groups.1.xml:51(surname)
-#: groupmod.8.xml:52(surname) groupmems.8.xml:55(surname)
-#: groupdel.8.xml:52(surname) groupadd.8.xml:54(surname)
-#: gpasswd.1.xml:56(surname) faillog.8.xml:51(surname)
-#: faillog.5.xml:51(surname) expiry.1.xml:55(surname) chsh.1.xml:54(surname)
-#: chpasswd.8.xml:55(surname) chgpasswd.8.xml:51(surname)
-#: chfn.1.xml:54(surname) chage.1.xml:52(surname)
+#: limits.5.xml:53(surname) lastlog.8.xml:52(surname) gshadow.5.xml:39(surname)
+#: grpck.8.xml:52(surname) groups.1.xml:51(surname) groupmod.8.xml:52(surname)
+#: groupmems.8.xml:55(surname) groupdel.8.xml:52(surname)
+#: groupadd.8.xml:54(surname) gpasswd.1.xml:56(surname)
+#: faillog.8.xml:51(surname) faillog.5.xml:51(surname) expiry.1.xml:55(surname)
+#: chsh.1.xml:54(surname) chpasswd.8.xml:55(surname)
+#: chgpasswd.8.xml:51(surname) chfn.1.xml:54(surname) chage.1.xml:52(surname)
 msgid "François"
 msgstr ""
 
@@ -169,14 +166,13 @@ msgstr ""
 #: newusers.8.xml:68(contrib) newgrp.1.xml:54(contrib)
 #: logoutd.8.xml:53(contrib) login.defs.5.xml:118(contrib)
 #: login.access.5.xml:54(contrib) login.1.xml:86(contrib)
-#: limits.5.xml:55(contrib) lastlog.8.xml:54(contrib)
-#: gshadow.5.xml:42(contrib) grpck.8.xml:54(contrib) groups.1.xml:53(contrib)
-#: groupmod.8.xml:54(contrib) groupmems.8.xml:57(contrib)
-#: groupdel.8.xml:54(contrib) groupadd.8.xml:56(contrib)
-#: gpasswd.1.xml:58(contrib) faillog.8.xml:53(contrib)
-#: faillog.5.xml:53(contrib) expiry.1.xml:57(contrib) chsh.1.xml:56(contrib)
-#: chpasswd.8.xml:57(contrib) chgpasswd.8.xml:53(contrib)
-#: chfn.1.xml:56(contrib) chage.1.xml:54(contrib)
+#: limits.5.xml:55(contrib) lastlog.8.xml:54(contrib) gshadow.5.xml:42(contrib)
+#: grpck.8.xml:54(contrib) groups.1.xml:53(contrib) groupmod.8.xml:54(contrib)
+#: groupmems.8.xml:57(contrib) groupdel.8.xml:54(contrib)
+#: groupadd.8.xml:56(contrib) gpasswd.1.xml:58(contrib)
+#: faillog.8.xml:53(contrib) faillog.5.xml:53(contrib) expiry.1.xml:57(contrib)
+#: chsh.1.xml:56(contrib) chpasswd.8.xml:57(contrib)
+#: chgpasswd.8.xml:53(contrib) chfn.1.xml:56(contrib) chage.1.xml:54(contrib)
 msgid "shadow-utils maintainer, 2007 - now"
 msgstr ""
 
@@ -256,14 +252,13 @@ msgstr ""
 #: useradd.8.xml:88(replaceable) useradd.8.xml:100(replaceable)
 #: su.1.xml:88(replaceable) pwconv.8.xml:81(replaceable)
 #: pwconv.8.xml:87(replaceable) pwconv.8.xml:93(replaceable)
-#: pwconv.8.xml:99(replaceable) pwck.8.xml:77(arg)
-#: passwd.1.xml:79(replaceable) newusers.8.xml:87(replaceable)
-#: lastlog.8.xml:73(replaceable) grpck.8.xml:72(arg)
-#: groupmod.8.xml:73(replaceable) groupdel.8.xml:73(replaceable)
-#: groupadd.8.xml:75(replaceable) faillog.8.xml:72(replaceable)
-#: chsh.1.xml:75(replaceable) chpasswd.8.xml:76(replaceable)
-#: chgpasswd.8.xml:72(replaceable) chfn.1.xml:75(replaceable)
-#: chage.1.xml:72(replaceable)
+#: pwconv.8.xml:99(replaceable) pwck.8.xml:77(arg) passwd.1.xml:79(replaceable)
+#: newusers.8.xml:87(replaceable) lastlog.8.xml:73(replaceable)
+#: grpck.8.xml:72(arg) groupmod.8.xml:73(replaceable)
+#: groupdel.8.xml:73(replaceable) groupadd.8.xml:75(replaceable)
+#: faillog.8.xml:72(replaceable) chsh.1.xml:75(replaceable)
+#: chpasswd.8.xml:76(replaceable) chgpasswd.8.xml:72(replaceable)
+#: chfn.1.xml:75(replaceable) chage.1.xml:72(replaceable)
 msgid "options"
 msgstr "параметры"
 
@@ -314,11 +309,10 @@ msgstr ""
 #: useradd.8.xml:124(title) su.1.xml:145(title) pwconv.8.xml:187(title)
 #: pwck.8.xml:176(title) passwd.1.xml:174(title) newusers.8.xml:265(title)
 #: login.1.xml:210(title) lastlog.8.xml:91(title) grpck.8.xml:147(title)
-#: groupmod.8.xml:89(title) groupmems.8.xml:100(title)
-#: groupdel.8.xml:88(title) groupadd.8.xml:93(title) gpasswd.1.xml:134(title)
-#: faillog.8.xml:89(title) expiry.1.xml:91(title) chsh.1.xml:95(title)
-#: chpasswd.8.xml:130(title) chgpasswd.8.xml:105(title) chfn.1.xml:111(title)
-#: chage.1.xml:91(title)
+#: groupmod.8.xml:89(title) groupmems.8.xml:100(title) groupdel.8.xml:88(title)
+#: groupadd.8.xml:93(title) gpasswd.1.xml:134(title) faillog.8.xml:89(title)
+#: expiry.1.xml:91(title) chsh.1.xml:95(title) chpasswd.8.xml:130(title)
+#: chgpasswd.8.xml:105(title) chfn.1.xml:111(title) chage.1.xml:91(title)
 msgid "OPTIONS"
 msgstr "ПАРАМЕТРЫ"
 
@@ -339,7 +333,7 @@ msgstr "Редактировать базу данных групп."
 
 #: vipw.8.xml:120(term) userdel.8.xml:123(term) useradd.8.xml:266(term)
 #: pwconv.8.xml:195(term) pwck.8.xml:186(term) passwd.1.xml:214(term)
-#: newusers.8.xml:283(term) lastlog.8.xml:107(term) grpck.8.xml:157(term)
+#: newusers.8.xml:283(term) lastlog.8.xml:118(term) grpck.8.xml:157(term)
 #: groupmod.8.xml:129(term) groupmems.8.xml:142(term) groupdel.8.xml:95(term)
 #: groupadd.8.xml:131(term) gpasswd.1.xml:173(term) faillog.8.xml:122(term)
 #: expiry.1.xml:112(term) chsh.1.xml:101(term) chpasswd.8.xml:171(term)
@@ -350,7 +344,7 @@ msgstr "<option>-h</option>, <option>--help</option>"
 # type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><para>
 #: vipw.8.xml:122(para) userdel.8.xml:125(para) useradd.8.xml:268(para)
 #: pwconv.8.xml:197(para) pwck.8.xml:188(para) passwd.1.xml:216(para)
-#: newusers.8.xml:285(para) lastlog.8.xml:111(para) grpck.8.xml:159(para)
+#: newusers.8.xml:285(para) lastlog.8.xml:122(para) grpck.8.xml:159(para)
 #: groupmod.8.xml:131(para) groupmems.8.xml:144(para) groupdel.8.xml:97(para)
 #: groupadd.8.xml:133(para) gpasswd.1.xml:175(para) faillog.8.xml:124(para)
 #: expiry.1.xml:114(para) chsh.1.xml:103(para) chpasswd.8.xml:173(para)
@@ -378,7 +372,7 @@ msgstr "Не выводить сообщений при работе."
 
 #: vipw.8.xml:138(term) usermod.8.xml:311(term) userdel.8.xml:146(term)
 #: useradd.8.xml:445(term) pwconv.8.xml:201(term) pwck.8.xml:209(term)
-#: passwd.1.xml:301(term) newusers.8.xml:308(term) lastlog.8.xml:115(term)
+#: passwd.1.xml:301(term) newusers.8.xml:308(term) lastlog.8.xml:126(term)
 #: grpck.8.xml:173(term) groupmod.8.xml:178(term) groupmems.8.xml:165(term)
 #: groupdel.8.xml:101(term) groupadd.8.xml:204(term) faillog.8.xml:180(term)
 #: chsh.1.xml:107(term) chpasswd.8.xml:188(term) chgpasswd.8.xml:146(term)
@@ -392,7 +386,7 @@ msgstr ""
 
 #: vipw.8.xml:142(para) usermod.8.xml:315(para) userdel.8.xml:150(para)
 #: useradd.8.xml:449(para) pwconv.8.xml:205(para) pwck.8.xml:213(para)
-#: passwd.1.xml:305(para) newusers.8.xml:312(para) lastlog.8.xml:119(para)
+#: passwd.1.xml:305(para) newusers.8.xml:312(para) lastlog.8.xml:130(para)
 #: grpck.8.xml:177(para) groupmod.8.xml:182(para) groupmems.8.xml:169(para)
 #: groupdel.8.xml:105(para) groupadd.8.xml:208(para) gpasswd.1.xml:185(para)
 #: faillog.8.xml:184(para) chsh.1.xml:111(para) chpasswd.8.xml:192(para)
@@ -428,9 +422,9 @@ msgstr "Указать какой пользовательский тенево�
 #: pwconv.8.xml:227(title) pwck.8.xml:252(title) passwd.1.xml:390(title)
 #: newusers.8.xml:362(title) newgrp.1.xml:109(title) login.1.xml:294(title)
 #: grpck.8.xml:209(title) groupmod.8.xml:193(title) groupmems.8.xml:199(title)
-#: groupdel.8.xml:128(title) groupadd.8.xml:219(title)
-#: gpasswd.1.xml:264(title) chsh.1.xml:154(title) chpasswd.8.xml:239(title)
-#: chgpasswd.8.xml:198(title) chfn.1.xml:193(title) chage.1.xml:244(title)
+#: groupdel.8.xml:128(title) groupadd.8.xml:219(title) gpasswd.1.xml:264(title)
+#: chsh.1.xml:154(title) chpasswd.8.xml:239(title) chgpasswd.8.xml:198(title)
+#: chfn.1.xml:193(title) chage.1.xml:244(title)
 msgid "CONFIGURATION"
 msgstr "НАСТРОЙКА"
 
@@ -498,28 +492,26 @@ msgstr ""
 #: pwconv.8.xml:250(title) pwck.8.xml:269(title) porttime.5.xml:130(title)
 #: passwd.5.xml:141(title) passwd.1.xml:408(title) newusers.8.xml:397(title)
 #: newgrp.1.xml:121(title) logoutd.8.xml:89(title)
-#: login.access.5.xml:121(title) login.1.xml:338(title)
-#: limits.5.xml:196(title) lastlog.8.xml:182(title) gshadow.5.xml:156(title)
-#: grpck.8.xml:221(title) groups.1.xml:100(title) groupmod.8.xml:205(title)
-#: groupmems.8.xml:211(title) groupdel.8.xml:140(title)
-#: groupadd.8.xml:233(title) gpasswd.1.xml:279(title) faillog.8.xml:243(title)
-#: faillog.5.xml:96(title) expiry.1.xml:121(title) chsh.1.xml:167(title)
-#: chpasswd.8.xml:255(title) chgpasswd.8.xml:213(title) chfn.1.xml:207(title)
-#: chage.1.xml:256(title)
+#: login.access.5.xml:121(title) login.1.xml:338(title) limits.5.xml:196(title)
+#: lastlog.8.xml:204(title) gshadow.5.xml:156(title) grpck.8.xml:221(title)
+#: groups.1.xml:100(title) groupmod.8.xml:205(title) groupmems.8.xml:211(title)
+#: groupdel.8.xml:140(title) groupadd.8.xml:233(title) gpasswd.1.xml:279(title)
+#: faillog.8.xml:243(title) faillog.5.xml:96(title) expiry.1.xml:121(title)
+#: chsh.1.xml:167(title) chpasswd.8.xml:255(title) chgpasswd.8.xml:213(title)
+#: chfn.1.xml:207(title) chage.1.xml:256(title)
 msgid "FILES"
 msgstr "ФАЙЛЫ"
 
 # type: Content of: <refentry><refsect1><para><filename>
 #: vipw.8.xml:198(filename) usermod.8.xml:517(filename)
 #: userdel.8.xml:191(filename) useradd.8.xml:690(filename)
-#: sg.1.xml:125(filename) pwck.8.xml:272(filename)
-#: newusers.8.xml:412(filename) newgrp.1.xml:136(filename)
-#: gshadow.5.xml:159(filename) grpck.8.xml:224(filename)
-#: groups.1.xml:103(filename) groupmod.8.xml:208(filename)
-#: groupmems.8.xml:214(filename) groupdel.8.xml:143(filename)
-#: groupadd.8.xml:236(filename) gpasswd.1.xml:72(filename)
-#: gpasswd.1.xml:75(filename) gpasswd.1.xml:282(filename)
-#: chgpasswd.8.xml:216(filename)
+#: sg.1.xml:125(filename) pwck.8.xml:272(filename) newusers.8.xml:412(filename)
+#: newgrp.1.xml:136(filename) gshadow.5.xml:159(filename)
+#: grpck.8.xml:224(filename) groups.1.xml:103(filename)
+#: groupmod.8.xml:208(filename) groupmems.8.xml:214(filename)
+#: groupdel.8.xml:143(filename) groupadd.8.xml:236(filename)
+#: gpasswd.1.xml:72(filename) gpasswd.1.xml:75(filename)
+#: gpasswd.1.xml:282(filename) chgpasswd.8.xml:216(filename)
 msgid "/etc/group"
 msgstr "/etc/group"
 
@@ -665,15 +657,15 @@ msgstr ""
 #: usermod.8.xml:46(surname) userdel.8.xml:46(surname)
 #: useradd.8.xml:57(surname) su.1.xml:57(surname) sg.1.xml:41(surname)
 #: shadow.5.xml:40(surname) shadow.3.xml:40(surname) pwck.8.xml:46(surname)
-#: porttime.5.xml:40(surname) passwd.5.xml:40(surname)
-#: passwd.1.xml:47(surname) newusers.8.xml:55(surname)
-#: newgrp.1.xml:41(surname) logoutd.8.xml:40(surname)
-#: login.defs.5.xml:105(surname) login.1.xml:73(surname)
-#: lastlog.8.xml:41(surname) grpck.8.xml:41(surname) groups.1.xml:40(surname)
-#: groupmod.8.xml:41(surname) groupdel.8.xml:41(surname)
-#: groupadd.8.xml:43(surname) faillog.8.xml:40(surname)
-#: faillog.5.xml:40(surname) expiry.1.xml:44(surname) chsh.1.xml:43(surname)
-#: chpasswd.8.xml:44(surname) chfn.1.xml:43(surname) chage.1.xml:41(surname)
+#: porttime.5.xml:40(surname) passwd.5.xml:40(surname) passwd.1.xml:47(surname)
+#: newusers.8.xml:55(surname) newgrp.1.xml:41(surname)
+#: logoutd.8.xml:40(surname) login.defs.5.xml:105(surname)
+#: login.1.xml:73(surname) lastlog.8.xml:41(surname) grpck.8.xml:41(surname)
+#: groups.1.xml:40(surname) groupmod.8.xml:41(surname)
+#: groupdel.8.xml:41(surname) groupadd.8.xml:43(surname)
+#: faillog.8.xml:40(surname) faillog.5.xml:40(surname) expiry.1.xml:44(surname)
+#: chsh.1.xml:43(surname) chpasswd.8.xml:44(surname) chfn.1.xml:43(surname)
+#: chage.1.xml:41(surname)
 msgid "Haugh"
 msgstr ""
 
@@ -1279,9 +1271,9 @@ msgstr ""
 # type: Content of: <refentry><refsect1><title>
 #: usermod.8.xml:478(title) userdel.8.xml:281(title) useradd.8.xml:623(title)
 #: su.1.xml:331(title) shadow.3.xml:218(title) passwd.1.xml:372(title)
-#: newusers.8.xml:350(title) login.1.xml:260(title) lastlog.8.xml:194(title)
-#: groupdel.8.xml:116(title) groupadd.8.xml:257(title)
-#: gpasswd.1.xml:252(title) faillog.8.xml:232(title) chpasswd.8.xml:231(title)
+#: newusers.8.xml:350(title) login.1.xml:260(title) lastlog.8.xml:216(title)
+#: groupdel.8.xml:116(title) groupadd.8.xml:257(title) gpasswd.1.xml:252(title)
+#: faillog.8.xml:232(title) chpasswd.8.xml:231(title)
 #: chgpasswd.8.xml:186(title)
 msgid "CAVEATS"
 msgstr "ПРЕДОСТЕРЕЖЕНИЯ"
@@ -1933,9 +1925,8 @@ msgstr "успешное выполнение"
 #: passwd.1.xml:449(replaceable) newgrp.1.xml:59(manvolnum)
 #: login.1.xml:91(manvolnum) grpck.8.xml:256(replaceable)
 #: groups.1.xml:58(manvolnum) gpasswd.1.xml:63(manvolnum)
-#: expiry.1.xml:62(manvolnum) chsh.1.xml:61(manvolnum)
-#: chfn.1.xml:61(manvolnum) chage.1.xml:59(manvolnum)
-#: chage.1.xml:289(replaceable)
+#: expiry.1.xml:62(manvolnum) chsh.1.xml:61(manvolnum) chfn.1.xml:61(manvolnum)
+#: chage.1.xml:59(manvolnum) chage.1.xml:289(replaceable)
 msgid "1"
 msgstr "1"
 
@@ -3431,9 +3422,8 @@ msgstr ""
 "citerefentry>."
 
 #: su.1.xml:58(contrib) shadow.5.xml:41(contrib) shadow.3.xml:41(contrib)
-#: porttime.5.xml:41(contrib) passwd.5.xml:41(contrib)
-#: passwd.1.xml:48(contrib) login.1.xml:74(contrib) faillog.8.xml:41(contrib)
-#: faillog.5.xml:41(contrib)
+#: porttime.5.xml:41(contrib) passwd.5.xml:41(contrib) passwd.1.xml:48(contrib)
+#: login.1.xml:74(contrib) faillog.8.xml:41(contrib) faillog.5.xml:41(contrib)
 msgid "Creation, 1989"
 msgstr ""
 
@@ -3563,14 +3553,9 @@ msgstr ""
 "<option>-c</option>."
 
 #: su.1.xml:158(para)
-#, fuzzy
-#| msgid ""
-#| "The executed command will have no controlling terminal. This option "
-#| "cannot be used to execute interractive programs which need a controlling "
-#| "TTY."
 msgid ""
 "The executed command will have no controlling terminal. This option cannot "
-"be used to execute interactive programs which need a controlling TTY."
+"be used to execute interractive programs which need a controlling TTY."
 msgstr ""
 "Запускаемая программа не будет иметь управляющего терминала. Этот параметр "
 "не может быть использован для запуска интерактивных программ, которым "
@@ -4858,20 +4843,17 @@ msgid "pwconv"
 msgstr "pwconv"
 
 # type: Content of: <refentry><refsect1><para><command>
-#: pwconv.8.xml:71(refname) pwconv.8.xml:85(command)
-#: login.defs.5.xml:438(term)
+#: pwconv.8.xml:71(refname) pwconv.8.xml:85(command) login.defs.5.xml:438(term)
 msgid "pwunconv"
 msgstr "pwunconv"
 
 # type: Content of: <refentry><refsect1><para><command>
-#: pwconv.8.xml:72(refname) pwconv.8.xml:91(command)
-#: login.defs.5.xml:340(term)
+#: pwconv.8.xml:72(refname) pwconv.8.xml:91(command) login.defs.5.xml:340(term)
 msgid "grpconv"
 msgstr "grpconv"
 
 # type: Content of: <refentry><refsect1><para><command>
-#: pwconv.8.xml:73(refname) pwconv.8.xml:97(command)
-#: login.defs.5.xml:346(term)
+#: pwconv.8.xml:73(refname) pwconv.8.xml:97(command) login.defs.5.xml:346(term)
 msgid "grpunconv"
 msgstr "grpunconv"
 
@@ -5094,8 +5076,7 @@ msgstr "проверяет целостность файлов паролей"
 # type: Content of: <refentry><refsect1><para><emphasis>
 #: pwck.8.xml:80(replaceable) passwd.5.xml:57(refentrytitle)
 #: passwd.5.xml:64(refname) passwd.1.xml:64(refentrytitle)
-#: passwd.1.xml:71(refname) passwd.1.xml:77(command)
-#: login.defs.5.xml:409(term)
+#: passwd.1.xml:71(refname) passwd.1.xml:77(command) login.defs.5.xml:409(term)
 msgid "passwd"
 msgstr "passwd"
 
@@ -8372,7 +8353,37 @@ msgid ""
 msgstr ""
 "Показать записи lastlog за последние <emphasis remap=\"I\">ДНЕЙ</emphasis>."
 
-#: lastlog.8.xml:127(term) faillog.8.xml:192(term)
+#: lastlog.8.xml:107(term)
+#, fuzzy
+#| msgid "<option>-u</option>, <option>--user</option>"
+msgid "<option>-C</option>, <option>--clear</option>"
+msgstr "<option>-u</option>, <option>--user</option>"
+
+#: lastlog.8.xml:111(para)
+#, fuzzy
+#| msgid ""
+#| "This option is only valid in combination with the <option>-d</option> (or "
+#| "<option>--home</option>) option."
+msgid ""
+"Clear lastlog record of an user. This option can be used only together with "
+"<option>-u</option> (<option>--user</option>))."
+msgstr ""
+"Этот параметр можно использовать только с параметром <option>-d</option> "
+"(или <option>--home</option>)."
+
+#: lastlog.8.xml:138(term)
+#, fuzzy
+#| msgid "<option>-r</option>, <option>--reset</option>"
+msgid "<option>-S</option>, <option>--set</option>"
+msgstr "<option>-r</option>, <option>--reset</option>"
+
+#: lastlog.8.xml:142(para)
+msgid ""
+"Set lastlog record of an user to the current time. This option can be used "
+"only together with <option>-u</option> (<option>--user</option>))."
+msgstr ""
+
+#: lastlog.8.xml:149(term) faillog.8.xml:192(term)
 msgid ""
 "<option>-t</option>, <option>--time</option>&nbsp;<replaceable>DAYS</"
 "replaceable>"
@@ -8381,14 +8392,14 @@ msgstr ""
 "replaceable>"
 
 # type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><para>
-#: lastlog.8.xml:131(para)
+#: lastlog.8.xml:153(para)
 msgid ""
 "Print the lastlog records more recent than <emphasis remap=\"I\">DAYS</"
 "emphasis>."
 msgstr ""
 "Показать записи lastlog новее чем <emphasis remap=\"I\">ДНЕЙ</emphasis>."
 
-#: lastlog.8.xml:138(term) faillog.8.xml:202(term)
+#: lastlog.8.xml:160(term) faillog.8.xml:202(term)
 msgid ""
 "<option>-u</option>, <option>--user</option>&nbsp;<replaceable>LOGIN</"
 "replaceable>|<replaceable>RANGE</replaceable>"
@@ -8397,11 +8408,11 @@ msgstr ""
 "ЗАПИСЬ</replaceable>|<replaceable>ДИАПАЗОН</replaceable>"
 
 # type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><para>
-#: lastlog.8.xml:142(para)
+#: lastlog.8.xml:164(para)
 msgid "Print the lastlog record of the specified user(s)."
 msgstr "Показать запись lastlog только для указанного пользователя(ей)."
 
-#: lastlog.8.xml:145(para) faillog.8.xml:211(para)
+#: lastlog.8.xml:167(para) faillog.8.xml:211(para)
 msgid ""
 "The users can be specified by a login name, a numerical user ID, or a "
 "<replaceable>RANGE</replaceable> of users. This <replaceable>RANGE</"
@@ -8416,7 +8427,7 @@ msgstr ""
 "максимального (<replaceable>-UID_МАКС</replaceable>) или минимального "
 "(<replaceable>UID_МИН-</replaceable>) значения."
 
-#: lastlog.8.xml:157(para)
+#: lastlog.8.xml:179(para)
 msgid ""
 "If the user has never logged in the message <emphasis>** Never logged in**</"
 "emphasis> will be displayed instead of the port and time."
@@ -8425,7 +8436,7 @@ msgstr ""
 "сообщение <emphasis>** Никогда не входил в систему**</emphasis> вместо "
 "названия порта и даты."
 
-#: lastlog.8.xml:162(para)
+#: lastlog.8.xml:184(para)
 msgid ""
 "Only the entries for the current users of the system will be displayed. "
 "Other entries may exist for users that were deleted previously."
@@ -8435,13 +8446,13 @@ msgstr ""
 "пользователей."
 
 # type: Content of: <refentry><refsect1><title>
-#: lastlog.8.xml:170(title) groups.1.xml:90(title) chsh.1.xml:140(title)
+#: lastlog.8.xml:192(title) groups.1.xml:90(title) chsh.1.xml:140(title)
 #: chage.1.xml:231(title)
 msgid "NOTE"
 msgstr "ЗАМЕЧАНИЕ"
 
 # type: Content of: <refentry><refsect1><para>
-#: lastlog.8.xml:171(para)
+#: lastlog.8.xml:193(para)
 msgid ""
 "The <filename>lastlog</filename> file is a database which contains info on "
 "the last login of each user. You should not rotate it. It is a sparse file, "
@@ -8459,17 +8470,17 @@ msgstr ""
 "значений). Чтобы увидеть реальный размер введите «<command>ls -s</command>»."
 
 # type: Content of: <refentry><refsect1><variablelist><varlistentry><term><filename>
-#: lastlog.8.xml:185(filename)
+#: lastlog.8.xml:207(filename)
 msgid "/var/log/lastlog"
 msgstr "/var/log/lastlog"
 
 # type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><para>
-#: lastlog.8.xml:187(para)
+#: lastlog.8.xml:209(para)
 msgid "Database times of previous user logins."
 msgstr "содержит список завершённых сеансов работы с системой"
 
 # type: Content of: <refentry><refsect1><para>
-#: lastlog.8.xml:195(para)
+#: lastlog.8.xml:217(para)
 msgid ""
 "Large gaps in UID numbers will cause the lastlog program to run longer with "
 "no output to the screen (i.e. if in lastlog database there is no entries for "

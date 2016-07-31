@@ -62,9 +62,6 @@
       </arg>
       <arg choice='opt'>
 	<arg choice='plain'>
-	  <replaceable>pid</replaceable>
-	</arg>
-	<arg choice='plain'>
 	  <replaceable>gid</replaceable>
 	</arg>
 	<arg choice='plain'>
@@ -85,6 +82,8 @@
     <para>
       The <command>newgidmap</command> sets <filename>/proc/[pid]/gid_map</filename> based on it's
       command line arguments and the gids allowed in <filename>/etc/subgid</filename>.
+      Note that the root user is not exempted from the requirement for a valid
+      <filename>/etc/subgid</filename> entry.
     </para>
 
     <para>

@@ -1,19 +1,19 @@
 # Translation of shadow messages to French
 # Copyright (C) 1999, 2004, 2005, 2006, 2009 Free Software Foundation, Inc.
-# Copyright (C) 2011-2013  Debian French l10n team <debian-l10n-french@lists.debian.org>
+# Copyright (C) 2011, 2012  Debian French l10n team <debian-l10n-french@lists.debian.org>
 # Patches, suggestions, etc welcome.
 #
 # Vincent Renardias <vincent@ldsol.com>, 1999, 2005.
 # Jean-Luc Coulon <jean.luc.coulon@wanadoo.fr>, 2005, 2006, 2008.
 # Christian Perrier <bubulle@debian.org>, 2005, 2006, 2008, 2009.
 # Jean-Luc Coulon (f5ibh) <jean-luc.coulon@wanadoo.fr>, 2009.
-# Thomas Blein <tblein@tblein.eu>, 2011, 2012, 2013.
+# Thomas Blein <tblein@tblein.eu>, 2011, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: shadow\n"
 "Report-Msgid-Bugs-To: pkg-shadow-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2014-05-09 12:52+0200\n"
-"PO-Revision-Date: 2013-07-10 18:53+0200\n"
+"POT-Creation-Date: 2016-03-16 17:19-0700\n"
+"PO-Revision-Date: 2012-01-13 17:09+0100\n"
 "Last-Translator: Thomas Blein <tblein@tblein.eu>\n"
 "Language-Team: French <debian-l10n-french@lists.debian.org>\n"
 "Language: fr\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n>1;\n"
-"X-Generator: Lokalize 1.4\n"
+"X-Generator: Lokalize 1.0\n"
 
 #, c-format
 msgid ""
@@ -54,9 +54,10 @@ msgstr ""
 msgid "%s: nscd did not terminate normally (signal %d)\n"
 msgstr "%s : nscd ne s'est pas terminé normalement (signal %d).\n"
 
-#, c-format
+#, fuzzy, c-format
+#| msgid "%s: nscd exited with status %d"
 msgid "%s: nscd exited with status %d\n"
-msgstr "%s : nscd s'est terminé avec l'état %d\n"
+msgstr "%s : nscd s'est terminé avec le statut %d."
 
 msgid "Password: "
 msgstr "Mot de passe : "
@@ -1162,6 +1163,16 @@ msgstr "%s : l'identifiant de groupe (GID) « %lu » existe déjà\n"
 msgid "%s: Cannot setup cleanup service.\n"
 msgstr "%s : Impossible de mettre en place un service de nettoyage.\n"
 
+#, fuzzy
+#| msgid ""
+#| "  -r, --reset                   reset the counters of login failures\n"
+msgid ""
+"  -f, --force                   delete group even if it is the primary group "
+"of a user\n"
+msgstr ""
+"  -r, --reset                   réinitialiser les compteurs d'échecs de "
+"connexion\n"
+
 #, c-format
 msgid "%s: cannot remove entry '%s' from %s\n"
 msgstr "%s : impossible de supprimer l'entrée « %s » de %s\n"
@@ -1394,6 +1405,28 @@ msgstr ""
 "   b, --before JOURS            n'afficher que les enregistrements de\n"
 "                                « lastlog » plus anciens que JOURS\n"
 
+#, fuzzy
+#| msgid ""
+#| "  -a, --all                     display faillog records for all users\n"
+msgid ""
+"  -C, --clear                   clear lastlog record of an user (usable only "
+"with -u)\n"
+msgstr ""
+"  -a, --all                     afficher les enregistrements d'échec "
+"(« faillog »)\n"
+"                                pour tous les utilisateurs\n"
+
+#, fuzzy
+#| msgid ""
+#| "  -a, --all                     display faillog records for all users\n"
+msgid ""
+"  -S, --set                     set lastlog record to current time (usable "
+"only with -u)\n"
+msgstr ""
+"  -a, --all                     afficher les enregistrements d'échec "
+"(« faillog »)\n"
+"                                pour tous les utilisateurs\n"
+
 msgid ""
 "  -t, --time DAYS               print only lastlog records more recent than "
 "DAYS\n"
@@ -1415,6 +1448,28 @@ msgstr "Utilisateur             Port     Dernière"
 
 msgid "**Never logged in**"
 msgstr "**Jamais connecté**"
+
+#, fuzzy, c-format
+#| msgid "%s: Failed to get the entry for UID %lu\n"
+msgid "%s: Failed to update the entry for UID %lu\n"
+msgstr ""
+"%s : échec de l'obtention de l'entrée pour l'identifiant d'utilisateur (UID) "
+"%lu\n"
+
+#, fuzzy, c-format
+#| msgid "%s: failed to reset the lastlog entry of UID %lu: %s\n"
+msgid "%s: Failed to update the lastlog file\n"
+msgstr ""
+"%s : impossible de réinitialiser l'entrée lastlog de l'identifiant "
+"d'utilisateur (UID) %lu : %s\n"
+
+#, c-format
+msgid "%s: Option -C cannot be used together with option -S\n"
+msgstr ""
+
+#, c-format
+msgid "%s: Options -C and -S require option -u to specify the user\n"
+msgstr ""
 
 #, c-format
 msgid "Usage: %s [-p] [name]\n"
@@ -2051,9 +2106,10 @@ msgstr "%s : impossible d'ouvrir le nouveau fichier des valeurs par défaut\n"
 msgid "%s: line too long in %s: %s..."
 msgstr "%s : ligne trop longue dans %s : %s…"
 
-#, c-format
+#, fuzzy, c-format
+#| msgid "%s: Cannot create symbolic link %s: %s\n"
 msgid "%s: Cannot create backup file (%s): %s\n"
-msgstr "%s : impossible de créer le fichier de sauvegarde (%s) : %s\n"
+msgstr "%s : impossible de créer le lien symbolique %s : %s\n"
 
 #, c-format
 msgid "%s: rename: %s: %s\n"
@@ -2556,26 +2612,6 @@ msgstr "%s : l'identifiant d'utilisateur (UID) « %lu » existe déjà\n"
 msgid "%s: %s does not exist, you cannot use the flags %s or %s\n"
 msgstr "%s : %s n'est pas autorisé à modifier le mot de passe de %s\n"
 
-#, fuzzy, c-format
-#| msgid "%s: failed to prepare the new %s entry '%s'\n"
-msgid "%s: failed to remove uid range %lu-%lu from '%s'\n"
-msgstr "%s : échec lors de la préparation de la nouvelle entrée de %s « %s »\n"
-
-#, fuzzy, c-format
-#| msgid "%s: failed to prepare the new %s entry '%s'\n"
-msgid "%s: failed to add uid range %lu-%lu from '%s'\n"
-msgstr "%s : échec lors de la préparation de la nouvelle entrée de %s « %s »\n"
-
-#, fuzzy, c-format
-#| msgid "%s: failed to prepare the new %s entry '%s'\n"
-msgid "%s: failed to remove gid range %lu-%lu from '%s'\n"
-msgstr "%s : échec lors de la préparation de la nouvelle entrée de %s « %s »\n"
-
-#, fuzzy, c-format
-#| msgid "%s: failed to prepare the new %s entry '%s'\n"
-msgid "%s: failed to add gid range %lu-%lu from '%s'\n"
-msgstr "%s : échec lors de la préparation de la nouvelle entrée de %s « %s »\n"
-
 #, c-format
 msgid "%s: directory %s exists\n"
 msgstr "%s : le répertoire %s existe\n"
@@ -2622,6 +2658,26 @@ msgstr "échec du changement de propriétaire de la boîte à lettres"
 
 msgid "failed to rename mailbox"
 msgstr "échec du changement de nom de la boîte à lettres"
+
+#, fuzzy, c-format
+#| msgid "%s: failed to prepare the new %s entry '%s'\n"
+msgid "%s: failed to remove uid range %lu-%lu from '%s'\n"
+msgstr "%s : échec lors de la préparation de la nouvelle entrée de %s « %s »\n"
+
+#, fuzzy, c-format
+#| msgid "%s: failed to prepare the new %s entry '%s'\n"
+msgid "%s: failed to add uid range %lu-%lu from '%s'\n"
+msgstr "%s : échec lors de la préparation de la nouvelle entrée de %s « %s »\n"
+
+#, fuzzy, c-format
+#| msgid "%s: failed to prepare the new %s entry '%s'\n"
+msgid "%s: failed to remove gid range %lu-%lu from '%s'\n"
+msgstr "%s : échec lors de la préparation de la nouvelle entrée de %s « %s »\n"
+
+#, fuzzy, c-format
+#| msgid "%s: failed to prepare the new %s entry '%s'\n"
+msgid "%s: failed to add gid range %lu-%lu from '%s'\n"
+msgstr "%s : échec lors de la préparation de la nouvelle entrée de %s « %s »\n"
 
 #, c-format
 msgid ""
@@ -2683,9 +2739,9 @@ msgid "%s: %s: %s\n"
 msgstr "%s : PAM : %s\n"
 
 #, fuzzy, c-format
-#| msgid "%s: nscd exited with status %d\n"
+#| msgid "%s: nscd exited with status %d"
 msgid "%s: %s returned with status %d\n"
-msgstr "%s : nscd s'est terminé avec l'état %d\n"
+msgstr "%s : nscd s'est terminé avec le statut %d."
 
 #, c-format
 msgid "%s: %s killed by signal %d\n"
