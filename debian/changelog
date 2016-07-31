@@ -9,7 +9,9 @@ shadow (1:4.3-1) unstable; urgency=medium
     - debian/patches/1020_fix_user_busy_errors - upstream
     - debian/patches/1010_vietnamese_translation - needs a refresh and I'm
       not qualified;  left the old version but unapplied
-  * debian/control: replace nekral with myself in Uploaders (Closes: #832380)
+  * debian/control:
+    - replace nekral with myself in Uploaders (Closes: #832380)
+    - Update VCS fields to use https
 
   [ Niels Thykier ]
   * debian/rules: explicitly set SHELL to /bin/sh
