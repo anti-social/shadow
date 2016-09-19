@@ -2,12 +2,12 @@
 .\"     Title: chgpasswd
 .\"    Author: Thomas K\(/loczko <kloczek@pld.org.pl>
 .\" Generator: DocBook XSL Stylesheets v1.79.1 <http://docbook.sf.net/>
-.\"      Date: 03/16/2016
+.\"      Date: 09/18/2016
 .\"    Manual: Команды управления системой
-.\"    Source: shadow-utils 4.2
+.\"    Source: shadow-utils 4.4
 .\"  Language: Russian
 .\"
-.TH "chgpasswd" "8" "03/16/2016" "shadow\-utils 4\&.2" "Команды управления системой"
+.TH "chgpasswd" "8" "09/18/2016" "shadow\-utils 4\&.4" "Команды управления системой"
 .\" -----------------------------------------------------------------
 .\" * Define some portability stuff
 .\" -----------------------------------------------------------------
@@ -43,14 +43,14 @@ chgpasswd \- обновляет пароли групп в пакетном ре
 По умолчанию, передаваемый пароль должен быть в виде обычного текста и шифруется командой
 \fBchgpasswd\fR\&.
 .PP
-Системный алгоритм шифрования по умолчанию может быть задан в переменной
+The default encryption algorithm can be defined for the system with the
 \fBENCRYPT_METHOD\fR
-в файле
-/etc/login\&.defs, и может быть переопределён параметрами
+variable of
+/etc/login\&.defs, and can be overwritten with the
 \fB\-e\fR,
-\fB\-m\fR
-или
-\fB\-c\fR\&.
+\fB\-m\fR, or
+\fB\-c\fR
+options\&.
 .PP
 Данная команда предназначена для работы в крупных системных средах, где за один раз заводится несколько учётных записей\&.
 .SH "ПАРАМЕТРЫ"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: shadow 4.0.18\n"
 "Report-Msgid-Bugs-To: pkg-shadow-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2016-03-16 17:19-0700\n"
+"POT-Creation-Date: 2016-09-18 21:41-0500\n"
 "PO-Revision-Date: 2008-03-29 20:31+0200\n"
 "Last-Translator: Mehmet Türker <mturker@innova.com.tr>\n"
 "Language-Team: Türkçe <tr@li.org>\n"
@@ -1463,6 +1463,15 @@ msgstr ""
 "\n"
 "[Bağlantı kesilmesi atlandı -- root girişi olanaklı.]"
 
+#, c-format
+msgid "%s: Cannot possibly work without effective root\n"
+msgstr ""
+
+msgid "No utmp entry.  You must exec \"login\" from the lowest level \"sh\""
+msgstr ""
+"Bu bir utmp girişi değil.  En düşük \"sh\" düzeyinde \"login\" i "
+"çalıştırmalısınız. "
+
 #, fuzzy, c-format
 #| msgid ""
 #| "\n"
@@ -1473,15 +1482,6 @@ msgid ""
 msgstr ""
 "\n"
 "Giriş %d saniye sonra zaman aşımına uğradı.\n"
-
-#, c-format
-msgid "%s: Cannot possibly work without effective root\n"
-msgstr ""
-
-msgid "No utmp entry.  You must exec \"login\" from the lowest level \"sh\""
-msgstr ""
-"Bu bir utmp girişi değil.  En düşük \"sh\" düzeyinde \"login\" i "
-"çalıştırmalısınız. "
 
 #, c-format
 msgid "login: PAM Failure, aborting: %s\n"
@@ -1930,12 +1930,6 @@ msgstr "Parola yetkilendirmesi atlandı.\n"
 msgid "Please enter your OWN password as authentication.\n"
 msgstr "Lütfen yetkilendirme için KENDİ parolanızı girin.\n"
 
-msgid " ...killed.\n"
-msgstr ""
-
-msgid " ...waiting for child to terminate.\n"
-msgstr ""
-
 #, fuzzy, c-format
 #| msgid "%s: cannot lock file %s\n"
 msgid "%s: Cannot fork user shell\n"
@@ -1950,6 +1944,14 @@ msgid "%s: signal masking malfunction\n"
 msgstr ""
 
 msgid "Session terminated, terminating shell..."
+msgstr ""
+
+#, c-format
+msgid " ...killed.\n"
+msgstr ""
+
+#, c-format
+msgid " ...waiting for child to terminate.\n"
 msgstr ""
 
 msgid " ...terminated.\n"

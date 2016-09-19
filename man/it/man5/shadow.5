@@ -2,12 +2,12 @@
 .\"     Title: shadow
 .\"    Author: Julianne Frances Haugh
 .\" Generator: DocBook XSL Stylesheets v1.79.1 <http://docbook.sf.net/>
-.\"      Date: 16/03/2016
+.\"      Date: 18/09/2016
 .\"    Manual: Formati di file e conversioni
-.\"    Source: shadow-utils 4.2
+.\"    Source: shadow-utils 4.4
 .\"  Language: Italian
 .\"
-.TH "SHADOW" "5" "16/03/2016" "shadow\-utils 4\&.2" "Formati di file e conversioni"
+.TH "SHADOW" "5" "18/09/2016" "shadow\-utils 4\&.4" "Formati di file e conversioni"
 .\" -----------------------------------------------------------------
 .\" * Define some portability stuff
 .\" -----------------------------------------------------------------
@@ -56,14 +56,14 @@ Questo campo pu\(`o essere vuoto, nel qual caso nessuna password \(`e richiesta 
 /etc/shadow
 possono decidere di non permettere nessun accesso se il campo password \(`e vuoto\&.
 .sp
-Se il campo password inizia con un punto esclamativo vuol dire che la password \(`e bloccata\&. I restanti caratteri del campo sono il contenuto del campo password prima che venisse bloccata\&.
+A password field which starts with an exclamation mark means that the password is locked\&. The remaining characters on the line represent the password field before the password was locked\&.
 .RE
 .PP
 \fBdata dell\*(Aqultimo cambio di password\fR
 .RS 4
 Data dell\*(Aqultimo cambio di password espressa in numero di giorni a partire dal 1 gennaio 1970\&.
 .sp
-Il valore 0 ha un significato speciale, vale a dire che l\*(Aqutente deve cambiare la propria password al prossimo accesso al sistema\&.
+The value 0 has a special meaning, which is that the user should change her password the next time she will log in the system\&.
 .sp
 Un campo vuoto implica che la scadenza della password \(`e disabilitata\&.
 .RE
@@ -106,7 +106,7 @@ Un campo vuoto implica che non \(`e applicato il periodo di inattivit\(`a\&.
 .RS 4
 La data di scadenza dell\*(Aqaccount, espressa in numero di giorni dal 1 gennaio 1970\&.
 .sp
-Notare che la scadenza dell\*(Aqaccount differisce da quella della password\&. Nel caso di un account scaduto l\*(Aqutente non deve poter accedere ulteriormente al sistema\&. Nel caso di password scaduta invece l\*(Aqutente non \(`e abilitato ad accedere con la propria password\&.
+Note that an account expiration differs from a password expiration\&. In case of an account expiration, the user shall not be allowed to login\&. In case of a password expiration, the user is not allowed to login using her password\&.
 .sp
 Un campo vuoto implica che l\*(Aqaccount non scade mai\&.
 .sp

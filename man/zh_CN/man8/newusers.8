@@ -2,12 +2,12 @@
 .\"     Title: newusers
 .\"    Author: Julianne Frances Haugh
 .\" Generator: DocBook XSL Stylesheets v1.79.1 <http://docbook.sf.net/>
-.\"      Date: 2016-03-16
+.\"      Date: 2016-09-18
 .\"    Manual: 系统管理命令
-.\"    Source: shadow-utils 4.2
+.\"    Source: shadow-utils 4.4
 .\"  Language: Chinese Simplified
 .\"
-.TH "NEWUSERS" "8" "2016-03-16" "shadow\-utils 4\&.2" "系统管理命令"
+.TH "NEWUSERS" "8" "2016-09-18" "shadow\-utils 4\&.4" "系统管理命令"
 .\" -----------------------------------------------------------------
 .\" * Define some portability stuff
 .\" -----------------------------------------------------------------
@@ -47,9 +47,8 @@ pw_name:pw_passwd:pw_uid:pw_gid:pw_gecos:pw_dir:pw_shell
 .RS 4
 这是用户的用户名。
 .sp
-既可以是新用户名也可以是现有用户名(也可以是
-\fBnewusers\fR
-以前创建的用户)。现有用户时，将会更改用户信息，否则会创建新用户。
+It can be the name of a new user or the name of an existing user (or a user created before by
+\fBnewusers\fR)\&. In case of an existing user, the user\*(Aqs information will be changed, otherwise a new user will be created\&.
 .RE
 .PP
 \fIpw_passwd\fR
@@ -61,14 +60,13 @@ pw_name:pw_passwd:pw_uid:pw_gid:pw_gecos:pw_dir:pw_shell
 .RS 4
 此字段用于定义用户的 UID。
 .sp
-如果此字段为空，\fBnewusers\fR
-会自动确定一个新的(未使用的)UID。
+If the field is empty, a new (unused) UID will be defined automatically by
+\fBnewusers\fR\&.
 .sp
 如果此字段包含一个数字，此数字会用于 UID。
 .sp
-如果此字段包含已经使用了的用户名(或者
-\fBnewusers\fR
-在前边已经创建的一个用户)，将会使用指定用户的 UID。
+If this field contains the name of an existing user (or the name of a user created before by
+\fBnewusers\fR), the UID of the specified user will be used\&.
 .sp
 如果一个现有用户更改了 UID，此用户的文件所有权需要手动修复。
 .RE

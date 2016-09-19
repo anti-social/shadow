@@ -2,12 +2,12 @@
 .\"     Title: usermod
 .\"    Author: Julianne Frances Haugh
 .\" Generator: DocBook XSL Stylesheets v1.79.1 <http://docbook.sf.net/>
-.\"      Date: 16.03.2016
+.\"      Date: 18.09.2016
 .\"    Manual: Befehle zur Systemverwaltung
-.\"    Source: shadow-utils 4.2
+.\"    Source: shadow-utils 4.4
 .\"  Language: German
 .\"
-.TH "USERMOD" "8" "16.03.2016" "shadow\-utils 4\&.2" "Befehle zur Systemverwaltung"
+.TH "USERMOD" "8" "18.09.2016" "shadow\-utils 4\&.4" "Befehle zur Systemverwaltung"
 .\" -----------------------------------------------------------------
 .\" * Define some portability stuff
 .\" -----------------------------------------------------------------
@@ -295,9 +295,9 @@ leer ist, wird die Zuordnung von SELinux\-Benutzern (sofern vorhanden) aus den A
 .RE
 .SH "WARNUNGEN"
 .PP
-Wenn Sie mit diesem Befehl die numerische UID, den Namen oder das Home\-Verzeichnis eines Benutzers ver\(:andern wollen, m\(:ussen Sie sicherstellen, dass dieser Benutzer keine Prozesse laufen l\(:asst\&. Bei Linux stellt dies
+You must make certain that the named user is not executing any processes when this command is being executed if the user\*(Aqs numerical user ID, the user\*(Aqs name, or the user\*(Aqs home directory is being changed\&.
 \fBusermod\fR
-sicher, auf anderen Architekturen \(:uberpr\(:uft es nur, ob der Benutzer laut utmp eingeloggt ist\&.
+checks this on Linux\&. On other platforms it only uses utmp to check if the user is logged in\&.
 .PP
 Sie m\(:ussen den Eigent\(:umer von
 \fBcrontab\fR\-Dateien oder

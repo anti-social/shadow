@@ -4,11 +4,11 @@ Notes:
  * I'm not sure login should add an entry in the FTMP file when PAM is used.
    (but nothing in /etc/login.defs indicates that the failure is not logged)
 
-Index: shadow-4.3/src/login.c
+Index: shadow-4.4/src/login.c
 ===================================================================
---- shadow-4.3.orig/src/login.c
-+++ shadow-4.3/src/login.c
-@@ -831,6 +831,24 @@ int main (int argc, char **argv)
+--- shadow-4.4.orig/src/login.c
++++ shadow-4.4/src/login.c
+@@ -834,6 +834,24 @@ int main (int argc, char **argv)
  			(void) puts ("");
  			(void) puts (_("Login incorrect"));
  
@@ -33,10 +33,10 @@ Index: shadow-4.3/src/login.c
  			if (failcount >= retries) {
  				SYSLOG ((LOG_NOTICE,
  				         "TOO MANY LOGIN TRIES (%u)%s FOR '%s'",
-Index: shadow-4.3/lib/getdef.c
+Index: shadow-4.4/lib/getdef.c
 ===================================================================
---- shadow-4.3.orig/lib/getdef.c
-+++ shadow-4.3/lib/getdef.c
+--- shadow-4.4.orig/lib/getdef.c
++++ shadow-4.4/lib/getdef.c
 @@ -57,7 +57,6 @@ struct itemdef {
  	{"ENVIRON_FILE", NULL},			\
  	{"ENV_TZ", NULL},			\

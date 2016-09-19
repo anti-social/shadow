@@ -2,12 +2,12 @@
 .\"     Title: shadow
 .\"    Author: Julianne Frances Haugh
 .\" Generator: DocBook XSL Stylesheets v1.79.1 <http://docbook.sf.net/>
-.\"      Date: 16/03/2016
+.\"      Date: 18/09/2016
 .\"    Manual: Formats et conversions de fichiers
-.\"    Source: shadow-utils 4.2
+.\"    Source: shadow-utils 4.4
 .\"  Language: French
 .\"
-.TH "SHADOW" "5" "16/03/2016" "shadow\-utils 4\&.2" "Formats et conversions de fich"
+.TH "SHADOW" "5" "18/09/2016" "shadow\-utils 4\&.4" "Formats et conversions de fich"
 .\" -----------------------------------------------------------------
 .\" * Define some portability stuff
 .\" -----------------------------------------------------------------
@@ -56,14 +56,14 @@ Ce champ peut \(^etre vide\&. Dans ce cas aucun mot de passe n\*(Aqest n\('ecess
 /etc/shadow
 peuvent n\*(Aqautoriser aucun acc\(`es si le mot de passe est vide\&.
 .sp
-Un champ de mot de passe qui commence avec un point d\*(Aqexclamation indique que le mot de passe est bloqu\('e\&. Les caract\(`eres restants sur la ligne repr\('esentent le champ de mot de passe avant que le mot de passe n\*(Aqait \('et\('e bloqu\('e\&.
+A password field which starts with an exclamation mark means that the password is locked\&. The remaining characters on the line represent the password field before the password was locked\&.
 .RE
 .PP
 \fBdate du dernier changement de mot de passe\fR
 .RS 4
 La date du dernier changement de mot de passe, exprim\('ee en nombre de jours depuis le 1er\ \&janvier\ \&1970\&.
 .sp
-La valeur 0 a une signification particuli\(`ere\ \&: l\*(Aqutilisateur devra changer son mot de passe la prochaine fois qu\*(Aqil se connectera au syst\(`eme\&.
+The value 0 has a special meaning, which is that the user should change her password the next time she will log in the system\&.
 .sp
 Un champ vide indique que les fonctionnalit\('es de vieillissement de mot de passe sont d\('esactiv\('ees\&.
 .RE
@@ -106,7 +106,7 @@ Un champ vide signifie qu\*(Aqaucune p\('eriode d\*(Aqinactivit\('e n\*(Aqest im
 .RS 4
 La date d\*(Aqexpiration du compte, exprim\('e en nombre de jours depuis le 1er\ \&janvier\ \&1970\&.
 .sp
-Veuillez noter que l\*(Aqexpiration d\*(Aqun compte diff\(`ere de l\*(Aqexpiration d\*(Aqun mot de passe\&. En cas d\*(Aqexpiration d\*(Aqun compte, l\*(Aqutilisateur ne sera plus autoris\('e \(`a se connecter\&. En cas d\*(Aqexpiration d\*(Aqun mot de passe, l\*(Aqutilisateur n\*(Aqest pas autoris\('e \(`a se connecter en utilisant son mot de passe\&.
+Note that an account expiration differs from a password expiration\&. In case of an account expiration, the user shall not be allowed to login\&. In case of a password expiration, the user is not allowed to login using her password\&.
 .sp
 Un champ vide signifie que le compte n\*(Aqexpirera jamais\&.
 .sp

@@ -2,12 +2,12 @@
 .\"     Title: usermod
 .\"    Author: Julianne Frances Haugh
 .\" Generator: DocBook XSL Stylesheets v1.79.1 <http://docbook.sf.net/>
-.\"      Date: 03/16/2016
+.\"      Date: 09/18/2016
 .\"    Manual: Polecenia Zarządzania Systemem
-.\"    Source: shadow-utils 4.2
+.\"    Source: shadow-utils 4.4
 .\"  Language: Polish
 .\"
-.TH "USERMOD" "8" "03/16/2016" "shadow\-utils 4\&.2" "Polecenia Zarządzania Systemem"
+.TH "USERMOD" "8" "09/18/2016" "shadow\-utils 4\&.4" "Polecenia Zarządzania Systemem"
 .\" -----------------------------------------------------------------
 .\" * Define some portability stuff
 .\" -----------------------------------------------------------------
@@ -291,7 +291,7 @@ will remove the SELinux user mapping for user
 .PP
 You must make certain that the named user is not executing any processes when this command is being executed if the user\*(Aqs numerical user ID, the user\*(Aqs name, or the user\*(Aqs home directory is being changed\&.
 \fBusermod\fR
-checks this on Linux, but only check if the user is logged in according to utmp on other architectures\&.
+checks this on Linux\&. On other platforms it only uses utmp to check if the user is logged in\&.
 .PP
 You must change the owner of any
 \fBcrontab\fR

@@ -2,12 +2,12 @@
 .\"     Title: shadow
 .\"    Author: Julianne Frances Haugh
 .\" Generator: DocBook XSL Stylesheets v1.79.1 <http://docbook.sf.net/>
-.\"      Date: 03/16/2016
+.\"      Date: 09/18/2016
 .\"    Manual: Форматы файлов
-.\"    Source: shadow-utils 4.2
+.\"    Source: shadow-utils 4.4
 .\"  Language: Russian
 .\"
-.TH "shadow" "5" "03/16/2016" "shadow\-utils 4\&.2" "Форматы файлов"
+.TH "shadow" "5" "09/18/2016" "shadow\-utils 4\&.4" "Форматы файлов"
 .\" -----------------------------------------------------------------
 .\" * Define some portability stuff
 .\" -----------------------------------------------------------------
@@ -55,14 +55,14 @@ shadow
 Это поле может быть пустым, то есть для указанной учётной записи не требуется аутентификация по паролю\&. Однако, некоторые приложения, читающие файл
 /etc/shadow, могут вообще отказать в доступе, если поле пароля пусто\&.
 .sp
-Поле пароля может начинаться с восклицательного знака, означающего, что пароль заблокирован\&. Оставшиеся символы в строке представляют поле пароля до его блокировки\&.
+A password field which starts with an exclamation mark means that the password is locked\&. The remaining characters on the line represent the password field before the password was locked\&.
 .RE
 .PP
 \fBдата последней смены пароля\fR
 .RS 4
 Дата последней смены пароля в днях начиная с 1 января 1970 года\&.
 .sp
-Значение 0 имеет специальное предназначение: оно указывает, что пользователь должен сменить пароль в следующий раз при входе в систему\&.
+The value 0 has a special meaning, which is that the user should change her password the next time she will log in the system\&.
 .sp
 Пустое значение обозначает, что проверка устаревания пароля выключена\&.
 .RE
@@ -105,7 +105,7 @@ shadow
 .RS 4
 Дата истечения срока действия учётной записи, указывается в днях начиная с 1 января 1970 года\&.
 .sp
-Заметим, что устаревание учётной записи отличается от устаревания пароля\&. При устаревании учётной записи пользователь не сможет войти в систему\&. При устаревании пароля пользователь не может войти в систему по этому паролю\&.
+Note that an account expiration differs from a password expiration\&. In case of an account expiration, the user shall not be allowed to login\&. In case of a password expiration, the user is not allowed to login using her password\&.
 .sp
 Пустое значение обозначает, что учётная запись никогда не устаревает\&.
 .sp

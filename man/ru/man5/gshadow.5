@@ -2,12 +2,12 @@
 .\"     Title: gshadow
 .\"    Author: Nicolas Fran\(,cois <nicolas.francois@centraliens.net>
 .\" Generator: DocBook XSL Stylesheets v1.79.1 <http://docbook.sf.net/>
-.\"      Date: 03/16/2016
+.\"      Date: 09/18/2016
 .\"    Manual: Форматы файлов
-.\"    Source: shadow-utils 4.2
+.\"    Source: shadow-utils 4.4
 .\"  Language: Russian
 .\"
-.TH "gshadow" "5" "03/16/2016" "shadow\-utils 4\&.2" "Форматы файлов"
+.TH "gshadow" "5" "09/18/2016" "shadow\-utils 4\&.4" "Форматы файлов"
 .\" -----------------------------------------------------------------
 .\" * Define some portability stuff
 .\" -----------------------------------------------------------------
@@ -52,12 +52,12 @@ gshadow \- файл с защищаемой информацией о групп
 Если поле пароля содержит строку, которая не удовлетворяет требованиям
 \fBcrypt\fR(3), например содержит ! или *, то пользователь не сможет использовать пароль unix для доступа в группу (а члену группы пароль не нужен)\&.
 .sp
-Пароль используется, если пользователю, не являющему членом группы, требуются права этой группы (смотрите
+The password is used when a user who is not a member of the group wants to gain the permissions of this group (see
 \fBnewgrp\fR(1))\&.
 .sp
 Это поле может быть пустым; в этом случае только члены группы могут пользоваться правами группы\&.
 .sp
-Поле пароля может начинаться с восклицательного знака, означающего, что пароль заблокирован\&. Оставшиеся символы в строке представляют поле пароля до его блокировки\&.
+A password field which starts with an exclamation mark means that the password is locked\&. The remaining characters on the line represent the password field before the password was locked\&.
 .sp
 Данный пароль заменяет любой пароль, указанный в файле
 /etc/group\&.

@@ -1,8 +1,8 @@
-/* A Bison parser, made by GNU Bison 3.0.2.  */
+/* A Bison parser, made by GNU Bison 3.0.4.  */
 
 /* Bison implementation for Yacc-like parsers in C
 
-   Copyright (C) 1984, 1989-1990, 2000-2013 Free Software Foundation, Inc.
+   Copyright (C) 1984, 1989-1990, 2000-2015 Free Software Foundation, Inc.
 
    This program is free software: you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -44,7 +44,7 @@
 #define YYBISON 1
 
 /* Bison version.  */
-#define YYBISON_VERSION "3.0.2"
+#define YYBISON_VERSION "3.0.4"
 
 /* Skeleton name.  */
 #define YYSKELETON_NAME "yacc.c"
@@ -303,7 +303,7 @@ extern int yydebug;
 
 /* Value type.  */
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
-typedef union YYSTYPE YYSTYPE;
+
 union YYSTYPE
 {
 #line 172 "getdate.y" /* yacc.c:355  */
@@ -313,6 +313,8 @@ union YYSTYPE
 
 #line 315 "getdate.c" /* yacc.c:355  */
 };
+
+typedef union YYSTYPE YYSTYPE;
 # define YYSTYPE_IS_TRIVIAL 1
 # define YYSTYPE_IS_DECLARED 1
 #endif
@@ -326,7 +328,7 @@ int yyparse (void);
 
 /* Copy the second part of user declarations.  */
 
-#line 330 "getdate.c" /* yacc.c:358  */
+#line 332 "getdate.c" /* yacc.c:358  */
 
 #ifdef short
 # undef short
@@ -1445,7 +1447,7 @@ yyreduce:
     {
 	    yyHaveTime++;
 	}
-#line 1449 "getdate.c" /* yacc.c:1646  */
+#line 1451 "getdate.c" /* yacc.c:1646  */
     break;
 
   case 5:
@@ -1453,7 +1455,7 @@ yyreduce:
     {
 	    yyHaveZone++;
 	}
-#line 1457 "getdate.c" /* yacc.c:1646  */
+#line 1459 "getdate.c" /* yacc.c:1646  */
     break;
 
   case 6:
@@ -1461,7 +1463,7 @@ yyreduce:
     {
 	    yyHaveDate++;
 	}
-#line 1465 "getdate.c" /* yacc.c:1646  */
+#line 1467 "getdate.c" /* yacc.c:1646  */
     break;
 
   case 7:
@@ -1469,7 +1471,7 @@ yyreduce:
     {
 	    yyHaveDay++;
 	}
-#line 1473 "getdate.c" /* yacc.c:1646  */
+#line 1475 "getdate.c" /* yacc.c:1646  */
     break;
 
   case 8:
@@ -1477,7 +1479,7 @@ yyreduce:
     {
 	    yyHaveRel++;
 	}
-#line 1481 "getdate.c" /* yacc.c:1646  */
+#line 1483 "getdate.c" /* yacc.c:1646  */
     break;
 
   case 10:
@@ -1488,7 +1490,7 @@ yyreduce:
 	    yySeconds = 0;
 	    yyMeridian = (yyvsp[0].Meridian);
 	}
-#line 1492 "getdate.c" /* yacc.c:1646  */
+#line 1494 "getdate.c" /* yacc.c:1646  */
     break;
 
   case 11:
@@ -1499,7 +1501,7 @@ yyreduce:
 	    yySeconds = 0;
 	    yyMeridian = (yyvsp[0].Meridian);
 	}
-#line 1503 "getdate.c" /* yacc.c:1646  */
+#line 1505 "getdate.c" /* yacc.c:1646  */
     break;
 
   case 12:
@@ -1513,7 +1515,7 @@ yyreduce:
 			  ? -(yyvsp[0].Number) % 100 + (-(yyvsp[0].Number) / 100) * 60
 			  : - ((yyvsp[0].Number) % 100 + ((yyvsp[0].Number) / 100) * 60));
 	}
-#line 1517 "getdate.c" /* yacc.c:1646  */
+#line 1519 "getdate.c" /* yacc.c:1646  */
     break;
 
   case 13:
@@ -1524,7 +1526,7 @@ yyreduce:
 	    yySeconds = (yyvsp[-1].Number);
 	    yyMeridian = (yyvsp[0].Meridian);
 	}
-#line 1528 "getdate.c" /* yacc.c:1646  */
+#line 1530 "getdate.c" /* yacc.c:1646  */
     break;
 
   case 14:
@@ -1539,7 +1541,7 @@ yyreduce:
 			  ? -(yyvsp[0].Number) % 100 + (-(yyvsp[0].Number) / 100) * 60
 			  : - ((yyvsp[0].Number) % 100 + ((yyvsp[0].Number) / 100) * 60));
 	}
-#line 1543 "getdate.c" /* yacc.c:1646  */
+#line 1545 "getdate.c" /* yacc.c:1646  */
     break;
 
   case 15:
@@ -1547,7 +1549,7 @@ yyreduce:
     {
 	    yyTimezone = (yyvsp[0].Number);
 	}
-#line 1551 "getdate.c" /* yacc.c:1646  */
+#line 1553 "getdate.c" /* yacc.c:1646  */
     break;
 
   case 16:
@@ -1555,7 +1557,7 @@ yyreduce:
     {
 	    yyTimezone = (yyvsp[0].Number) - 60;
 	}
-#line 1559 "getdate.c" /* yacc.c:1646  */
+#line 1561 "getdate.c" /* yacc.c:1646  */
     break;
 
   case 17:
@@ -1563,7 +1565,7 @@ yyreduce:
     {
 	    yyTimezone = (yyvsp[-1].Number) - 60;
 	}
-#line 1567 "getdate.c" /* yacc.c:1646  */
+#line 1569 "getdate.c" /* yacc.c:1646  */
     break;
 
   case 18:
@@ -1572,7 +1574,7 @@ yyreduce:
 	    yyDayOrdinal = 1;
 	    yyDayNumber = (yyvsp[0].Number);
 	}
-#line 1576 "getdate.c" /* yacc.c:1646  */
+#line 1578 "getdate.c" /* yacc.c:1646  */
     break;
 
   case 19:
@@ -1581,7 +1583,7 @@ yyreduce:
 	    yyDayOrdinal = 1;
 	    yyDayNumber = (yyvsp[-1].Number);
 	}
-#line 1585 "getdate.c" /* yacc.c:1646  */
+#line 1587 "getdate.c" /* yacc.c:1646  */
     break;
 
   case 20:
@@ -1590,7 +1592,7 @@ yyreduce:
 	    yyDayOrdinal = (yyvsp[-1].Number);
 	    yyDayNumber = (yyvsp[0].Number);
 	}
-#line 1594 "getdate.c" /* yacc.c:1646  */
+#line 1596 "getdate.c" /* yacc.c:1646  */
     break;
 
   case 21:
@@ -1599,7 +1601,7 @@ yyreduce:
 	    yyMonth = (yyvsp[-2].Number);
 	    yyDay = (yyvsp[0].Number);
 	}
-#line 1603 "getdate.c" /* yacc.c:1646  */
+#line 1605 "getdate.c" /* yacc.c:1646  */
     break;
 
   case 22:
@@ -1622,7 +1624,7 @@ yyreduce:
 	      yyYear = (yyvsp[0].Number);
 	    }
 	}
-#line 1626 "getdate.c" /* yacc.c:1646  */
+#line 1628 "getdate.c" /* yacc.c:1646  */
     break;
 
   case 23:
@@ -1633,7 +1635,7 @@ yyreduce:
 	    yyMonth = -(yyvsp[-1].Number);
 	    yyDay = -(yyvsp[0].Number);
 	}
-#line 1637 "getdate.c" /* yacc.c:1646  */
+#line 1639 "getdate.c" /* yacc.c:1646  */
     break;
 
   case 24:
@@ -1644,7 +1646,7 @@ yyreduce:
 	    yyMonth = (yyvsp[-1].Number);
 	    yyYear = -(yyvsp[0].Number);
 	}
-#line 1648 "getdate.c" /* yacc.c:1646  */
+#line 1650 "getdate.c" /* yacc.c:1646  */
     break;
 
   case 25:
@@ -1653,7 +1655,7 @@ yyreduce:
 	    yyMonth = (yyvsp[-1].Number);
 	    yyDay = (yyvsp[0].Number);
 	}
-#line 1657 "getdate.c" /* yacc.c:1646  */
+#line 1659 "getdate.c" /* yacc.c:1646  */
     break;
 
   case 26:
@@ -1663,7 +1665,7 @@ yyreduce:
 	    yyDay = (yyvsp[-2].Number);
 	    yyYear = (yyvsp[0].Number);
 	}
-#line 1667 "getdate.c" /* yacc.c:1646  */
+#line 1669 "getdate.c" /* yacc.c:1646  */
     break;
 
   case 27:
@@ -1672,7 +1674,7 @@ yyreduce:
 	    yyMonth = (yyvsp[0].Number);
 	    yyDay = (yyvsp[-1].Number);
 	}
-#line 1676 "getdate.c" /* yacc.c:1646  */
+#line 1678 "getdate.c" /* yacc.c:1646  */
     break;
 
   case 28:
@@ -1682,7 +1684,7 @@ yyreduce:
 	    yyDay = (yyvsp[-2].Number);
 	    yyYear = (yyvsp[0].Number);
 	}
-#line 1686 "getdate.c" /* yacc.c:1646  */
+#line 1688 "getdate.c" /* yacc.c:1646  */
     break;
 
   case 29:
@@ -1695,7 +1697,7 @@ yyreduce:
 	    yyRelMonth = -yyRelMonth;
 	    yyRelYear = -yyRelYear;
 	}
-#line 1699 "getdate.c" /* yacc.c:1646  */
+#line 1701 "getdate.c" /* yacc.c:1646  */
     break;
 
   case 31:
@@ -1703,7 +1705,7 @@ yyreduce:
     {
 	    yyRelYear += (yyvsp[-1].Number) * (yyvsp[0].Number);
 	}
-#line 1707 "getdate.c" /* yacc.c:1646  */
+#line 1709 "getdate.c" /* yacc.c:1646  */
     break;
 
   case 32:
@@ -1711,7 +1713,7 @@ yyreduce:
     {
 	    yyRelYear += (yyvsp[-1].Number) * (yyvsp[0].Number);
 	}
-#line 1715 "getdate.c" /* yacc.c:1646  */
+#line 1717 "getdate.c" /* yacc.c:1646  */
     break;
 
   case 33:
@@ -1719,7 +1721,7 @@ yyreduce:
     {
 	    yyRelYear++;
 	}
-#line 1723 "getdate.c" /* yacc.c:1646  */
+#line 1725 "getdate.c" /* yacc.c:1646  */
     break;
 
   case 34:
@@ -1727,7 +1729,7 @@ yyreduce:
     {
 	    yyRelMonth += (yyvsp[-1].Number) * (yyvsp[0].Number);
 	}
-#line 1731 "getdate.c" /* yacc.c:1646  */
+#line 1733 "getdate.c" /* yacc.c:1646  */
     break;
 
   case 35:
@@ -1735,7 +1737,7 @@ yyreduce:
     {
 	    yyRelMonth += (yyvsp[-1].Number) * (yyvsp[0].Number);
 	}
-#line 1739 "getdate.c" /* yacc.c:1646  */
+#line 1741 "getdate.c" /* yacc.c:1646  */
     break;
 
   case 36:
@@ -1743,7 +1745,7 @@ yyreduce:
     {
 	    yyRelMonth++;
 	}
-#line 1747 "getdate.c" /* yacc.c:1646  */
+#line 1749 "getdate.c" /* yacc.c:1646  */
     break;
 
   case 37:
@@ -1751,7 +1753,7 @@ yyreduce:
     {
 	    yyRelDay += (yyvsp[-1].Number) * (yyvsp[0].Number);
 	}
-#line 1755 "getdate.c" /* yacc.c:1646  */
+#line 1757 "getdate.c" /* yacc.c:1646  */
     break;
 
   case 38:
@@ -1759,7 +1761,7 @@ yyreduce:
     {
 	    yyRelDay += (yyvsp[-1].Number) * (yyvsp[0].Number);
 	}
-#line 1763 "getdate.c" /* yacc.c:1646  */
+#line 1765 "getdate.c" /* yacc.c:1646  */
     break;
 
   case 39:
@@ -1767,7 +1769,7 @@ yyreduce:
     {
 	    yyRelDay++;
 	}
-#line 1771 "getdate.c" /* yacc.c:1646  */
+#line 1773 "getdate.c" /* yacc.c:1646  */
     break;
 
   case 40:
@@ -1775,7 +1777,7 @@ yyreduce:
     {
 	    yyRelHour += (yyvsp[-1].Number) * (yyvsp[0].Number);
 	}
-#line 1779 "getdate.c" /* yacc.c:1646  */
+#line 1781 "getdate.c" /* yacc.c:1646  */
     break;
 
   case 41:
@@ -1783,7 +1785,7 @@ yyreduce:
     {
 	    yyRelHour += (yyvsp[-1].Number) * (yyvsp[0].Number);
 	}
-#line 1787 "getdate.c" /* yacc.c:1646  */
+#line 1789 "getdate.c" /* yacc.c:1646  */
     break;
 
   case 42:
@@ -1791,7 +1793,7 @@ yyreduce:
     {
 	    yyRelHour++;
 	}
-#line 1795 "getdate.c" /* yacc.c:1646  */
+#line 1797 "getdate.c" /* yacc.c:1646  */
     break;
 
   case 43:
@@ -1799,7 +1801,7 @@ yyreduce:
     {
 	    yyRelMinutes += (yyvsp[-1].Number) * (yyvsp[0].Number);
 	}
-#line 1803 "getdate.c" /* yacc.c:1646  */
+#line 1805 "getdate.c" /* yacc.c:1646  */
     break;
 
   case 44:
@@ -1807,7 +1809,7 @@ yyreduce:
     {
 	    yyRelMinutes += (yyvsp[-1].Number) * (yyvsp[0].Number);
 	}
-#line 1811 "getdate.c" /* yacc.c:1646  */
+#line 1813 "getdate.c" /* yacc.c:1646  */
     break;
 
   case 45:
@@ -1815,7 +1817,7 @@ yyreduce:
     {
 	    yyRelMinutes++;
 	}
-#line 1819 "getdate.c" /* yacc.c:1646  */
+#line 1821 "getdate.c" /* yacc.c:1646  */
     break;
 
   case 46:
@@ -1823,7 +1825,7 @@ yyreduce:
     {
 	    yyRelSeconds += (yyvsp[-1].Number) * (yyvsp[0].Number);
 	}
-#line 1827 "getdate.c" /* yacc.c:1646  */
+#line 1829 "getdate.c" /* yacc.c:1646  */
     break;
 
   case 47:
@@ -1831,7 +1833,7 @@ yyreduce:
     {
 	    yyRelSeconds += (yyvsp[-1].Number) * (yyvsp[0].Number);
 	}
-#line 1835 "getdate.c" /* yacc.c:1646  */
+#line 1837 "getdate.c" /* yacc.c:1646  */
     break;
 
   case 48:
@@ -1839,7 +1841,7 @@ yyreduce:
     {
 	    yyRelSeconds++;
 	}
-#line 1843 "getdate.c" /* yacc.c:1646  */
+#line 1845 "getdate.c" /* yacc.c:1646  */
     break;
 
   case 49:
@@ -1874,7 +1876,7 @@ yyreduce:
 		  }
 	      }
 	  }
-#line 1878 "getdate.c" /* yacc.c:1646  */
+#line 1880 "getdate.c" /* yacc.c:1646  */
     break;
 
   case 50:
@@ -1882,7 +1884,7 @@ yyreduce:
     {
 	    (yyval.Meridian) = MER24;
 	  }
-#line 1886 "getdate.c" /* yacc.c:1646  */
+#line 1888 "getdate.c" /* yacc.c:1646  */
     break;
 
   case 51:
@@ -1890,11 +1892,11 @@ yyreduce:
     {
 	    (yyval.Meridian) = (yyvsp[0].Meridian);
 	  }
-#line 1894 "getdate.c" /* yacc.c:1646  */
+#line 1896 "getdate.c" /* yacc.c:1646  */
     break;
 
 
-#line 1898 "getdate.c" /* yacc.c:1646  */
+#line 1900 "getdate.c" /* yacc.c:1646  */
       default: break;
     }
   /* User semantic actions sometimes alter yychar, and that requires

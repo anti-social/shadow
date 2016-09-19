@@ -2,12 +2,12 @@
 .\"     Title: useradd
 .\"    Author: Julianne Frances Haugh
 .\" Generator: DocBook XSL Stylesheets v1.79.1 <http://docbook.sf.net/>
-.\"      Date: 2016-03-16
+.\"      Date: 2016-09-18
 .\"    Manual: 系统管理命令
-.\"    Source: shadow-utils 4.2
+.\"    Source: shadow-utils 4.4
 .\"  Language: Chinese Simplified
 .\"
-.TH "USERADD" "8" "2016-03-16" "shadow\-utils 4\&.2" "系统管理命令"
+.TH "USERADD" "8" "2016-09-18" "shadow\-utils 4\&.4" "系统管理命令"
 .\" -----------------------------------------------------------------
 .\" * Define some portability stuff
 .\" -----------------------------------------------------------------
@@ -178,24 +178,28 @@ useradd \- 创建一个新用户或更新默认新用户信息
 .PP
 \fB\-K\fR, \fB\-\-key\fR\ \&\fIKEY\fR=\fIVALUE\fR
 .RS 4
-默认覆盖
+Overrides
 /etc/login\&.defs
-(\fBUID_MIN\fR,
+defaults (\fBUID_MIN\fR,
 \fBUID_MAX\fR,
 \fBUMASK\fR,
 \fBPASS_MAX_DAYS\fR
-及其它)。
-例如：\fB\-K\fR\ \&\fIPASS_MAX_DAYS\fR=\fI\-1\fR
-可以用于创建一个密码不会过期的系统账户，即使系统账户没有密码。可以指定多个
+and others)\&.
+
+Example:
+\fB\-K\fR\ \&\fIPASS_MAX_DAYS\fR=\fI\-1\fR
+can be used when creating system account to turn off password aging, even though system account has no password at all\&. Multiple
 \fB\-K\fR
-选项，如：\fB\-K\fR\ \&\fIUID_MIN\fR=\fI100\fR\ \&\fB\-K\fR\ \&\fIUID_MAX\fR=\fI499\fR
+options can be specified, e\&.g\&.:
+\fB\-K\fR\ \&\fIUID_MIN\fR=\fI100\fR\ \&
+\fB\-K\fR\ \&\fIUID_MAX\fR=\fI499\fR
 .RE
 .PP
 \fB\-l\fR, \fB\-\-no\-log\-init\fR
 .RS 4
 不要将用户添加到最近登录和登录失败数据库。
 .sp
-默认上，最近登录和登录失败中用户的条目会被重置，以避免重新使用先前删除的用户的条目。
+By default, the user\*(Aqs entries in the lastlog and faillog databases are reset to avoid reusing the entry from a previously deleted user\&.
 .RE
 .PP
 \fB\-m\fR, \fB\-\-create\-home\fR
@@ -209,7 +213,7 @@ useradd \- 创建一个新用户或更新默认新用户信息
 没有启用，不会创建主目录。
 .RE
 .PP
-\fB\-M\fR
+\fB\-M\fR, \fB\-\-no\-create\-home\fR
 .RS 4
 不创建用户主目录，即使系统在
 /etc/login\&.defs
@@ -273,12 +277,13 @@ range, defined in
 \fBGID\fR
 counterparts for the creation of groups)\&.
 .sp
-注意：\fBuseradd\fR
-不会为这种用户创建主目录，无论
+Note that
+\fBuseradd\fR
+will not create a home directory for such a user, regardless of the default setting in
 /etc/login\&.defs
-(\fBCREATE_HOME\fR) 中是的默认设置是怎样。如果想为要创建的系统账户创建主目录，需要指定
+(\fBCREATE_HOME\fR)\&. You have to specify the
 \fB\-m\fR
-选项。
+options if you want a home directory for a system account to be created\&.
 .RE
 .PP
 \fB\-R\fR, \fB\-\-root\fR\ \&\fICHROOT_DIR\fR

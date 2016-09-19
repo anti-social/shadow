@@ -2,12 +2,12 @@
 .\"     Title: chpasswd
 .\"    Author: Julianne Frances Haugh
 .\" Generator: DocBook XSL Stylesheets v1.79.1 <http://docbook.sf.net/>
-.\"      Date: 03/16/2016
+.\"      Date: 09/18/2016
 .\"    Manual: System Management Commands
-.\"    Source: shadow-utils 4.3
+.\"    Source: shadow-utils 4.4
 .\"  Language: English
 .\"
-.TH "CHPASSWD" "8" "03/16/2016" "shadow\-utils 4\&.3" "System Management Commands"
+.TH "CHPASSWD" "8" "09/18/2016" "shadow\-utils 4\&.4" "System Management Commands"
 .\" -----------------------------------------------------------------
 .\" * Define some portability stuff
 .\" -----------------------------------------------------------------
@@ -48,14 +48,14 @@ The default encryption algorithm can be defined for the system with the
 or
 \fBMD5_CRYPT_ENAB\fR
 variables of
-/etc/login\&.defs, and can be overwitten with the
+/etc/login\&.defs, and can be overwritten with the
 \fB\-e\fR,
 \fB\-m\fR, or
 \fB\-c\fR
 options\&.
 .PP
 \fBchpasswd\fR
-first updates all the passwords in memory, and then commits all the changes to disk if no errors occured for any user\&.
+first updates all the passwords in memory, and then commits all the changes to disk if no errors occurred for any user\&.
 .PP
 This command is intended to be used in a large system environment where many accounts are created at a single time\&.
 .SH "OPTIONS"

@@ -2,12 +2,12 @@
 .\"     Title: useradd
 .\"    Author: Julianne Frances Haugh
 .\" Generator: DocBook XSL Stylesheets v1.79.1 <http://docbook.sf.net/>
-.\"      Date: 03/16/2016
+.\"      Date: 09/18/2016
 .\"    Manual: Команды управления системой
-.\"    Source: shadow-utils 4.2
+.\"    Source: shadow-utils 4.4
 .\"  Language: Russian
 .\"
-.TH "useradd" "8" "03/16/2016" "shadow\-utils 4\&.2" "Команды управления системой"
+.TH "useradd" "8" "09/18/2016" "shadow\-utils 4\&.4" "Команды управления системой"
 .\" -----------------------------------------------------------------
 .\" * Define some portability stuff
 .\" -----------------------------------------------------------------
@@ -181,27 +181,28 @@ useradd \- регистрирует нового пользователя или
 .PP
 \fB\-K\fR, \fB\-\-key\fR\ \&\fIКЛЮЧ\fR=\fIЗНАЧЕНИЕ\fR
 .RS 4
-Заменяет значения по умолчанию из файла
+Overrides
 /etc/login\&.defs
-(\fBUID_MIN\fR,
+defaults (\fBUID_MIN\fR,
 \fBUID_MAX\fR,
 \fBUMASK\fR,
 \fBPASS_MAX_DAYS\fR
-и других)\&.
+and others)\&.
 
-Пример:
+Example:
 \fB\-K\fR\ \&\fIPASS_MAX_DAYS\fR=\fI\-1\fR
-можно использовать при создании системной учётной записи, чтобы выключить устаревание пароля, даже если системная учётная запись вообще не имеет пароля\&. Можно указывать параметр
+can be used when creating system account to turn off password aging, even though system account has no password at all\&. Multiple
 \fB\-K\fR
-несколько раз, например:
-\fB\-K\fR\ \&\fIUID_MIN\fR=\fI100\fR\ \&\fB\-K\fR\ \&\fIUID_MAX\fR=\fI499\fR
+options can be specified, e\&.g\&.:
+\fB\-K\fR\ \&\fIUID_MIN\fR=\fI100\fR\ \&
+\fB\-K\fR\ \&\fIUID_MAX\fR=\fI499\fR
 .RE
 .PP
 \fB\-l\fR, \fB\-\-no\-log\-init\fR
 .RS 4
 Не добавлять пользователя в базы данных lastlog и faillog\&.
 .sp
-По умолчанию, записи пользователя в базах данных lastlog и faillog сбрасываются во избежание повторного использования записи, оставшейся от ранее удалённого пользователя\&.
+By default, the user\*(Aqs entries in the lastlog and faillog databases are reset to avoid reusing the entry from a previously deleted user\&.
 .RE
 .PP
 \fB\-m\fR, \fB\-\-create\-home\fR
@@ -214,7 +215,7 @@ option), будут скопированы в домашний каталог\&.
 \fBCREATE_HOME\fR, домашний каталог не создаётся\&.
 .RE
 .PP
-\fB\-M\fR
+\fB\-M\fR, \fB\-\-no\-create\-home\fR
 .RS 4
 Не создавать домашний каталог пользователя, даже если значение системной переменной в файле
 /etc/login\&.defs
@@ -273,12 +274,13 @@ option), будут скопированы в домашний каталог\&.
 \fBGID\fR
 при создании групп)\&.
 .sp
-Заметим, что
+Note that
 \fBuseradd\fR
-не создаёт домашний каталог для данного пользователя независимо от значения по умолчанию в
+will not create a home directory for such a user, regardless of the default setting in
 /etc/login\&.defs
-(\fBCREATE_HOME\fR)\&. Если вы хотите создать домашний каталог для системной учётной записи укажите параметр
-\fB\-m\fR\&.
+(\fBCREATE_HOME\fR)\&. You have to specify the
+\fB\-m\fR
+options if you want a home directory for a system account to be created\&.
 .RE
 .PP
 \fB\-R\fR, \fB\-\-root\fR\ \&\fIКАТ_CHROOT\fR

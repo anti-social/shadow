@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: shadow\n"
 "Report-Msgid-Bugs-To: pkg-shadow-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2016-03-16 17:19-0700\n"
+"POT-Creation-Date: 2016-09-18 21:41-0500\n"
 "PO-Revision-Date: 2004-06-03 21:41+0200\n"
 "Last-Translator: Håvard Korsvoll <korsvoll@skulelinux.no>\n"
 "Language-Team: Norwegian (Nynorsk) <i18n-nn@lister.ping.uio.no>\n"
@@ -1373,6 +1373,13 @@ msgstr ""
 "\n"
 "[Fråkopling omgått -- innlogging av root er tillete.]"
 
+#, c-format
+msgid "%s: Cannot possibly work without effective root\n"
+msgstr ""
+
+msgid "No utmp entry.  You must exec \"login\" from the lowest level \"sh\""
+msgstr ""
+
 #, fuzzy, c-format
 #| msgid ""
 #| "\n"
@@ -1383,13 +1390,6 @@ msgid ""
 msgstr ""
 "\n"
 "Innlogging gjekk ut på tid etter %d sekund.\n"
-
-#, c-format
-msgid "%s: Cannot possibly work without effective root\n"
-msgstr ""
-
-msgid "No utmp entry.  You must exec \"login\" from the lowest level \"sh\""
-msgstr ""
 
 #, c-format
 msgid "login: PAM Failure, aborting: %s\n"
@@ -1809,12 +1809,6 @@ msgstr "Passordautentisering er forbigått.\n"
 msgid "Please enter your OWN password as authentication.\n"
 msgstr "Oppgje ditt EIGE passord for autentisering.\n"
 
-msgid " ...killed.\n"
-msgstr ""
-
-msgid " ...waiting for child to terminate.\n"
-msgstr ""
-
 #, fuzzy, c-format
 #| msgid "%s: cannot lock file %s\n"
 msgid "%s: Cannot fork user shell\n"
@@ -1829,6 +1823,14 @@ msgid "%s: signal masking malfunction\n"
 msgstr ""
 
 msgid "Session terminated, terminating shell..."
+msgstr ""
+
+#, c-format
+msgid " ...killed.\n"
+msgstr ""
+
+#, c-format
+msgid " ...waiting for child to terminate.\n"
 msgstr ""
 
 msgid " ...terminated.\n"

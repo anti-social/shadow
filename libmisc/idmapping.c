@@ -83,6 +83,27 @@ struct map_range *get_map_ranges(int ranges, int argc, char **argv)
 			free(mappings);
 			return NULL;
 		}
+		if (ULONG_MAX - mapping->upper <= mapping->count || ULONG_MAX - mapping->lower <= mapping->count) {
+			fprintf(stderr, _( "%s: subuid overflow detected.\n"), Prog);
+			exit(EXIT_FAILURE);
+		}
+		if (mapping->upper > UINT_MAX ||
+			mapping->lower > UINT_MAX ||
+			mapping->count > UINT_MAX)  {
+			fprintf(stderr, _( "%s: subuid overflow detected.\n"), Prog);
+			exit(EXIT_FAILURE);
+		}
+		if (mapping->lower + mapping->count > UINT_MAX ||
+				mapping->upper + mapping->count > UINT_MAX) {
+			fprintf(stderr, _( "%s: subuid overflow detected.\n"), Prog);
+			exit(EXIT_FAILURE);
+		}
+		if (mapping->lower + mapping->count < mapping->lower ||
+				mapping->upper + mapping->count < mapping->upper) {
+			/* this one really shouldn't be possible given previous checks */
+			fprintf(stderr, _( "%s: subuid overflow detected.\n"), Prog);
+			exit(EXIT_FAILURE);
+		}
 	}
 	return mappings;
 }

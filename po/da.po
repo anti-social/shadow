@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: shadow\n"
 "Report-Msgid-Bugs-To: pkg-shadow-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2016-03-16 17:19-0700\n"
+"POT-Creation-Date: 2016-09-18 21:41-0500\n"
 "PO-Revision-Date: 2012-01-26 23:57+0100\n"
 "Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
 "Language-Team: Danish <debian-l10n-danish@lists.debian.org>\n"
@@ -1432,19 +1432,19 @@ msgstr ""
 "[Afbrød ikke forbindelsen - root-logind er tilladt.]"
 
 #, c-format
+msgid "%s: Cannot possibly work without effective root\n"
+msgstr "%s: Kan umuligt arbejde uden effektiv root\n"
+
+msgid "No utmp entry.  You must exec \"login\" from the lowest level \"sh\""
+msgstr "Intet utmp-punkt. Du skal køre »login« fra det laveste »sh-niveau«"
+
+#, c-format
 msgid ""
 "\n"
 "Login timed out after %u seconds.\n"
 msgstr ""
 "\n"
 "Logind udløb efter %u sekunder.\n"
-
-#, c-format
-msgid "%s: Cannot possibly work without effective root\n"
-msgstr "%s: Kan umuligt arbejde uden effektiv root\n"
-
-msgid "No utmp entry.  You must exec \"login\" from the lowest level \"sh\""
-msgstr "Intet utmp-punkt. Du skal køre »login« fra det laveste »sh-niveau«"
 
 #, c-format
 msgid "login: PAM Failure, aborting: %s\n"
@@ -1868,12 +1868,6 @@ msgstr "Gik uden om adgangskodegodkendelse.\n"
 msgid "Please enter your OWN password as authentication.\n"
 msgstr "Angiv din EGEN adgangskode som godkendelse.\n"
 
-msgid " ...killed.\n"
-msgstr " ...dræbt.\n"
-
-msgid " ...waiting for child to terminate.\n"
-msgstr " ...venter på at underproces termineres.\n"
-
 #, c-format
 msgid "%s: Cannot fork user shell\n"
 msgstr "%s: Kan ikke forgrene brugerskal\n"
@@ -1888,6 +1882,14 @@ msgstr "%s: Forkert signalmasking\n"
 
 msgid "Session terminated, terminating shell..."
 msgstr "Session termineret, terminerer skal..."
+
+#, c-format
+msgid " ...killed.\n"
+msgstr " ...dræbt.\n"
+
+#, c-format
+msgid " ...waiting for child to terminate.\n"
+msgstr " ...venter på at underproces termineres.\n"
 
 msgid " ...terminated.\n"
 msgstr " ...termineret.\n"

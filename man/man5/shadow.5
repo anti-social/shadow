@@ -2,12 +2,12 @@
 .\"     Title: shadow
 .\"    Author: Julianne Frances Haugh
 .\" Generator: DocBook XSL Stylesheets v1.79.1 <http://docbook.sf.net/>
-.\"      Date: 03/16/2016
+.\"      Date: 09/18/2016
 .\"    Manual: File Formats and Conversions
-.\"    Source: shadow-utils 4.3
+.\"    Source: shadow-utils 4.4
 .\"  Language: English
 .\"
-.TH "SHADOW" "5" "03/16/2016" "shadow\-utils 4\&.3" "File Formats and Conversions"
+.TH "SHADOW" "5" "09/18/2016" "shadow\-utils 4\&.4" "File Formats and Conversions"
 .\" -----------------------------------------------------------------
 .\" * Define some portability stuff
 .\" -----------------------------------------------------------------
@@ -56,14 +56,14 @@ This field may be empty, in which case no passwords are required to authenticate
 /etc/shadow
 file may decide not to permit any access at all if the password field is empty\&.
 .sp
-A password field which starts with a exclamation mark means that the password is locked\&. The remaining characters on the line represent the password field before the password was locked\&.
+A password field which starts with an exclamation mark means that the password is locked\&. The remaining characters on the line represent the password field before the password was locked\&.
 .RE
 .PP
 \fBdate of last password change\fR
 .RS 4
 The date of the last password change, expressed as the number of days since Jan 1, 1970\&.
 .sp
-The value 0 has a special meaning, which is that the user should change her pasword the next time she will log in the system\&.
+The value 0 has a special meaning, which is that the user should change her password the next time she will log in the system\&.
 .sp
 An empty field means that password aging features are disabled\&.
 .RE
@@ -106,7 +106,7 @@ An empty field means that there are no enforcement of an inactivity period\&.
 .RS 4
 The date of expiration of the account, expressed as the number of days since Jan 1, 1970\&.
 .sp
-Note that an account expiration differs from a password expiration\&. In case of an acount expiration, the user shall not be allowed to login\&. In case of a password expiration, the user is not allowed to login using her password\&.
+Note that an account expiration differs from a password expiration\&. In case of an account expiration, the user shall not be allowed to login\&. In case of a password expiration, the user is not allowed to login using her password\&.
 .sp
 An empty field means that the account will never expire\&.
 .sp

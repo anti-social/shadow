@@ -2,12 +2,12 @@
 .\"     Title: limits
 .\"    Author: Luca Berra
 .\" Generator: DocBook XSL Stylesheets v1.79.1 <http://docbook.sf.net/>
-.\"      Date: 16/03/2016
+.\"      Date: 18/09/2016
 .\"    Manual: Formati di file e conversioni
-.\"    Source: shadow-utils 4.2
+.\"    Source: shadow-utils 4.4
 .\"  Language: Italian
 .\"
-.TH "LIMITS" "5" "16/03/2016" "shadow\-utils 4\&.2" "Formati di file e conversioni"
+.TH "LIMITS" "5" "18/09/2016" "shadow\-utils 4\&.4" "Formati di file e conversioni"
 .\" -----------------------------------------------------------------
 .\" * Define some portability stuff
 .\" -----------------------------------------------------------------
@@ -94,7 +94,7 @@ D: spazio massimo per i dati (kB)
 .sp -1
 .IP \(bu 2.3
 .\}
-F: dimensione massima di file (kB)
+F: maximum file size (KB)
 .RE
 .sp
 .RS 4
@@ -237,10 +237,11 @@ Ad esempio,
 .RE
 .\}
 .PP
-Notare che dopo
-\fInomeutente\fR
-il resto della riga \(`e considerato il testo del limite, quindi non sono ammessi commenti a fine riga\&. Un testo limite non valido verr\(`a ignorato dal programma
-\fBlogin\fR\&.
+Be aware that after
+\fIusername\fR
+the rest of the line is considered a limit string, thus comments are not allowed\&. An invalid limits string will be rejected (not considered) by the
+\fBlogin\fR
+program\&.
 .PP
 L\*(Aqimpostazione predefinita \(`e quella che ha come nome utente \(Fo\fI*\fR\(Fc\&. Se si hanno varie righe
 \fIpredefinite\fR
@@ -252,11 +253,11 @@ I limiti specificati nella forma \(Fo\fI@gruppo\fR\(Fc si applicano ai membri de
 \fIgruppo\fR
 specificato\&.
 .PP
-Se ci sono pi\(`u righe per lo stesso utente nel file limits, allora solo la prima verr\(`a considerata\&.
+If more than one line with limits for a user exist, only the first line for this user will be considered\&.
 .PP
-Se non ci sono righe specifiche per un utente, verr\(`a presa l\*(Aqultima riga
+If no lines are specified for a user, the last
 \fI@group\fR
-relativa ad un gruppo del quale l\*(Aqutente \(`e membro, oppure l\*(Aqultima riga con limiti predefiniti se non si trova nessuna riga con gruppi dell\*(Aqutente\&.
+line matching a group whose the user is a member of will be considered, or the last line with default limits if no groups contain the user\&.
 .PP
 Per eliminare completamente l\*(Aqimpostazione di limiti per un certo utente, si pu\(`o utilizzare \(Fo\fI\-\fR\(Fc\&.
 .PP

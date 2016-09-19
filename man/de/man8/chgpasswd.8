@@ -2,12 +2,12 @@
 .\"     Title: chgpasswd
 .\"    Author: Thomas K\(/loczko <kloczek@pld.org.pl>
 .\" Generator: DocBook XSL Stylesheets v1.79.1 <http://docbook.sf.net/>
-.\"      Date: 16.03.2016
+.\"      Date: 18.09.2016
 .\"    Manual: Befehle zur Systemverwaltung
-.\"    Source: shadow-utils 4.2
+.\"    Source: shadow-utils 4.4
 .\"  Language: German
 .\"
-.TH "CHGPASSWD" "8" "16.03.2016" "shadow\-utils 4\&.2" "Befehle zur Systemverwaltung"
+.TH "CHGPASSWD" "8" "18.09.2016" "shadow\-utils 4\&.4" "Befehle zur Systemverwaltung"
 .\" -----------------------------------------------------------------
 .\" * Define some portability stuff
 .\" -----------------------------------------------------------------
@@ -42,16 +42,14 @@ liest eine Liste von Gruppenname\-Passwort\-Paaren von der Standardeingabe\&. Da
 .PP
 Das Passwort wird standardm\(:a\(ssig im Klartext angegeben\&. Die Standardalgorithmus zur Verschl\(:usselung ist DES\&.
 .PP
-Der standardm\(:a\(ssige Verschl\(:usselungsalgorithmus wird systemweit mit der Variable
+The default encryption algorithm can be defined for the system with the
 \fBENCRYPT_METHOD\fR
-in
-/etc/login\&.defs
-bestimmt\&. Dies kann mit den Optionen
+variable of
+/etc/login\&.defs, and can be overwritten with the
 \fB\-e\fR,
-\fB\-m\fR
-oder
+\fB\-m\fR, or
 \fB\-c\fR
-\(:uberschrieben werden\&.
+options\&.
 .PP
 Dieser Befehl ist f\(:ur den Einsatz in gro\(ssen Umgebungen vorgesehen, in der viele Konten gleichzeitig erstellt werden m\(:ussen\&.
 .SH "OPTIONEN"

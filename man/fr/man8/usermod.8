@@ -2,12 +2,12 @@
 .\"     Title: usermod
 .\"    Author: Julianne Frances Haugh
 .\" Generator: DocBook XSL Stylesheets v1.79.1 <http://docbook.sf.net/>
-.\"      Date: 16/03/2016
+.\"      Date: 18/09/2016
 .\"    Manual: Commandes de gestion du syst\(`eme
-.\"    Source: shadow-utils 4.2
+.\"    Source: shadow-utils 4.4
 .\"  Language: French
 .\"
-.TH "USERMOD" "8" "16/03/2016" "shadow\-utils 4\&.2" "Commandes de gestion du syst\(`em"
+.TH "USERMOD" "8" "18/09/2016" "shadow\-utils 4\&.4" "Commandes de gestion du syst\(`em"
 .\" -----------------------------------------------------------------
 .\" * Define some portability stuff
 .\" -----------------------------------------------------------------
@@ -283,9 +283,9 @@ vide \('eliminera l\*(Aqassociation de l\*(Aqutilisateur SELinux pour l\*(Aqutil
 .RE
 .SH "AVERTISSEMENTS"
 .PP
-Il est n\('ecessaire de contr\(^oler que l\*(Aqidentifiant indiqu\('e n\*(Aqa pas de processus en cours d\*(Aqex\('ecution si cette commande est utilis\('ee pour modifier l\*(Aqidentifiant num\('erique de l\*(Aqutilisateur, son identifiant (login) ou son r\('epertoire personnel\&.
+You must make certain that the named user is not executing any processes when this command is being executed if the user\*(Aqs numerical user ID, the user\*(Aqs name, or the user\*(Aqs home directory is being changed\&.
 \fBusermod\fR
-effectue ce contr\(^ole sous Linux mais v\('erifie seulement les informations d\*(Aqutmp sur les autres architectures\&.
+checks this on Linux\&. On other platforms it only uses utmp to check if the user is logged in\&.
 .PP
 Il est n\('ecessaire de changer manuellement le propri\('etaire des fichiers
 \fBcrontab\fR

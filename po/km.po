@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: shadow_po_km\n"
 "Report-Msgid-Bugs-To: pkg-shadow-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2016-03-16 17:19-0700\n"
+"POT-Creation-Date: 2016-09-18 21:41-0500\n"
 "PO-Revision-Date: 2006-06-28 10:08+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -1404,6 +1404,13 @@ msgstr ""
 "\n"
 "[បាន​វៀង​ការ​ផ្ដាច់ -- បាន​អនុញ្ញាត​ការ​ចូល​ជា root ។]\n"
 
+#, c-format
+msgid "%s: Cannot possibly work without effective root\n"
+msgstr ""
+
+msgid "No utmp entry.  You must exec \"login\" from the lowest level \"sh\""
+msgstr "គ្មាន​ធាតុ​ utmp ឡើយ ។ អ្នក​ត្រូវ​ប្រតិបត្តិ​ \"login\" ពី​កម្រិត​ទាប​បំផុត​ \"sh\""
+
 #, fuzzy, c-format
 #| msgid ""
 #| "\n"
@@ -1414,13 +1421,6 @@ msgid ""
 msgstr ""
 "\n"
 "អស់​ពេល​ចូល​បន្ទាប់ពី %d វិនាទី ។\n"
-
-#, c-format
-msgid "%s: Cannot possibly work without effective root\n"
-msgstr ""
-
-msgid "No utmp entry.  You must exec \"login\" from the lowest level \"sh\""
-msgstr "គ្មាន​ធាតុ​ utmp ឡើយ ។ អ្នក​ត្រូវ​ប្រតិបត្តិ​ \"login\" ពី​កម្រិត​ទាប​បំផុត​ \"sh\""
 
 #, c-format
 msgid "login: PAM Failure, aborting: %s\n"
@@ -1845,12 +1845,6 @@ msgstr "ការ​ផ្ទៀងផ្ទាត់​ភាព​ត្រឹ
 msgid "Please enter your OWN password as authentication.\n"
 msgstr "សូម​បញ្ចូល​ពាក្យ​សម្ងាត់ផ្ទាល់ខ្លួន​របស់អ្នក​ ជា​ការផ្ទៀងផ្ទាត់ភាពត្រឹមត្រូវ​ ។\n"
 
-msgid " ...killed.\n"
-msgstr ""
-
-msgid " ...waiting for child to terminate.\n"
-msgstr ""
-
 #, fuzzy, c-format
 #| msgid "%s: cannot lock file %s\n"
 msgid "%s: Cannot fork user shell\n"
@@ -1865,6 +1859,14 @@ msgid "%s: signal masking malfunction\n"
 msgstr ""
 
 msgid "Session terminated, terminating shell..."
+msgstr ""
+
+#, c-format
+msgid " ...killed.\n"
+msgstr ""
+
+#, c-format
+msgid " ...waiting for child to terminate.\n"
 msgstr ""
 
 msgid " ...terminated.\n"

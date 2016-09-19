@@ -2,12 +2,12 @@
 .\"     Title: chpasswd
 .\"    Author: Julianne Frances Haugh
 .\" Generator: DocBook XSL Stylesheets v1.79.1 <http://docbook.sf.net/>
-.\"      Date: 16.03.2016
+.\"      Date: 18.09.2016
 .\"    Manual: Befehle zur Systemverwaltung
-.\"    Source: shadow-utils 4.2
+.\"    Source: shadow-utils 4.4
 .\"  Language: German
 .\"
-.TH "CHPASSWD" "8" "16.03.2016" "shadow\-utils 4\&.2" "Befehle zur Systemverwaltung"
+.TH "CHPASSWD" "8" "18.09.2016" "shadow\-utils 4\&.4" "Befehle zur Systemverwaltung"
 .\" -----------------------------------------------------------------
 .\" * Define some portability stuff
 .\" -----------------------------------------------------------------
@@ -44,21 +44,19 @@ Das Passwort muss standardm\(:a\(ssig im Klartext angegeben werden und von
 \fBchpasswd\fR
 verschl\(:usselt\&. Soweit vorhanden, wird auch das Alter des Passworts aktualisiert\&.
 .PP
-Der standardm\(:a\(ssige Verschl\(:usselungsalgorithmus kann systemweit mit den Variablen
+The default encryption algorithm can be defined for the system with the
 \fBENCRYPT_METHOD\fR
-oder
+or
 \fBMD5_CRYPT_ENAB\fR
-in
-/etc/login\&.defs
-definiert werden\&. Dieser kann mit den Optionen
+variables of
+/etc/login\&.defs, and can be overwritten with the
 \fB\-e\fR,
-\fB\-m\fR
-oder
+\fB\-m\fR, or
 \fB\-c\fR
-\(:uberschrieben werden\&.
+options\&.
 .PP
 \fBchpasswd\fR
-aktualisiert zun\(:achst alle Passw\(:orter im Arbeitsspeicher und schreibt dann die \(:Anderungen auf das Speichermedium, falls keine Fehler aufgetreten sind\&.
+first updates all the passwords in memory, and then commits all the changes to disk if no errors occurred for any user\&.
 .PP
 Dieser Befehl ist f\(:ur den Einsatz in gro\(ssen Umgebungen vorgesehen, in der viele Konten gleichzeitig erstellt werden m\(:ussen\&.
 .SH "OPTIONEN"

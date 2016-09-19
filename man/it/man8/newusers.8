@@ -2,12 +2,12 @@
 .\"     Title: newusers
 .\"    Author: Julianne Frances Haugh
 .\" Generator: DocBook XSL Stylesheets v1.79.1 <http://docbook.sf.net/>
-.\"      Date: 16/03/2016
+.\"      Date: 18/09/2016
 .\"    Manual: Comandi per la gestione del sistema
-.\"    Source: shadow-utils 4.2
+.\"    Source: shadow-utils 4.4
 .\"  Language: Italian
 .\"
-.TH "NEWUSERS" "8" "16/03/2016" "shadow\-utils 4\&.2" "Comandi per la gestione del si"
+.TH "NEWUSERS" "8" "18/09/2016" "shadow\-utils 4\&.4" "Comandi per la gestione del si"
 .\" -----------------------------------------------------------------
 .\" * Define some portability stuff
 .\" -----------------------------------------------------------------
@@ -47,8 +47,8 @@ pw_name:pw_passwd:pw_uid:pw_gid:pw_gecos:pw_dir:pw_shell
 .RS 4
 Il nome dell\*(Aqutente\&.
 .sp
-Pu\(`o essere il nome di un nuovo utente o di uno gi\(`a esistente (o uno creato precedentemente da
-\fBnewusers\fR)\&. Nel caso di utente gi\(`a esistente le informazioni sull\*(Aqutente verranno aggiornate, altrimenti verr\(`a creato un nuovo utente\&.
+It can be the name of a new user or the name of an existing user (or a user created before by
+\fBnewusers\fR)\&. In case of an existing user, the user\*(Aqs information will be changed, otherwise a new user will be created\&.
 .RE
 .PP
 \fIpw_passwd\fR
@@ -60,13 +60,13 @@ Questo campo verr\(`a cifrato e utilizzato come nuovo valore per la password cif
 .RS 4
 Definisce l\*(AqUID dell\*(Aqutente\&.
 .sp
-Se il campo \(`e vuoto, verr\(`a generato automaticamente un nuovo UID (non utilizzato) da parte di
+If the field is empty, a new (unused) UID will be defined automatically by
 \fBnewusers\fR\&.
 .sp
 Se questo campo contiene un numero, verr\(`a utilizzato come UID\&.
 .sp
-Se questo campo contiene il nome di un utente gi\(`a esistente (o il nome di un utente creato precedentemente da
-\fBnewusers\fR), verr\(`a utilizzato l\*(AqUID dell\*(Aqutente specificato\&.
+If this field contains the name of an existing user (or the name of a user created before by
+\fBnewusers\fR), the UID of the specified user will be used\&.
 .sp
 Se viene cambiato l\*(AqUID di un utente esistente, la propriet\(`a dei file di propriet\(`a dell\*(Aqutente stesso andr\(`a cambiata manualmente\&.
 .RE

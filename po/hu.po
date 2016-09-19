@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 4.0.18\n"
 "Report-Msgid-Bugs-To: pkg-shadow-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2016-03-16 17:19-0700\n"
+"POT-Creation-Date: 2016-09-18 21:41-0500\n"
 "PO-Revision-Date: 2007-11-25 20:56+0100\n"
 "Last-Translator: SZERVÁC Attila <sas@321.hu>\n"
 "Language-Team: Hungarian <gnome@gnome.hu>\n"
@@ -1381,6 +1381,15 @@ msgstr ""
 "\n"
 "[Leválasztás átlépve -- root bejelentkezés engedélyezett]"
 
+#, c-format
+msgid "%s: Cannot possibly work without effective root\n"
+msgstr ""
+
+msgid "No utmp entry.  You must exec \"login\" from the lowest level \"sh\""
+msgstr ""
+"Nincs utmp bejegyzés.  Futtasd a \"login\"-t a legalacsonyabb szintű \"sh\"-"
+"ból."
+
 #, fuzzy, c-format
 #| msgid ""
 #| "\n"
@@ -1391,15 +1400,6 @@ msgid ""
 msgstr ""
 "\n"
 "A bejelentkezés %d mp. után elkésett\n"
-
-#, c-format
-msgid "%s: Cannot possibly work without effective root\n"
-msgstr ""
-
-msgid "No utmp entry.  You must exec \"login\" from the lowest level \"sh\""
-msgstr ""
-"Nincs utmp bejegyzés.  Futtasd a \"login\"-t a legalacsonyabb szintű \"sh\"-"
-"ból."
 
 #, c-format
 msgid "login: PAM Failure, aborting: %s\n"
@@ -1818,12 +1818,6 @@ msgstr "Jelszó hitelesítés átlépve.\n"
 msgid "Please enter your OWN password as authentication.\n"
 msgstr "Add meg SAJÁT jelszavad a hitelesítéshez.\n"
 
-msgid " ...killed.\n"
-msgstr ""
-
-msgid " ...waiting for child to terminate.\n"
-msgstr ""
-
 #, fuzzy, c-format
 #| msgid "%s: cannot lock file %s\n"
 msgid "%s: Cannot fork user shell\n"
@@ -1838,6 +1832,14 @@ msgid "%s: signal masking malfunction\n"
 msgstr ""
 
 msgid "Session terminated, terminating shell..."
+msgstr ""
+
+#, c-format
+msgid " ...killed.\n"
+msgstr ""
+
+#, c-format
+msgid " ...waiting for child to terminate.\n"
 msgstr ""
 
 msgid " ...terminated.\n"

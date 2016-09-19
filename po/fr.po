@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: shadow\n"
 "Report-Msgid-Bugs-To: pkg-shadow-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2016-03-16 17:19-0700\n"
+"POT-Creation-Date: 2016-09-18 21:41-0500\n"
 "PO-Revision-Date: 2012-01-13 17:09+0100\n"
 "Last-Translator: Thomas Blein <tblein@tblein.eu>\n"
 "Language-Team: French <debian-l10n-french@lists.debian.org>\n"
@@ -1506,14 +1506,6 @@ msgstr ""
 "[Déconnexion court-circuitée -- accès superutilisateur autorisé]."
 
 #, c-format
-msgid ""
-"\n"
-"Login timed out after %u seconds.\n"
-msgstr ""
-"\n"
-"Tentative de connexion : délai de %u secondes dépassé.\n"
-
-#, c-format
 msgid "%s: Cannot possibly work without effective root\n"
 msgstr ""
 "%s : fonctionnement impossible sans être réellement le superutilisateur\n"
@@ -1522,6 +1514,14 @@ msgid "No utmp entry.  You must exec \"login\" from the lowest level \"sh\""
 msgstr ""
 "Pas d'entrée utmp. Vous devez exécuter « login » depuis l'interpréteur de "
 "commandes de plus bas niveau (« sh »)"
+
+#, c-format
+msgid ""
+"\n"
+"Login timed out after %u seconds.\n"
+msgstr ""
+"\n"
+"Tentative de connexion : délai de %u secondes dépassé.\n"
 
 #, c-format
 msgid "login: PAM Failure, aborting: %s\n"
@@ -1961,12 +1961,6 @@ msgstr "Authentification par mot de passe court-circuitée.\n"
 msgid "Please enter your OWN password as authentication.\n"
 msgstr "Entrez votre PROPRE mot de passe pour vous authentifier.\n"
 
-msgid " ...killed.\n"
-msgstr "… Tué.\n"
-
-msgid " ...waiting for child to terminate.\n"
-msgstr "… en attente que les processus fils se terminent.\n"
-
 #, c-format
 msgid "%s: Cannot fork user shell\n"
 msgstr ""
@@ -1983,6 +1977,14 @@ msgstr "%s : défaut de fonctionnement de masquage du signal\n"
 
 msgid "Session terminated, terminating shell..."
 msgstr "Session terminée, arrêt de l'interpréteur de commandes…"
+
+#, c-format
+msgid " ...killed.\n"
+msgstr "… Tué.\n"
+
+#, c-format
+msgid " ...waiting for child to terminate.\n"
+msgstr "… en attente que les processus fils se terminent.\n"
 
 msgid " ...terminated.\n"
 msgstr "… terminé.\n"

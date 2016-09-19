@@ -2,12 +2,12 @@
 .\"     Title: chpasswd
 .\"    Author: Julianne Frances Haugh
 .\" Generator: DocBook XSL Stylesheets v1.79.1 <http://docbook.sf.net/>
-.\"      Date: 16/03/2016
+.\"      Date: 18/09/2016
 .\"    Manual: Comandi per la gestione del sistema
-.\"    Source: shadow-utils 4.2
+.\"    Source: shadow-utils 4.4
 .\"  Language: Italian
 .\"
-.TH "CHPASSWD" "8" "16/03/2016" "shadow\-utils 4\&.2" "Comandi per la gestione del si"
+.TH "CHPASSWD" "8" "18/09/2016" "shadow\-utils 4\&.4" "Comandi per la gestione del si"
 .\" -----------------------------------------------------------------
 .\" * Define some portability stuff
 .\" -----------------------------------------------------------------
@@ -42,19 +42,19 @@ legge da standard input un elenco di coppie di nomi utente e password e usa ques
 Come impostazione predefinita, si devono fornire password in chiaro che vengono poi cifrate da
 \fBchpasswd\fR\&. Vengono aggiornate, se presenti, anche le informazioni sulla durata delle password\&.
 .PP
-L\*(Aqalgoritmo di cifratura predefinito pu\(`o essere impostato con le variabili
+The default encryption algorithm can be defined for the system with the
 \fBENCRYPT_METHOD\fR
-e
+or
 \fBMD5_CRYPT_ENAB\fR
-in
-/etc/login\&.defs, e pu\(`o essere ulteriormente modificato con le opzioni
+variables of
+/etc/login\&.defs, and can be overwritten with the
 \fB\-e\fR,
-\fB\-m\fR
-o
-\fB\-c\fR\&.
+\fB\-m\fR, or
+\fB\-c\fR
+options\&.
 .PP
 \fBchpasswd\fR
-prima aggiorna tutte le passwor in memoria, e poi scrive tutto su disco se non trova errori per nessun utente\&.
+first updates all the passwords in memory, and then commits all the changes to disk if no errors occurred for any user\&.
 .PP
 Questo comando \(`e appositamente pensato per grossi sistemi in cui si abbia la necessit\(`a di creare molti account nello stesso momento\&.
 .SH "OPZIONI"

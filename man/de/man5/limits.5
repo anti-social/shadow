@@ -2,12 +2,12 @@
 .\"     Title: limits
 .\"    Author: Luca Berra
 .\" Generator: DocBook XSL Stylesheets v1.79.1 <http://docbook.sf.net/>
-.\"      Date: 16.03.2016
+.\"      Date: 18.09.2016
 .\"    Manual: Dateiformate und -konvertierung
-.\"    Source: shadow-utils 4.2
+.\"    Source: shadow-utils 4.4
 .\"  Language: German
 .\"
-.TH "LIMITS" "5" "16.03.2016" "shadow\-utils 4\&.2" "Dateiformate und \-konvertieru"
+.TH "LIMITS" "5" "18.09.2016" "shadow\-utils 4\&.4" "Dateiformate und \-konvertieru"
 .\" -----------------------------------------------------------------
 .\" * Define some portability stuff
 .\" -----------------------------------------------------------------
@@ -95,7 +95,7 @@ D: maximale Datengr\(:o\(sse (KB)
 .sp -1
 .IP \(bu 2.3
 .\}
-F: maximale Dateigr\(:o\(sse (KB)
+F: maximum file size (KB)
 .RE
 .sp
 .RS 4
@@ -240,11 +240,11 @@ eine g\(:ultige
 .RE
 .\}
 .PP
-Beachten Sie, dass nach
-\fIBenutzername\fR
-die \(:ubrige Zeile als Zeichenkette f\(:ur Beschr\(:ankungen angesehen wird\&. Kommentare sind daher nicht zul\(:assig\&. Eine ung\(:ultige Zeichenkette wird von
+Be aware that after
+\fIusername\fR
+the rest of the line is considered a limit string, thus comments are not allowed\&. An invalid limits string will be rejected (not considered) by the
 \fBlogin\fR
-ignoriert\&.
+program\&.
 .PP
 Standardwerte werden mit dem Benutzernamen \(Fc\fI*\fR\(Fo festgelegt\&. Falls Sie mehrfach
 \fIStandard\fR\-Werte in der
@@ -254,11 +254,11 @@ bestimmen, wird nur der letzte ber\(:ucksichtigt\&.
 Beschr\(:ankungen, die in der Form \(Fc\fI@group\fR\(Fo festgelegt wurden, gelten f\(:ur alle Mitglieder der angegebenen Gruppe
 \fIgroup\fR\&.
 .PP
-Wenn mehr als eine Zeile mit Beschr\(:ankungen f\(:ur einen Benutzer vorhanden ist, wird f\(:ur ihn nur die erste Zeile ber\(:ucksichtigt\&.
+If more than one line with limits for a user exist, only the first line for this user will be considered\&.
 .PP
-Wenn keine Zeile auf einen Benutzer zutrifft, wird auf ihn die letzte Zeile mit
+If no lines are specified for a user, the last
 \fI@group\fR
-angewendet, die auf eine Gruppe verweist, deren Mitglied er ist\&. Wenn er auch nicht Mitglied einer der aufgef\(:uhrten Gruppe ist, wird auf ihn die letzte Zeile, in der Standardwerte bestimmt sind, angewendet\&.
+line matching a group whose the user is a member of will be considered, or the last line with default limits if no groups contain the user\&.
 .PP
 Mit einem Gedankenstrich \(Fc\fI\-\fR\(Fo k\(:onnen Sie alle Beschr\(:ankungen f\(:ur einen Benutzer zu entfernen\&.
 .PP

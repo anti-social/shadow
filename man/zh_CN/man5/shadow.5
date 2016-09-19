@@ -2,12 +2,12 @@
 .\"     Title: shadow
 .\"    Author: Julianne Frances Haugh
 .\" Generator: DocBook XSL Stylesheets v1.79.1 <http://docbook.sf.net/>
-.\"      Date: 2016-03-16
+.\"      Date: 2016-09-18
 .\"    Manual: 文件格式和转化
-.\"    Source: shadow-utils 4.2
+.\"    Source: shadow-utils 4.4
 .\"  Language: Chinese Simplified
 .\"
-.TH "SHADOW" "5" "2016-03-16" "shadow\-utils 4\&.2" "文件格式和转化"
+.TH "SHADOW" "5" "2016-09-18" "shadow\-utils 4\&.4" "文件格式和转化"
 .\" -----------------------------------------------------------------
 .\" * Define some portability stuff
 .\" -----------------------------------------------------------------
@@ -57,14 +57,14 @@ shadow
 /etc/shadow
 文件的应用程序，在密码字段为空时，可能决定禁止任何访问。
 .sp
-以叹号开始的密码字段意味着密码被锁定。该行的剩余字符表示锁定之前的密码。
+A password field which starts with an exclamation mark means that the password is locked\&. The remaining characters on the line represent the password field before the password was locked\&.
 .RE
 .PP
 \fB最后一次更改密码的日期\fR
 .RS 4
 最近一次更改密码的时间，表示从1970年1月1日开始的天数。
 .sp
-0 有特殊意思，表示用户应该在下次登录系统时更改密码。
+The value 0 has a special meaning, which is that the user should change her password the next time she will log in the system\&.
 .sp
 空字段表示密码年龄功能被禁用。
 .RE
@@ -107,7 +107,7 @@ shadow
 .RS 4
 账户过期的日期，表示从1970年1月1日开始的天数。
 .sp
-注意，账户过期不同于密码过期。账户过期时，用户将不被允许登录；密码过期时，用户将不被允许使用其密码登录。
+Note that an account expiration differs from a password expiration\&. In case of an account expiration, the user shall not be allowed to login\&. In case of a password expiration, the user is not allowed to login using her password\&.
 .sp
 空字段表示账户永不过期。
 .sp

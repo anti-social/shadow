@@ -2,12 +2,12 @@
 .\"     Title: useradd
 .\"    Author: Julianne Frances Haugh
 .\" Generator: DocBook XSL Stylesheets v1.79.1 <http://docbook.sf.net/>
-.\"      Date: 16/03/2016
+.\"      Date: 18/09/2016
 .\"    Manual: Commandes de gestion du syst\(`eme
-.\"    Source: shadow-utils 4.2
+.\"    Source: shadow-utils 4.4
 .\"  Language: French
 .\"
-.TH "USERADD" "8" "16/03/2016" "shadow\-utils 4\&.2" "Commandes de gestion du syst\(`em"
+.TH "USERADD" "8" "18/09/2016" "shadow\-utils 4\&.4" "Commandes de gestion du syst\(`em"
 .\" -----------------------------------------------------------------
 .\" * Define some portability stuff
 .\" -----------------------------------------------------------------
@@ -183,20 +183,20 @@ Si possible, les ACL et les attributs \('etendus seront copi\('es\&.
 .PP
 \fB\-K\fR, \fB\-\-key\fR\ \&\fICL\('E\fR=\fIVALEUR\fR
 .RS 4
-Surcharge les valeurs par d\('efaut de
+Overrides
 /etc/login\&.defs
-(\fBUID_MIN\fR,
+defaults (\fBUID_MIN\fR,
 \fBUID_MAX\fR,
 \fBUMASK\fR,
 \fBPASS_MAX_DAYS\fR
-et autres)\&.
+and others)\&.
 
-Par exemple\ \&:
+Example:
 \fB\-K\fR\ \&\fIPASS_MAX_DAYS\fR=\fI\-1\fR
-peut \(^etre utilis\('e pour la cr\('eation de comptes syst\(`eme pour d\('esactiver la gestion de la dur\('ee de validit\('e des mots de passe, m\(^eme si les comptes syst\(`eme n\*(Aqont pas de mot de passe\&. Plusieurs options
+can be used when creating system account to turn off password aging, even though system account has no password at all\&. Multiple
 \fB\-K\fR
-peuvent \(^etre pr\('ecis\('ees, comme par exemple\ \&:
-\fB\-K\fR\ \&\fIUID_MIN\fR=\fI100\fR
+options can be specified, e\&.g\&.:
+\fB\-K\fR\ \&\fIUID_MIN\fR=\fI100\fR\ \&
 \fB\-K\fR\ \&\fIUID_MAX\fR=\fI499\fR
 .RE
 .PP
@@ -204,7 +204,7 @@ peuvent \(^etre pr\('ecis\('ees, comme par exemple\ \&:
 .RS 4
 N\*(Aqajoute pas l\*(Aqutilisateur aux bases de donn\('ees lastlog et faillog\&.
 .sp
-Par d\('efaut, les entr\('ees de l\*(Aqutilisateur dans les bases de donn\('ees lastlog et faillog sont remises \(`a z\('ero pour \('eviter de r\('eutiliser les entr\('ees d\*(Aqun utilisateur pr\('ec\('edemment supprim\('e\&.
+By default, the user\*(Aqs entries in the lastlog and faillog databases are reset to avoid reusing the entry from a previously deleted user\&.
 .RE
 .PP
 \fB\-m\fR, \fB\-\-create\-home\fR
@@ -217,7 +217,7 @@ Par d\('efaut, si cette option n\*(Aqest pas pr\('ecis\('ee et si
 n\*(Aqest pas activ\('ee, aucun r\('epertoire personnel ne sera cr\('e\('e\&.
 .RE
 .PP
-\fB\-M\fR
+\fB\-M\fR, \fB\-\-no\-create\-home\fR
 .RS 4
 Ne cr\('ee pas le r\('epertoire personnel de l\*(Aqutilisateur, m\(^eme si la configuration globale au syst\(`eme contenue dans
 /etc/login\&.defs
@@ -276,13 +276,13 @@ Les utilisateurs syst\(`eme seront cr\('e\('es sans information d\*(Aqexpiration
 \fBGID\fR
 pour la cr\('eation des groupes)\&.
 .sp
-Notez que
+Note that
 \fBuseradd\fR
-ne cr\('eera pas de r\('epertoire personnel pour ces utilisateurs, ind\('ependamment de la configuration par d\('efaut dans
+will not create a home directory for such a user, regardless of the default setting in
 /etc/login\&.defs
-(\fBCREATE_HOME\fR)\&. Vous devez pr\('eciser l\*(Aqoption
+(\fBCREATE_HOME\fR)\&. You have to specify the
 \fB\-m\fR
-si vous voulez qu\*(Aqun r\('epertoire personnel soit cr\('e\('e pour un compte syst\(`eme\&.
+options if you want a home directory for a system account to be created\&.
 .RE
 .PP
 \fB\-R\fR, \fB\-\-root\fR\ \&\fIR\('EP_CHROOT\fR

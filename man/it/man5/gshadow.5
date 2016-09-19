@@ -2,12 +2,12 @@
 .\"     Title: gshadow
 .\"    Author: Nicolas Fran\(,cois <nicolas.francois@centraliens.net>
 .\" Generator: DocBook XSL Stylesheets v1.79.1 <http://docbook.sf.net/>
-.\"      Date: 16/03/2016
+.\"      Date: 18/09/2016
 .\"    Manual: Formati di file e conversioni
-.\"    Source: shadow-utils 4.2
+.\"    Source: shadow-utils 4.4
 .\"  Language: Italian
 .\"
-.TH "GSHADOW" "5" "16/03/2016" "shadow\-utils 4\&.2" "Formati di file e conversioni"
+.TH "GSHADOW" "5" "18/09/2016" "shadow\-utils 4\&.4" "Formati di file e conversioni"
 .\" -----------------------------------------------------------------
 .\" * Define some portability stuff
 .\" -----------------------------------------------------------------
@@ -52,12 +52,12 @@ per dettagli sul modo in cui questa stringa viene interpretata\&.
 Se il campo password contiene un testo che non sia un risultato valido di
 \fBcrypt\fR(3), ad esempio ! o *, gli utenti non potranno accedere a quel gruppo utilizzando la password unix (ma i membri del gruppo non necessitano di password)\&.
 .sp
-La password \(`e utilizzata quanto un utente che non \(`e membro del gruppo cerca di ottenerne i permessi (vedere
+The password is used when a user who is not a member of the group wants to gain the permissions of this group (see
 \fBnewgrp\fR(1))\&.
 .sp
 Questo campo pu\(`o essere vuoto, nel qual caso solo i membri del gruppo possono ottenere i permessi del gruppo\&.
 .sp
-Se il campo password inizia con un punto esclamativo vuol dire che la password \(`e bloccata\&. I restanti caratteri del campo sono il contenuto del campo password prima che venisse bloccata\&.
+A password field which starts with an exclamation mark means that the password is locked\&. The remaining characters on the line represent the password field before the password was locked\&.
 .sp
 Questa password ha la precedenza su ogni altra specificata in
 /etc/group\&.

@@ -2,12 +2,12 @@
 .\"     Title: suauth
 .\"    Author: Marek Micha\(/lkiewicz
 .\" Generator: DocBook XSL Stylesheets v1.79.1 <http://docbook.sf.net/>
-.\"      Date: 03/16/2016
+.\"      Date: 09/18/2016
 .\"    Manual: Форматы файлов
-.\"    Source: shadow-utils 4.2
+.\"    Source: shadow-utils 4.4
 .\"  Language: Russian
 .\"
-.TH "suauth" "5" "03/16/2016" "shadow\-utils 4\&.2" "Форматы файлов"
+.TH "suauth" "5" "09/18/2016" "shadow\-utils 4\&.4" "Форматы файлов"
 .\" -----------------------------------------------------------------
 .\" * Define some portability stuff
 .\" -----------------------------------------------------------------
@@ -42,7 +42,7 @@ suauth \- файл управления командой su
 .RS 4
 .\}
 .nf
-      1) пользователя, права которого нужно получить с помощью su
+      1) the user su is targeting
     
 .fi
 .if n \{\
@@ -68,12 +68,15 @@ suauth \- файл управления командой su
 \fIALL\fR, списком имён пользователей, перечисленных через запятую (\(Fo,\(Fc) или фразы
 \fIALL EXCEPT\fR, после которой идёт список имён пользователей перечисленных через \(Fo,\(Fc\&.
 .PP
-желающий\-id может содержать то же, что и желательный\-id, плюс новое слово\fIGROUP\fR\&.
-\fIALL EXCEPT GROUP\fR
-тоже допустимо\&. После
+from\-id is formatted the same as to\-id except the extra word
 \fIGROUP\fR
-указывается одна или более названий групп, разделённых \(Fo,\(Fc\&. Недостаточно иметь id первичной группы соответствующей группы, необходимо иметь запись в файле
-\fB/etc/group\fR(5)\&.
+is recognized\&.
+\fIALL EXCEPT GROUP\fR
+is perfectly valid too\&. Following
+\fIGROUP\fR
+appears one or more group names, delimited by ","\&. It is not sufficient to have primary group id of the relevant group, an entry in
+\fB/etc/group\fR(5)
+is necessary\&.
 .PP
 В поле ДЕЙСТВИЕ может быть только одно из следующих значений:
 .PP

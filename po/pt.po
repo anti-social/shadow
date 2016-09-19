@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: shadow 4.0.18\n"
 "Report-Msgid-Bugs-To: pkg-shadow-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2016-03-16 17:19-0700\n"
+"POT-Creation-Date: 2016-09-18 21:41-0500\n"
 "PO-Revision-Date: 2012-01-14 12:41+0000\n"
 "Last-Translator: Miguel Figueiredo <elmig@debianpt.org>\n"
 "Language-Team: Portuguese <traduz@debianpt.org>\n"
@@ -1447,14 +1447,6 @@ msgstr ""
 "[Encerramento ultrapassado -- login de root permitido.]"
 
 #, c-format
-msgid ""
-"\n"
-"Login timed out after %u seconds.\n"
-msgstr ""
-"\n"
-"Tempo de login caducou após %u segundos.\n"
-
-#, c-format
 msgid "%s: Cannot possibly work without effective root\n"
 msgstr "%s: Não é possível trabalhar sem root\n"
 
@@ -1462,6 +1454,14 @@ msgid "No utmp entry.  You must exec \"login\" from the lowest level \"sh\""
 msgstr ""
 "Sem entrada utmp.  Tem de executar \"login\" a partir do \"sh\" de nível "
 "mais baixo"
+
+#, c-format
+msgid ""
+"\n"
+"Login timed out after %u seconds.\n"
+msgstr ""
+"\n"
+"Tempo de login caducou após %u segundos.\n"
 
 #, c-format
 msgid "login: PAM Failure, aborting: %s\n"
@@ -1899,12 +1899,6 @@ msgstr "Autenticação por palavra-passe foi contornada.\n"
 msgid "Please enter your OWN password as authentication.\n"
 msgstr "Por favor introduza a SUA palavra-passe como autenticação.\n"
 
-msgid " ...killed.\n"
-msgstr " ...morto.\n"
-
-msgid " ...waiting for child to terminate.\n"
-msgstr " ...á espera que o processo-filho termine.\n"
-
 #, c-format
 msgid "%s: Cannot fork user shell\n"
 msgstr "%s: Não é possível fazer fork à shell de utilizador.\n"
@@ -1919,6 +1913,14 @@ msgstr "%s: mau funcionamento de máscara de sinal\n"
 
 msgid "Session terminated, terminating shell..."
 msgstr "Sessão terminada, a terminar shell..."
+
+#, c-format
+msgid " ...killed.\n"
+msgstr " ...morto.\n"
+
+#, c-format
+msgid " ...waiting for child to terminate.\n"
+msgstr " ...á espera que o processo-filho termine.\n"
 
 msgid " ...terminated.\n"
 msgstr " ...terminado.\n"

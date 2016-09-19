@@ -2,12 +2,12 @@
 .\"     Title: limits
 .\"    Author: Luca Berra
 .\" Generator: DocBook XSL Stylesheets v1.79.1 <http://docbook.sf.net/>
-.\"      Date: 16-03-2016
+.\"      Date: 18-09-2016
 .\"    Manual: Filformat och konversioner
-.\"    Source: shadow-utils 4.2
+.\"    Source: shadow-utils 4.4
 .\"  Language: Swedish
 .\"
-.TH "LIMITS" "5" "16-03-2016" "shadow\-utils 4\&.2" "Filformat och konversioner"
+.TH "LIMITS" "5" "18-09-2016" "shadow\-utils 4\&.4" "Filformat och konversioner"
 .\" -----------------------------------------------------------------
 .\" * Define some portability stuff
 .\" -----------------------------------------------------------------
@@ -94,7 +94,7 @@ D: maximal datastorlek (KB)
 .sp -1
 .IP \(bu 2.3
 .\}
-F: maximal filstorlek (KB)
+F: maximum file size (KB)
 .RE
 .sp
 .RS 4
@@ -239,7 +239,7 @@ is a valid
 .PP
 Be aware that after
 \fIusername\fR
-the rest of the line is considered a limit string, thus comments are not allowed\&. A invalid limits string will be rejected (not considered) by the
+the rest of the line is considered a limit string, thus comments are not allowed\&. An invalid limits string will be rejected (not considered) by the
 \fBlogin\fR
 program\&.
 .PP
@@ -251,9 +251,9 @@ entries in your
 The limits specified in the form "\fI@group\fR" apply to the members of the specified
 \fIgroup\fR\&.
 .PP
-If more than one line with limits for an user exist, only the first line for this user will be considered\&.
+If more than one line with limits for a user exist, only the first line for this user will be considered\&.
 .PP
-If no lines are specified for an user, the last
+If no lines are specified for a user, the last
 \fI@group\fR
 line matching a group whose the user is a member of will be considered, or the last line with default limits if no groups contain the user\&.
 .PP

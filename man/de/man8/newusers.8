@@ -2,12 +2,12 @@
 .\"     Title: newusers
 .\"    Author: Julianne Frances Haugh
 .\" Generator: DocBook XSL Stylesheets v1.79.1 <http://docbook.sf.net/>
-.\"      Date: 16.03.2016
+.\"      Date: 18.09.2016
 .\"    Manual: Befehle zur Systemverwaltung
-.\"    Source: shadow-utils 4.2
+.\"    Source: shadow-utils 4.4
 .\"  Language: German
 .\"
-.TH "NEWUSERS" "8" "16.03.2016" "shadow\-utils 4\&.2" "Befehle zur Systemverwaltung"
+.TH "NEWUSERS" "8" "18.09.2016" "shadow\-utils 4\&.4" "Befehle zur Systemverwaltung"
 .\" -----------------------------------------------------------------
 .\" * Define some portability stuff
 .\" -----------------------------------------------------------------
@@ -47,9 +47,8 @@ pw_Name:pw_Passwort:pw_uid:pw_gid:pw_gecos:pw_Verz:pw_shell
 .RS 4
 Dies ist der Name des Benutzers\&.
 .sp
-Es kann sich dabei um den Namen eines neuen oder eines existierenden Benutzer (oder eines, der zuvor mit
-\fBnewusers\fR
-erstellt wurde) handeln\&. F\(:ur den Fall, dass der Benutzer bereits vorhanden ist, werden seine Daten ver\(:andert, anderenfalls wird ein neuer Benutzer erstellt\&.
+It can be the name of a new user or the name of an existing user (or a user created before by
+\fBnewusers\fR)\&. In case of an existing user, the user\*(Aqs information will be changed, otherwise a new user will be created\&.
 .RE
 .PP
 \fIpw_Passwort\fR
@@ -61,15 +60,13 @@ Dieses Feld wird verschl\(:usselt und als neuer Wert f\(:ur das verschl\(:usselt
 .RS 4
 Mit diesem Feld wird die UID des Benutzers bestimmt\&.
 .sp
-Wenn dieses Feld leer ist, wird von
-\fBnewusers\fR
-automatisch eine neue (noch freie) UID gew\(:ahlt\&.
+If the field is empty, a new (unused) UID will be defined automatically by
+\fBnewusers\fR\&.
 .sp
 Wenn dieses Feld eine Zahl enth\(:alt, wird sie als UID verwendet\&.
 .sp
-Wenn dieses Feld den Namen eines existierenden Benutzers enth\(:alt (oder eines Benutzers, der zuvor mit
-\fBnewusers\fR
-erstellt wurde), wird die UID des angegebenen Benutzers verwendet\&.
+If this field contains the name of an existing user (or the name of a user created before by
+\fBnewusers\fR), the UID of the specified user will be used\&.
 .sp
 Falls die UID eines bestehenden Benutzers ver\(:andert wird, muss der Eigent\(:umer der Dateien des Benutzers per Hand angepasst werden\&.
 .RE

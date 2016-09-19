@@ -15,7 +15,6 @@
 523_su_arguments_are_no_more_concatenated_by_default
 508_nologin_in_usr_sbin
 505_useradd_recommend_adduser
-#1010_vietnamese_translation
-0001-get_map_ranges-check-for-overflow.patch
-0002-Simplify-getulong.patch
-0003-also-check-upper-for-wrap.patch
+501_commonio_group_shadow
+1000_configure_userns
+1010_vietnamese_translation

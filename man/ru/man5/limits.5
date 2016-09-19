@@ -2,12 +2,12 @@
 .\"     Title: limits
 .\"    Author: Luca Berra
 .\" Generator: DocBook XSL Stylesheets v1.79.1 <http://docbook.sf.net/>
-.\"      Date: 03/16/2016
+.\"      Date: 09/18/2016
 .\"    Manual: Форматы файлов
-.\"    Source: shadow-utils 4.2
+.\"    Source: shadow-utils 4.4
 .\"  Language: Russian
 .\"
-.TH "limits" "5" "03/16/2016" "shadow\-utils 4\&.2" "Форматы файлов"
+.TH "limits" "5" "09/18/2016" "shadow\-utils 4\&.4" "Форматы файлов"
 .\" -----------------------------------------------------------------
 .\" * Define some portability stuff
 .\" -----------------------------------------------------------------
@@ -94,7 +94,7 @@ D: максимальный размер данных (КБ)
 .sp -1
 .IP \(bu 2.3
 .\}
-F: максимальный размер файла (КБ)
+F: maximum file size (KB)
 .RE
 .sp
 .RS 4
@@ -237,10 +237,11 @@ U: максимальное число процессов
 .RE
 .\}
 .PP
-Заметим, что после
+Be aware that after
 \fIusername\fR
-оставшаяся часть строки считается строкой ограничений, поэтому комментарии недопустимы\&. Неправильная строка ограничений будет отброшена (не учтена) программой
-\fBlogin\fR\&.
+the rest of the line is considered a limit string, thus comments are not allowed\&. An invalid limits string will be rejected (not considered) by the
+\fBlogin\fR
+program\&.
 .PP
 Запись по умолчанию выглядит как username "\fI*\fR"\&. Если у вас есть несколько записей
 \fIпо умолчанию\fR
@@ -250,11 +251,11 @@ U: максимальное число процессов
 Ограничения, задаваемые в виде \(Fo\fI@group\fR\(Fc, применяются к членам указанной группы
 \fIgroup\fR\&.
 .PP
-Если для пользователя есть более одной строки ограничений, то учитывается только первая строка\&.
+If more than one line with limits for a user exist, only the first line for this user will be considered\&.
 .PP
-Если для пользователя не указано ни одной строки, то учитывается последняя строка
+If no lines are specified for a user, the last
 \fI@group\fR
-с группой, в которую входит пользователь, или последняя строка с ограничениями по умолчанию, если не указано групп, в которые входит пользователь\&.
+line matching a group whose the user is a member of will be considered, or the last line with default limits if no groups contain the user\&.
 .PP
 Чтобы полностью снять ограничения с пользователя, используется одиночное тире \(Fo\fI\-\fR\(Fc\&.
 .PP

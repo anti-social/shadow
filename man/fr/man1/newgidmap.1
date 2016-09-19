@@ -2,12 +2,12 @@
 .\"     Title: newgidmap
 .\"    Author: [FIXME: author] [see http://docbook.sf.net/el/author]
 .\" Generator: DocBook XSL Stylesheets v1.79.1 <http://docbook.sf.net/>
-.\"      Date: 16/03/2016
+.\"      Date: 18/09/2016
 .\"    Manual: Commandes utilisateur
-.\"    Source: shadow-utils 4.2
+.\"    Source: shadow-utils 4.4
 .\"  Language: French
 .\"
-.TH "NEWGIDMAP" "1" "16/03/2016" "shadow\-utils 4\&.2" "Commandes utilisateur"
+.TH "NEWGIDMAP" "1" "18/09/2016" "shadow\-utils 4\&.4" "Commandes utilisateur"
 .\" -----------------------------------------------------------------
 .\" * Define some portability stuff
 .\" -----------------------------------------------------------------
@@ -38,7 +38,7 @@ The
 \fBnewgidmap\fR
 sets
 /proc/[pid]/gid_map
-based on it\*(Aqs command line arguments and the gids allowed in
+based on its command line arguments and the gids allowed in
 /etc/subgid\&. Note that the root user is not exempted from the requirement for a valid
 /etc/subgid
 entry\&.
@@ -49,12 +49,12 @@ expects sets of 3 integers:
 .PP
 gid
 .RS 4
-Begining of the range of GIDs inside the user namespace\&.
+Beginning of the range of GIDs inside the user namespace\&.
 .RE
 .PP
 lowergid
 .RS 4
-Begining of the range of GIDs outside the user namespace\&.
+Beginning of the range of GIDs outside the user namespace\&.
 .RE
 .PP
 count
@@ -80,7 +80,7 @@ command\&.
 .PP
 /etc/subgid
 .RS 4
-List of users subordinate group IDs\&.
+List of user\*(Aqs subordinate group IDs\&.
 .RE
 .PP
 /proc/[pid]/gid_map

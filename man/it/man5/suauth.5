@@ -2,12 +2,12 @@
 .\"     Title: suauth
 .\"    Author: Marek Micha\(/lkiewicz
 .\" Generator: DocBook XSL Stylesheets v1.79.1 <http://docbook.sf.net/>
-.\"      Date: 16/03/2016
+.\"      Date: 18/09/2016
 .\"    Manual: Formati di file e conversioni
-.\"    Source: shadow-utils 4.2
+.\"    Source: shadow-utils 4.4
 .\"  Language: Italian
 .\"
-.TH "SUAUTH" "5" "16/03/2016" "shadow\-utils 4\&.2" "Formati di file e conversioni"
+.TH "SUAUTH" "5" "18/09/2016" "shadow\-utils 4\&.4" "Formati di file e conversioni"
 .\" -----------------------------------------------------------------
 .\" * Define some portability stuff
 .\" -----------------------------------------------------------------
@@ -42,7 +42,7 @@ viene utilizzato all\*(Aqinvocazione del comando \(Fosu\(Fc\&. Pu\(`o cambiare i
 .RS 4
 .\}
 .nf
-    1) l\*(Aqutente che \(Fosu\(Fc sta usando come target
+      1) the user su is targeting
     
 .fi
 .if n \{\
@@ -70,13 +70,15 @@ Dove \(Foid\-finale\(Fc \(`e la parola
 \fIALL EXCEPT\fR
 seguite da una lista di nomi utente separati da \(Fo,\(Fc\&.
 .PP
-\(Foid\-iniziale\(Fc \(`e formattato come \(Foid\-iniziale\(Fc salvo il riconoscimento della parola aggiuntiva
-\fIGROUP\fR\&. Anche
-\fIALL EXCEPT GROUP\fR
-\(`e perfettamente gestito\&. Subito dopo
+from\-id is formatted the same as to\-id except the extra word
 \fIGROUP\fR
-appaiono uno o pi\(`u nomi di gruppo separati da \(Fo,\(Fc\&. Non \(`e sufficiente avere come gruppo primario il gruppo specificato, ma deve anche esserci la relativa riga in
-\fB/etc/group\fR(5)\&.
+is recognized\&.
+\fIALL EXCEPT GROUP\fR
+is perfectly valid too\&. Following
+\fIGROUP\fR
+appears one or more group names, delimited by ","\&. It is not sufficient to have primary group id of the relevant group, an entry in
+\fB/etc/group\fR(5)
+is necessary\&.
 .PP
 AZIONE pu\(`o essere una delle seguenti opzioni attualmente supportate\&.
 .PP

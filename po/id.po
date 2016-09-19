@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: shadow 4.0.15\n"
 "Report-Msgid-Bugs-To: pkg-shadow-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2016-03-16 17:19-0700\n"
+"POT-Creation-Date: 2016-09-18 21:41-0500\n"
 "PO-Revision-Date: 2007-11-25 20:58+0100\n"
 "Last-Translator: Parlin Imanuel Toh <parlin_i@yahoo.com>\n"
 "Language-Team: Debian Indonesia <debid@yahoogroups.com>\n"
@@ -1374,6 +1374,14 @@ msgstr ""
 "\n"
 "[Pemutusan hubungan diabaikan -- login root diperbolehkan.]"
 
+#, c-format
+msgid "%s: Cannot possibly work without effective root\n"
+msgstr ""
+
+msgid "No utmp entry.  You must exec \"login\" from the lowest level \"sh\""
+msgstr ""
+"Tanpa entri utmp. Anda mesti menjalankan \"login\" dari level terendah \"sh\""
+
 #, fuzzy, c-format
 #| msgid ""
 #| "\n"
@@ -1384,14 +1392,6 @@ msgid ""
 msgstr ""
 "\n"
 "Login time out setelah %d detik.\n"
-
-#, c-format
-msgid "%s: Cannot possibly work without effective root\n"
-msgstr ""
-
-msgid "No utmp entry.  You must exec \"login\" from the lowest level \"sh\""
-msgstr ""
-"Tanpa entri utmp. Anda mesti menjalankan \"login\" dari level terendah \"sh\""
 
 #, c-format
 msgid "login: PAM Failure, aborting: %s\n"
@@ -1810,12 +1810,6 @@ msgstr "Otentikasi kata sandi diabaikan.\n"
 msgid "Please enter your OWN password as authentication.\n"
 msgstr "Silakan masukkan kata sandi anda SENDIRI sebagai otentikasi.\n"
 
-msgid " ...killed.\n"
-msgstr ""
-
-msgid " ...waiting for child to terminate.\n"
-msgstr ""
-
 #, fuzzy, c-format
 #| msgid "%s: cannot lock file %s\n"
 msgid "%s: Cannot fork user shell\n"
@@ -1830,6 +1824,14 @@ msgid "%s: signal masking malfunction\n"
 msgstr ""
 
 msgid "Session terminated, terminating shell..."
+msgstr ""
+
+#, c-format
+msgid " ...killed.\n"
+msgstr ""
+
+#, c-format
+msgid " ...waiting for child to terminate.\n"
 msgstr ""
 
 msgid " ...terminated.\n"

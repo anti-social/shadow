@@ -2,12 +2,12 @@
 .\"     Title: usermod
 .\"    Author: Julianne Frances Haugh
 .\" Generator: DocBook XSL Stylesheets v1.79.1 <http://docbook.sf.net/>
-.\"      Date: 2016-03-16
+.\"      Date: 2016-09-18
 .\"    Manual: 系统管理命令
-.\"    Source: shadow-utils 4.2
+.\"    Source: shadow-utils 4.4
 .\"  Language: Chinese Simplified
 .\"
-.TH "USERMOD" "8" "2016-03-16" "shadow\-utils 4\&.2" "系统管理命令"
+.TH "USERMOD" "8" "2016-09-18" "shadow\-utils 4\&.4" "系统管理命令"
 .\" -----------------------------------------------------------------
 .\" * Define some portability stuff
 .\" -----------------------------------------------------------------
@@ -294,8 +294,9 @@ from /etc/login\&.defs\&.
 .RE
 .SH "CAVEATS"
 .PP
-如果要更改用户的数字 ID、用户名或主目录，需要确保允许命令时，用户没有执行任何进程。\fBusermod\fR
-会在 Linux 上进行检查；但是在其它平台上，仅仅根据 utmp 检查用户是否已经登录。
+You must make certain that the named user is not executing any processes when this command is being executed if the user\*(Aqs numerical user ID, the user\*(Aqs name, or the user\*(Aqs home directory is being changed\&.
+\fBusermod\fR
+checks this on Linux\&. On other platforms it only uses utmp to check if the user is logged in\&.
 .PP
 您必须手动更改
 \fBcrontab\fR

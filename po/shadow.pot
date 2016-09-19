@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: pkg-shadow-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2016-03-16 17:19-0700\n"
+"POT-Creation-Date: 2016-09-18 21:41-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1299,16 +1299,16 @@ msgid ""
 msgstr ""
 
 #, c-format
-msgid ""
-"\n"
-"Login timed out after %u seconds.\n"
-msgstr ""
-
-#, c-format
 msgid "%s: Cannot possibly work without effective root\n"
 msgstr ""
 
 msgid "No utmp entry.  You must exec \"login\" from the lowest level \"sh\""
+msgstr ""
+
+#, c-format
+msgid ""
+"\n"
+"Login timed out after %u seconds.\n"
 msgstr ""
 
 #, c-format
@@ -1693,12 +1693,6 @@ msgstr ""
 msgid "Please enter your OWN password as authentication.\n"
 msgstr ""
 
-msgid " ...killed.\n"
-msgstr ""
-
-msgid " ...waiting for child to terminate.\n"
-msgstr ""
-
 #, c-format
 msgid "%s: Cannot fork user shell\n"
 msgstr ""
@@ -1712,6 +1706,14 @@ msgid "%s: signal masking malfunction\n"
 msgstr ""
 
 msgid "Session terminated, terminating shell..."
+msgstr ""
+
+#, c-format
+msgid " ...killed.\n"
+msgstr ""
+
+#, c-format
+msgid " ...waiting for child to terminate.\n"
 msgstr ""
 
 msgid " ...terminated.\n"

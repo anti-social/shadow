@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: shadow\n"
 "Report-Msgid-Bugs-To: pkg-shadow-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2016-03-16 17:19-0700\n"
+"POT-Creation-Date: 2016-09-18 21:41-0500\n"
 "PO-Revision-Date: 2012-01-08 18:13+0100\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
@@ -1466,14 +1466,6 @@ msgstr ""
 "[Chức năng ngắt kết nối đã bị vòng: cho phép người chủ đăng nhập.]"
 
 #, c-format
-msgid ""
-"\n"
-"Login timed out after %u seconds.\n"
-msgstr ""
-"\n"
-"Đăng nhập đã quá hạn sau %u giây.\n"
-
-#, c-format
 msgid "%s: Cannot possibly work without effective root\n"
 msgstr "%s: Không thể làm việc mà không có gốc có hiệu lực\n"
 
@@ -1481,6 +1473,14 @@ msgid "No utmp entry.  You must exec \"login\" from the lowest level \"sh\""
 msgstr ""
 "Không có mục nhập utmp. Vì thế bạn cần phải thực hiện « login » (đăng nhập) "
 "từ « sh » (trình bao) cấp dưới cùng."
+
+#, c-format
+msgid ""
+"\n"
+"Login timed out after %u seconds.\n"
+msgstr ""
+"\n"
+"Đăng nhập đã quá hạn sau %u giây.\n"
 
 #, c-format
 msgid "login: PAM Failure, aborting: %s\n"
@@ -1929,12 +1929,6 @@ msgstr "Xác thực mật khẩu bị đi vòng.\n"
 msgid "Please enter your OWN password as authentication.\n"
 msgstr "Hãy nhập mật khẩu của MÌNH để xác thực.\n"
 
-msgid " ...killed.\n"
-msgstr ""
-
-msgid " ...waiting for child to terminate.\n"
-msgstr ""
-
 #, fuzzy, c-format
 #| msgid "%s: Cannot determine your user name.\n"
 msgid "%s: Cannot fork user shell\n"
@@ -1949,6 +1943,14 @@ msgid "%s: signal masking malfunction\n"
 msgstr ""
 
 msgid "Session terminated, terminating shell..."
+msgstr ""
+
+#, c-format
+msgid " ...killed.\n"
+msgstr ""
+
+#, c-format
+msgid " ...waiting for child to terminate.\n"
 msgstr ""
 
 msgid " ...terminated.\n"

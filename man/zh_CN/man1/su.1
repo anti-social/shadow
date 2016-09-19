@@ -2,12 +2,12 @@
 .\"     Title: su
 .\"    Author: Julianne Frances Haugh
 .\" Generator: DocBook XSL Stylesheets v1.79.1 <http://docbook.sf.net/>
-.\"      Date: 2016-03-16
+.\"      Date: 2016-09-18
 .\"    Manual: 用户命令
-.\"    Source: shadow-utils 4.2
+.\"    Source: shadow-utils 4.4
 .\"  Language: Chinese Simplified
 .\"
-.TH "SU" "1" "2016-03-16" "shadow\-utils 4\&.2" "用户命令"
+.TH "SU" "1" "2016-09-18" "shadow\-utils 4\&.4" "用户命令"
 .\" -----------------------------------------------------------------
 .\" * Define some portability stuff
 .\" -----------------------------------------------------------------
@@ -78,7 +78,7 @@ su \- 更改用户 ID 或成为超级用户
 \fB\-c\fR
 选项，指定一个由 shell 运行的命令。
 .sp
-执行的命令将不会拥有控制终端。此选项不能用于执行需要控制 TTY 的交互程序。
+The executed command will have no controlling terminal\&. This option cannot be used to execute interactive programs which need a controlling TTY\&.
 .RE
 .PP
 \fB\-\fR, \fB\-l\fR, \fB\-\-login\fR

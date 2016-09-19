@@ -2,12 +2,12 @@
 .\"     Title: chpasswd
 .\"    Author: Julianne Frances Haugh
 .\" Generator: DocBook XSL Stylesheets v1.79.1 <http://docbook.sf.net/>
-.\"      Date: 03/16/2016
+.\"      Date: 09/18/2016
 .\"    Manual: Команды управления системой
-.\"    Source: shadow-utils 4.2
+.\"    Source: shadow-utils 4.4
 .\"  Language: Russian
 .\"
-.TH "chpasswd" "8" "03/16/2016" "shadow\-utils 4\&.2" "Команды управления системой"
+.TH "chpasswd" "8" "09/18/2016" "shadow\-utils 4\&.4" "Команды управления системой"
 .\" -----------------------------------------------------------------
 .\" * Define some portability stuff
 .\" -----------------------------------------------------------------
@@ -43,20 +43,19 @@ chpasswd \- обновляет пароли в пакетном режиме
 По умолчанию, передаваемый пароль должен быть в виде обычного текста и шифруется командой
 \fBchpasswd\fR\&. Также, если есть срок действия пароля, то он будет обновлён\&.
 .PP
-Системный алгоритм шифрования по умолчанию может быть задан в переменной
+The default encryption algorithm can be defined for the system with the
 \fBENCRYPT_METHOD\fR
-или
+or
 \fBMD5_CRYPT_ENAB\fR
-в файле
-/etc/login\&.defs, и может быть переопределён параметрами
+variables of
+/etc/login\&.defs, and can be overwritten with the
 \fB\-e\fR,
-\fB\-m\fR
-или
-\fB\-c\fR\&.
+\fB\-m\fR, or
+\fB\-c\fR
+options\&.
 .PP
-Команда
 \fBchpasswd\fR
-сначала обновляет все пароли в памяти, а затем записывает все изменения на диск, если не было никаких ошибок\&.
+first updates all the passwords in memory, and then commits all the changes to disk if no errors occurred for any user\&.
 .PP
 Данная команда предназначена для работы в крупных системных средах, где за один раз заводится несколько учётных записей\&.
 .SH "ПАРАМЕТРЫ"

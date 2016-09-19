@@ -2,12 +2,12 @@
 .\"     Title: suauth
 .\"    Author: Marek Micha\(/lkiewicz
 .\" Generator: DocBook XSL Stylesheets v1.79.1 <http://docbook.sf.net/>
-.\"      Date: 16/03/2016
+.\"      Date: 18/09/2016
 .\"    Manual: Formats et conversions de fichiers
-.\"    Source: shadow-utils 4.2
+.\"    Source: shadow-utils 4.4
 .\"  Language: French
 .\"
-.TH "SUAUTH" "5" "16/03/2016" "shadow\-utils 4\&.2" "Formats et conversions de fich"
+.TH "SUAUTH" "5" "18/09/2016" "shadow\-utils 4\&.4" "Formats et conversions de fich"
 .\" -----------------------------------------------------------------
 .\" * Define some portability stuff
 .\" -----------------------------------------------------------------
@@ -42,7 +42,7 @@ est lu chaque fois que su est ex\('ecut\('e\&. Il permet de modifier le comporte
 .RS 4
 .\}
 .nf
-      1) l\*(Aqutilisateur cible de su
+      1) the user su is targeting
     
 .fi
 .if n \{\
@@ -69,14 +69,15 @@ O\(`u vers\-id peut \(^etre le mot
 \fIALL EXCEPT\fR
 suivi d\*(Aqune liste d\*(Aqutilisateurs s\('epar\('es par une virgule\&.
 .PP
-par\-id utilise le m\(^eme format que vers\-id, mais accepte \('egalement le mot\-cl\('e
-\fIGROUP\fR\&.
-\fIALL EXCEPT GROUP\fR
-est \('egalement accept\('e\&.
+from\-id is formatted the same as to\-id except the extra word
 \fIGROUP\fR
-est suivi d\*(Aqun ou plusieurs noms de groupes, s\('epar\('es par une virgule\&. Il n\*(Aqest pas suffisant d\*(Aqavoir comme groupe primaire le groupe appropri\('e\ \&: une entr\('ee dans
+is recognized\&.
+\fIALL EXCEPT GROUP\fR
+is perfectly valid too\&. Following
+\fIGROUP\fR
+appears one or more group names, delimited by ","\&. It is not sufficient to have primary group id of the relevant group, an entry in
 \fB/etc/group\fR(5)
-est n\('ecessaire\&.
+is necessary\&.
 .PP
 Les valeurs d\*(AqACTION valables sont\ \&:
 .PP

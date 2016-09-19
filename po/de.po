@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: shadow 4.1.4.2\n"
 "Report-Msgid-Bugs-To: pkg-shadow-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2016-03-16 17:19-0700\n"
+"POT-Creation-Date: 2016-09-18 21:41-0500\n"
 "PO-Revision-Date: 2012-01-18 21:44+0100\n"
 "Last-Translator: Holger Wansing <linux@wansing-online.de>\n"
 "Language-Team: German <debian-l10n-german@lists.debian.org>\n"
@@ -1460,6 +1460,14 @@ msgstr ""
 "[Trennung abgebrochen -- root-Login erlaubt.]"
 
 #, c-format
+msgid "%s: Cannot possibly work without effective root\n"
+msgstr "%s: Arbeit ohne effektive root-Rechte eventuell nicht möglich\n"
+
+msgid "No utmp entry.  You must exec \"login\" from the lowest level \"sh\""
+msgstr ""
+"Kein utmp-Eintrag. Sie müssen »login« vom niedrigsten »sh«-Level ausführen."
+
+#, c-format
 msgid ""
 "\n"
 "Login timed out after %u seconds.\n"
@@ -1467,14 +1475,6 @@ msgstr ""
 "\n"
 "Login nach %u Sekunden wegen\n"
 "Zeitüberschreitung abgebrochen.\n"
-
-#, c-format
-msgid "%s: Cannot possibly work without effective root\n"
-msgstr "%s: Arbeit ohne effektive root-Rechte eventuell nicht möglich\n"
-
-msgid "No utmp entry.  You must exec \"login\" from the lowest level \"sh\""
-msgstr ""
-"Kein utmp-Eintrag. Sie müssen »login« vom niedrigsten »sh«-Level ausführen."
 
 #, c-format
 msgid "login: PAM Failure, aborting: %s\n"
@@ -1906,12 +1906,6 @@ msgstr "Passwort-Authentifizierung umgangen.\n"
 msgid "Please enter your OWN password as authentication.\n"
 msgstr "Bitte geben Sie Ihr EIGENES Passwort als Authentifizierung ein.\n"
 
-msgid " ...killed.\n"
-msgstr " ... abgeschossen.\n"
-
-msgid " ...waiting for child to terminate.\n"
-msgstr " ... Warten auf Beendigung des Kindprozesses.\n"
-
 #, c-format
 msgid "%s: Cannot fork user shell\n"
 msgstr "%s: Prozessaufspaltung (fork) für Benutzer-Shell nicht möglich\n"
@@ -1926,6 +1920,14 @@ msgstr "%s: Signalmaskierungs-Fehlfunktion\n"
 
 msgid "Session terminated, terminating shell..."
 msgstr "Sitzung abgebrochen, Shell wird beendet ..."
+
+#, c-format
+msgid " ...killed.\n"
+msgstr " ... abgeschossen.\n"
+
+#, c-format
+msgid " ...waiting for child to terminate.\n"
+msgstr " ... Warten auf Beendigung des Kindprozesses.\n"
 
 msgid " ...terminated.\n"
 msgstr " ... abgebrochen.\n"

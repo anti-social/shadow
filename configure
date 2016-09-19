@@ -3192,7 +3192,7 @@ fi
 # Define the identity of the package.
 
  PACKAGE=shadow
- VERSION=4.3
+ VERSION=4.4
 
 
 cat >>confdefs.h <<_ACEOF

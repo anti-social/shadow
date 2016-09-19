@@ -2,12 +2,12 @@
 .\"     Title: gshadow
 .\"    Author: Nicolas Fran\(,cois <nicolas.francois@centraliens.net>
 .\" Generator: DocBook XSL Stylesheets v1.79.1 <http://docbook.sf.net/>
-.\"      Date: 16/03/2016
+.\"      Date: 18/09/2016
 .\"    Manual: File Formats and Conversions
-.\"    Source: shadow-utils 4.2
+.\"    Source: shadow-utils 4.4
 .\"  Language: Danish
 .\"
-.TH "GSHADOW" "5" "16/03/2016" "shadow\-utils 4\&.2" "File Formats and Conversions"
+.TH "GSHADOW" "5" "18/09/2016" "shadow\-utils 4\&.4" "File Formats and Conversions"
 .\" -----------------------------------------------------------------
 .\" * Define some portability stuff
 .\" -----------------------------------------------------------------
@@ -52,12 +52,12 @@ for details on how this string is interpreted\&.
 If the password field contains some string that is not a valid result of
 \fBcrypt\fR(3), for instance ! or *, users will not be able to use a unix password to access the group (but group members do not need the password)\&.
 .sp
-The password is used when an user who is not a member of the group wants to gain the permissions of this group (see
+The password is used when a user who is not a member of the group wants to gain the permissions of this group (see
 \fBnewgrp\fR(1))\&.
 .sp
 This field may be empty, in which case only the group members can gain the group permissions\&.
 .sp
-A password field which starts with a exclamation mark means that the password is locked\&. The remaining characters on the line represent the password field before the password was locked\&.
+A password field which starts with an exclamation mark means that the password is locked\&. The remaining characters on the line represent the password field before the password was locked\&.
 .sp
 This password supersedes any password specified in
 /etc/group\&.

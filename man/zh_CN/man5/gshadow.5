@@ -2,12 +2,12 @@
 .\"     Title: gshadow
 .\"    Author: Nicolas Fran\(,cois <nicolas.francois@centraliens.net>
 .\" Generator: DocBook XSL Stylesheets v1.79.1 <http://docbook.sf.net/>
-.\"      Date: 2016-03-16
+.\"      Date: 2016-09-18
 .\"    Manual: 文件格式和转化
-.\"    Source: shadow-utils 4.2
+.\"    Source: shadow-utils 4.4
 .\"  Language: Chinese Simplified
 .\"
-.TH "GSHADOW" "5" "2016-03-16" "shadow\-utils 4\&.2" "文件格式和转化"
+.TH "GSHADOW" "5" "2016-09-18" "shadow\-utils 4\&.4" "文件格式和转化"
 .\" -----------------------------------------------------------------
 .\" * Define some portability stuff
 .\" -----------------------------------------------------------------
@@ -52,13 +52,12 @@ gshadow \- 影子化了的组文件
 If the password field contains some string that is not a valid result of
 \fBcrypt\fR(3), for instance ! or *, users will not be able to use a unix password to access the group (but group members do not need the password)\&.
 .sp
-此密码用于不是此组成员的用户获取此组的权限。(参考
-\fBnewgrp\fR(1)
-)。
+The password is used when a user who is not a member of the group wants to gain the permissions of this group (see
+\fBnewgrp\fR(1))\&.
 .sp
 此字段可以为空，此时，只有组成员可以获取组权限。
 .sp
-以叹号开始的密码字段意味着密码被锁定。该行的剩余字符表示锁定之前的密码。
+A password field which starts with an exclamation mark means that the password is locked\&. The remaining characters on the line represent the password field before the password was locked\&.
 .sp
 此密码取代
 /etc/group

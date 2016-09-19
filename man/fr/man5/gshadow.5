@@ -2,12 +2,12 @@
 .\"     Title: gshadow
 .\"    Author: Nicolas Fran\(,cois <nicolas.francois@centraliens.net>
 .\" Generator: DocBook XSL Stylesheets v1.79.1 <http://docbook.sf.net/>
-.\"      Date: 16/03/2016
+.\"      Date: 18/09/2016
 .\"    Manual: Formats et conversions de fichiers
-.\"    Source: shadow-utils 4.2
+.\"    Source: shadow-utils 4.4
 .\"  Language: French
 .\"
-.TH "GSHADOW" "5" "16/03/2016" "shadow\-utils 4\&.2" "Formats et conversions de fich"
+.TH "GSHADOW" "5" "18/09/2016" "shadow\-utils 4\&.4" "Formats et conversions de fich"
 .\" -----------------------------------------------------------------
 .\" * Define some portability stuff
 .\" -----------------------------------------------------------------
@@ -52,12 +52,12 @@ pour plus d\*(Aqinformations sur le traitement de cette cha\(^ine\&.
 Si le champ du mot de passe contient une cha\(^ine qui ne peut pas \(^etre un r\('esultat valable de
 \fBcrypt\fR(3), par exemple si elle contient les caract\(`eres \(Fo\ \&!\ \&\(Fc ou \(Fo\ \&*\ \&\(Fc, les utilisateurs ne pourront pas utiliser le mot de passe UNIX pour acc\('eder au groupe (mais les membres du groupe n\*(Aqont pas besoin de mot de passe)\&.
 .sp
-Le mot de passe est utilis\('e quand un utilisateur non membre du groupe veut obtenir les permissions de ce groupe (consultez
+The password is used when a user who is not a member of the group wants to gain the permissions of this group (see
 \fBnewgrp\fR(1))\&.
 .sp
 Ce champ peut \(^etre vide\&. Dans ce cas seuls les membres du groupe peuvent obtenir les permissions du groupe\&.
 .sp
-Un champ de mot de passe qui commence avec un point d\*(Aqexclamation indique que le mot de passe est bloqu\('e\&. Les caract\(`eres restants sur la ligne repr\('esentent le champ de mot de passe avant que le mot de passe n\*(Aqait \('et\('e bloqu\('e\&.
+A password field which starts with an exclamation mark means that the password is locked\&. The remaining characters on the line represent the password field before the password was locked\&.
 .sp
 Ce mot de passe remplace tout mot de passe indiqu\('e dans
 /etc/group\&.

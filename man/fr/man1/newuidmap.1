@@ -2,12 +2,12 @@
 .\"     Title: newuidmap
 .\"    Author: [FIXME: author] [see http://docbook.sf.net/el/author]
 .\" Generator: DocBook XSL Stylesheets v1.79.1 <http://docbook.sf.net/>
-.\"      Date: 16/03/2016
+.\"      Date: 18/09/2016
 .\"    Manual: Commandes utilisateur
-.\"    Source: shadow-utils 4.2
+.\"    Source: shadow-utils 4.4
 .\"  Language: French
 .\"
-.TH "NEWUIDMAP" "1" "16/03/2016" "shadow\-utils 4\&.2" "Commandes utilisateur"
+.TH "NEWUIDMAP" "1" "18/09/2016" "shadow\-utils 4\&.4" "Commandes utilisateur"
 .\" -----------------------------------------------------------------
 .\" * Define some portability stuff
 .\" -----------------------------------------------------------------
@@ -38,7 +38,7 @@ The
 \fBnewuidmap\fR
 sets
 /proc/[pid]/uid_map
-based on it\*(Aqs command line arguments and the uids allowed in
+based on its command line arguments and the uids allowed in
 /etc/subuid\&. Note that the root user is not exempted from the requirement for a valid
 /etc/subuid
 entry\&.
@@ -49,12 +49,12 @@ expects sets of 3 integers:
 .PP
 uid
 .RS 4
-Begining of the range of UIDs inside the user namespace\&.
+Beginning of the range of UIDs inside the user namespace\&.
 .RE
 .PP
 loweruid
 .RS 4
-Begining of the range of UIDs outside the user namespace\&.
+Beginning of the range of UIDs outside the user namespace\&.
 .RE
 .PP
 count
@@ -80,7 +80,7 @@ command\&.
 .PP
 /etc/subuid
 .RS 4
-List of users subordinate user IDs\&.
+List of user\*(Aqs subordinate user IDs\&.
 .RE
 .PP
 /proc/[pid]/uid_map

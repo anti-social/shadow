@@ -2,12 +2,12 @@
 .\"     Title: chpasswd
 .\"    Author: Julianne Frances Haugh
 .\" Generator: DocBook XSL Stylesheets v1.79.1 <http://docbook.sf.net/>
-.\"      Date: 16/03/2016
+.\"      Date: 18/09/2016
 .\"    Manual: Commandes de gestion du syst\(`eme
-.\"    Source: shadow-utils 4.2
+.\"    Source: shadow-utils 4.4
 .\"  Language: French
 .\"
-.TH "CHPASSWD" "8" "16/03/2016" "shadow\-utils 4\&.2" "Commandes de gestion du syst\(`em"
+.TH "CHPASSWD" "8" "18/09/2016" "shadow\-utils 4\&.4" "Commandes de gestion du syst\(`em"
 .\" -----------------------------------------------------------------
 .\" * Define some portability stuff
 .\" -----------------------------------------------------------------
@@ -43,19 +43,19 @@ lit une liste de paires de noms d\*(Aqutilisateurs et de mots de passe depuis l\
 Par d\('efaut, les mots de passe doivent \(^etre fournis en clair, et sont chiffr\('es par
 \fBchpasswd\fR\&. L\*(Aq\(^age du mot de passe sera \('egalement mis \(`a jour, s\*(Aqil est pr\('esent\&.
 .PP
-L\*(Aqalgorithme de chiffrement par d\('efaut peut \(^etre d\('efini pour le syst\(`eme \(`a l\*(Aqaide des variables
+The default encryption algorithm can be defined for the system with the
 \fBENCRYPT_METHOD\fR
-ou
+or
 \fBMD5_CRYPT_ENAB\fR
-de
-/etc/login\&.defs, et peut \(^etre surcharg\('e par les options
+variables of
+/etc/login\&.defs, and can be overwritten with the
 \fB\-e\fR,
-\fB\-m\fR
-ou
+\fB\-m\fR, or
 \fB\-c\fR
+options\&.
 .PP
 \fBchpasswd\fR
-modifie d\*(Aqabord tous les mots de passe en m\('emoire, puis propage toutes les modifications sur le disque si aucune erreur n\*(Aqa eu lieu, quelque soit l\*(Aqutilisateur\&.
+first updates all the passwords in memory, and then commits all the changes to disk if no errors occurred for any user\&.
 .PP
 Cette commande est destin\('ee aux gros syst\(`emes pour lesquels un nombre importants de comptes sont cr\('e\('es en une seule fois\&.
 .SH "OPTIONS"

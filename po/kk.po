@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: shadowutils\n"
 "Report-Msgid-Bugs-To: pkg-shadow-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2016-03-16 17:19-0700\n"
+"POT-Creation-Date: 2016-09-18 21:41-0500\n"
 "PO-Revision-Date: 2012-01-20 21:16+0600\n"
 "Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
 "Language-Team: Kazakh <kk_KZ@googlegroups.com>\n"
@@ -1425,14 +1425,6 @@ msgstr ""
 "етілген.]"
 
 #, c-format
-msgid ""
-"\n"
-"Login timed out after %u seconds.\n"
-msgstr ""
-"\n"
-"Жүйеге кіру уақыты %u секундтан кейін аяқталды.\n"
-
-#, c-format
 msgid "%s: Cannot possibly work without effective root\n"
 msgstr "%s: Эффективті root-сыз жұмыс істемеуі мүмкін\n"
 
@@ -1440,6 +1432,14 @@ msgid "No utmp entry.  You must exec \"login\" from the lowest level \"sh\""
 msgstr ""
 "Utmp жазбасы жоқ. Сізге exec \"login\" командасын бірінші деңгейден \"sh\" "
 "қосу керек"
+
+#, c-format
+msgid ""
+"\n"
+"Login timed out after %u seconds.\n"
+msgstr ""
+"\n"
+"Жүйеге кіру уақыты %u секундтан кейін аяқталды.\n"
 
 #, c-format
 msgid "login: PAM Failure, aborting: %s\n"
@@ -1871,12 +1871,6 @@ msgstr "Парольдік аутентификацияны аттап өтем�
 msgid "Please enter your OWN password as authentication.\n"
 msgstr "Шындылықты тексеру үшін ӨЗІҢІЗДІҢ пароліңізді енгізіңіз.\n"
 
-msgid " ...killed.\n"
-msgstr " ...өлтірілді.\n"
-
-msgid " ...waiting for child to terminate.\n"
-msgstr " ...ұрпақ үрдістің тоқтатылуын күту.\n"
-
 #, c-format
 msgid "%s: Cannot fork user shell\n"
 msgstr "%s: Пайдаланушы қоршамын іске қосу мүмкін емес\n"
@@ -1891,6 +1885,14 @@ msgstr "%s: сигналды басқару ақаулығы\n"
 
 msgid "Session terminated, terminating shell..."
 msgstr "Сессия тоқтатылды, қоршамды тоқтату..."
+
+#, c-format
+msgid " ...killed.\n"
+msgstr " ...өлтірілді.\n"
+
+#, c-format
+msgid " ...waiting for child to terminate.\n"
+msgstr " ...ұрпақ үрдістің тоқтатылуын күту.\n"
 
 msgid " ...terminated.\n"
 msgstr " ...тоқтатылды.\n"

@@ -2,12 +2,12 @@
 .\"     Title: useradd
 .\"    Author: Julianne Frances Haugh
 .\" Generator: DocBook XSL Stylesheets v1.79.1 <http://docbook.sf.net/>
-.\"      Date: 03/16/2016
+.\"      Date: 09/18/2016
 .\"    Manual: System Management Commands
-.\"    Source: shadow-utils 4.3
+.\"    Source: shadow-utils 4.4
 .\"  Language: English
 .\"
-.TH "USERADD" "8" "03/16/2016" "shadow\-utils 4\&.3" "System Management Commands"
+.TH "USERADD" "8" "09/18/2016" "shadow\-utils 4\&.4" "System Management Commands"
 .\" -----------------------------------------------------------------
 .\" * Define some portability stuff
 .\" -----------------------------------------------------------------
@@ -194,7 +194,7 @@ and others)\&.
 
 Example:
 \fB\-K\fR\ \&\fIPASS_MAX_DAYS\fR=\fI\-1\fR
-can be used when creating system account to turn off password ageing, even though system account has no password at all\&. Multiple
+can be used when creating system account to turn off password aging, even though system account has no password at all\&. Multiple
 \fB\-K\fR
 options can be specified, e\&.g\&.:
 \fB\-K\fR\ \&\fIUID_MIN\fR=\fI100\fR\ \&
@@ -205,7 +205,7 @@ options can be specified, e\&.g\&.:
 .RS 4
 Do not add the user to the lastlog and faillog databases\&.
 .sp
-By default, the user\*(Aqs entries in the lastlog and faillog databases are resetted to avoid reusing the entry from a previously deleted user\&.
+By default, the user\*(Aqs entries in the lastlog and faillog databases are reset to avoid reusing the entry from a previously deleted user\&.
 .RE
 .PP
 \fB\-m\fR, \fB\-\-create\-home\fR
@@ -219,7 +219,7 @@ By default, if this option is not specified and
 is not enabled, no home directories are created\&.
 .RE
 .PP
-\fB\-M\fR
+\fB\-M\fR, \fB\-\-no\-create\-home\fR
 .RS 4
 Do no create the user\*(Aqs home directory, even if the system wide setting from
 /etc/login\&.defs
@@ -282,7 +282,7 @@ counterparts for the creation of groups)\&.
 .sp
 Note that
 \fBuseradd\fR
-will not create a home directory for such an user, regardless of the default setting in
+will not create a home directory for such a user, regardless of the default setting in
 /etc/login\&.defs
 (\fBCREATE_HOME\fR)\&. You have to specify the
 \fB\-m\fR

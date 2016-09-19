@@ -350,9 +350,9 @@ $(srcdir)/Makefile.in: @MAINTAINER_MODE_TRUE@ $(srcdir)/Makefile.am $(srcdir)/..
 	      exit 1;; \
 	  esac; \
 	done; \
-	echo ' cd $(top_srcdir) && $(AUTOMAKE) --foreign man/zh_CN/Makefile'; \
+	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu man/zh_CN/Makefile'; \
 	$(am__cd) $(top_srcdir) && \
-	  $(AUTOMAKE) --foreign man/zh_CN/Makefile
+	  $(AUTOMAKE) --gnu man/zh_CN/Makefile
 Makefile: $(srcdir)/Makefile.in $(top_builddir)/config.status
 	@case '$?' in \
 	  *config.status*) \

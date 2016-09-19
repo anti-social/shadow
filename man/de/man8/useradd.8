@@ -2,12 +2,12 @@
 .\"     Title: useradd
 .\"    Author: Julianne Frances Haugh
 .\" Generator: DocBook XSL Stylesheets v1.79.1 <http://docbook.sf.net/>
-.\"      Date: 16.03.2016
+.\"      Date: 18.09.2016
 .\"    Manual: Befehle zur Systemverwaltung
-.\"    Source: shadow-utils 4.2
+.\"    Source: shadow-utils 4.4
 .\"  Language: German
 .\"
-.TH "USERADD" "8" "16.03.2016" "shadow\-utils 4\&.2" "Befehle zur Systemverwaltung"
+.TH "USERADD" "8" "18.09.2016" "shadow\-utils 4\&.4" "Befehle zur Systemverwaltung"
 .\" -----------------------------------------------------------------
 .\" * Define some portability stuff
 .\" -----------------------------------------------------------------
@@ -190,27 +190,28 @@ Soweit m\(:oglich, werden die ACLs und erweiterten Attribute kopiert\&.
 .PP
 \fB\-K\fR, \fB\-\-key\fR\ \&\fISCHL\(:USSEL\fR=\fIWERT\fR
 .RS 4
-\(:Uberschreibt die Standardwerte aus
+Overrides
 /etc/login\&.defs
-(\fBUID_MIN\fR,
+defaults (\fBUID_MIN\fR,
 \fBUID_MAX\fR,
 \fBUMASK\fR,
 \fBPASS_MAX_DAYS\fR
-und andere)\&.
+and others)\&.
 
-Beispiel:
-\fB\-K\fR\ \&\fIPASS_MAX_TAGE\fR=\fI\-1\fR
-kann eingesetzt werden, wenn ein Systemkonto erstellt wird, um den Verfall des Passworts abzuschalten, selbst wenn das Systemkonto \(:uberhaupt kein Passwort besitzt\&. Die Option
+Example:
+\fB\-K\fR\ \&\fIPASS_MAX_DAYS\fR=\fI\-1\fR
+can be used when creating system account to turn off password aging, even though system account has no password at all\&. Multiple
 \fB\-K\fR
-kann mehrmals verwendet werden, z\&.B\&.:
-\fB\-K\fR\ \&\fIUID_MIN\fR=\fI100\fR\ \&\fB\-K\fR\ \&\fIUID_MAX\fR=\fI499\fR
+options can be specified, e\&.g\&.:
+\fB\-K\fR\ \&\fIUID_MIN\fR=\fI100\fR\ \&
+\fB\-K\fR\ \&\fIUID_MAX\fR=\fI499\fR
 .RE
 .PP
 \fB\-l\fR, \fB\-\-no\-log\-init\fR
 .RS 4
 F\(:ugt den Benutzer nicht zu den Datenbanken lastlog und faillog hinzu\&.
 .sp
-Standardm\(:a\(ssig werden die Benutzereintr\(:age in den Datenbanken lastlog und faillog zur\(:uckgesetzt, um zu vermeiden, dass der Eintrag eines fr\(:uher gel\(:oschten Benutzers verwendet wird\&.
+By default, the user\*(Aqs entries in the lastlog and faillog databases are reset to avoid reusing the entry from a previously deleted user\&.
 .RE
 .PP
 \fB\-m\fR, \fB\-\-create\-home\fR
@@ -224,7 +225,7 @@ Wenn diese Option nicht angegeben wird und
 nicht aktiviert wurde, wird standardm\(:a\(ssig kein Home\-Verzeichnis erstellt\&.
 .RE
 .PP
-\fB\-M\fR
+\fB\-M\fR, \fB\-\-no\-create\-home\fR
 .RS 4
 Erstellt nicht das Home\-Verzeichnis des Benutzers, selbst wenn die systemweite Option
 \fBCREATE_HOME\fR
@@ -294,11 +295,13 @@ bis
 \fBUID_MAX\fR
 gew\(:ahlt (gleiches gilt f\(:ur die GID bei der Erstellung von Gruppen)\&.
 .sp
-Beachten Sie, dass
+Note that
 \fBuseradd\fR
-f\(:ur einen solchen Benutzer unabh\(:angig von der Einstellung in
+will not create a home directory for such a user, regardless of the default setting in
 /etc/login\&.defs
-(\fBCREATE_HOME\fR) kein Home\-Verzeichnis erzeugen wird\&.
+(\fBCREATE_HOME\fR)\&. You have to specify the
+\fB\-m\fR
+options if you want a home directory for a system account to be created\&.
 .RE
 .PP
 \fB\-R\fR, \fB\-\-root\fR\ \&\fICHROOT_VERZ\fR

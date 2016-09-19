@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: shadow 4.1.1\n"
 "Report-Msgid-Bugs-To: pkg-shadow-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2016-03-16 17:19-0700\n"
+"POT-Creation-Date: 2016-09-18 21:41-0500\n"
 "PO-Revision-Date: 2009-04-19 21:32+0900\n"
 "Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
 "Language-Team: Korean <debian-l10n-korean@lists.debian.org>\n"
@@ -1401,6 +1401,14 @@ msgstr ""
 "\n"
 "[접속해제가 무시되었습니다 -- 루트 로그인 허용.]"
 
+#, c-format
+msgid "%s: Cannot possibly work without effective root\n"
+msgstr ""
+
+msgid "No utmp entry.  You must exec \"login\" from the lowest level \"sh\""
+msgstr ""
+"UTMP 항목이 없습니다. 가장 낮은 \"sh\"에서 \"login\"을 실행해야 합니다."
+
 #, fuzzy, c-format
 #| msgid ""
 #| "\n"
@@ -1411,14 +1419,6 @@ msgid ""
 msgstr ""
 "\n"
 "%d 초 후 로그인이 종료되었습니다.\n"
-
-#, c-format
-msgid "%s: Cannot possibly work without effective root\n"
-msgstr ""
-
-msgid "No utmp entry.  You must exec \"login\" from the lowest level \"sh\""
-msgstr ""
-"UTMP 항목이 없습니다. 가장 낮은 \"sh\"에서 \"login\"을 실행해야 합니다."
 
 #, c-format
 msgid "login: PAM Failure, aborting: %s\n"
@@ -1844,12 +1844,6 @@ msgstr "암호 인증이 무시되었습니다.\n"
 msgid "Please enter your OWN password as authentication.\n"
 msgstr "인증하기 위해 본인의 암호를 입력하십시오.\n"
 
-msgid " ...killed.\n"
-msgstr ""
-
-msgid " ...waiting for child to terminate.\n"
-msgstr ""
-
 #, fuzzy, c-format
 #| msgid "%s: Cannot determine your user name.\n"
 msgid "%s: Cannot fork user shell\n"
@@ -1864,6 +1858,14 @@ msgid "%s: signal masking malfunction\n"
 msgstr ""
 
 msgid "Session terminated, terminating shell..."
+msgstr ""
+
+#, c-format
+msgid " ...killed.\n"
+msgstr ""
+
+#, c-format
+msgid " ...waiting for child to terminate.\n"
 msgstr ""
 
 msgid " ...terminated.\n"

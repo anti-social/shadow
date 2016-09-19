@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: eu\n"
 "Report-Msgid-Bugs-To: pkg-shadow-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2016-03-16 17:19-0700\n"
+"POT-Creation-Date: 2016-09-18 21:41-0500\n"
 "PO-Revision-Date: 2011-11-26 19:42+0100\n"
 "Last-Translator: Piarres Beobide <pi@beobide.net>\n"
 "Language-Team: Euskara <debian-l10n-eu@lists.debian.org>\n"
@@ -1451,14 +1451,6 @@ msgstr ""
 "[Deskonexioa saltatuta -- root-ek saio-hastea baimenduta.]"
 
 #, c-format
-msgid ""
-"\n"
-"Login timed out after %u seconds.\n"
-msgstr ""
-"\n"
-"Saio-hasiera denboraz kanpo %u segundo igarotakoan.\n"
-
-#, c-format
 msgid "%s: Cannot possibly work without effective root\n"
 msgstr "%s: Ezingo du ziurrenik funtzionatu erro efektibo bat gabe\n"
 
@@ -1466,6 +1458,14 @@ msgid "No utmp entry.  You must exec \"login\" from the lowest level \"sh\""
 msgstr ""
 "Ez dago utmp sarrerarik. \"login\" \"sh\" maila baxuenetik exekutatu beharko "
 "zenuke"
+
+#, c-format
+msgid ""
+"\n"
+"Login timed out after %u seconds.\n"
+msgstr ""
+"\n"
+"Saio-hasiera denboraz kanpo %u segundo igarotakoan.\n"
 
 #, c-format
 msgid "login: PAM Failure, aborting: %s\n"
@@ -1905,12 +1905,6 @@ msgstr "Pasahitz autentifikazioa saltatuta.\n"
 msgid "Please enter your OWN password as authentication.\n"
 msgstr "Sartu zure pasahitz PROPIOA autentifikazio gisa.\n"
 
-msgid " ...killed.\n"
-msgstr ""
-
-msgid " ...waiting for child to terminate.\n"
-msgstr ""
-
 #, fuzzy, c-format
 #| msgid "%s: Cannot determine your user name.\n"
 msgid "%s: Cannot fork user shell\n"
@@ -1925,6 +1919,14 @@ msgid "%s: signal masking malfunction\n"
 msgstr ""
 
 msgid "Session terminated, terminating shell..."
+msgstr ""
+
+#, c-format
+msgid " ...killed.\n"
+msgstr ""
+
+#, c-format
+msgid " ...waiting for child to terminate.\n"
 msgstr ""
 
 msgid " ...terminated.\n"

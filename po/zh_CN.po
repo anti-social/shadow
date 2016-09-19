@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: shadow 4.0.15\n"
 "Report-Msgid-Bugs-To: pkg-shadow-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2016-03-16 17:19-0700\n"
+"POT-Creation-Date: 2016-09-18 21:41-0500\n"
 "PO-Revision-Date: 2012-01-10 01:23+0800\n"
 "Last-Translator: YunQiang Su <wzssyqa@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
@@ -1364,19 +1364,19 @@ msgstr ""
 "[忽略断线要求 -- 允许 root 登录。]"
 
 #, c-format
+msgid "%s: Cannot possibly work without effective root\n"
+msgstr "%s：没有有效 root 的情况下，不可能工作\n"
+
+msgid "No utmp entry.  You must exec \"login\" from the lowest level \"sh\""
+msgstr "没有 utmp 条目。您必须在最底层的“sh”里执行“login”"
+
+#, c-format
 msgid ""
 "\n"
 "Login timed out after %u seconds.\n"
 msgstr ""
 "\n"
 "%u 秒后登录超时。\n"
-
-#, c-format
-msgid "%s: Cannot possibly work without effective root\n"
-msgstr "%s：没有有效 root 的情况下，不可能工作\n"
-
-msgid "No utmp entry.  You must exec \"login\" from the lowest level \"sh\""
-msgstr "没有 utmp 条目。您必须在最底层的“sh”里执行“login”"
 
 #, c-format
 msgid "login: PAM Failure, aborting: %s\n"
@@ -1786,12 +1786,6 @@ msgstr "忽略密码认证\n"
 msgid "Please enter your OWN password as authentication.\n"
 msgstr "请输入您*自己*的密码作为验证。\n"
 
-msgid " ...killed.\n"
-msgstr " ...已被杀死。\n"
-
-msgid " ...waiting for child to terminate.\n"
-msgstr " ...等待子进程结束。\n"
-
 #, c-format
 msgid "%s: Cannot fork user shell\n"
 msgstr "%s：无法 fork 用户 shell\n"
@@ -1806,6 +1800,14 @@ msgstr "%s：信号屏蔽(mask)故障\n"
 
 msgid "Session terminated, terminating shell..."
 msgstr "会话结束，结束 shell ..."
+
+#, c-format
+msgid " ...killed.\n"
+msgstr " ...已被杀死。\n"
+
+#, c-format
+msgid " ...waiting for child to terminate.\n"
+msgstr " ...等待子进程结束。\n"
 
 msgid " ...terminated.\n"
 msgstr " ...已结束。\n"

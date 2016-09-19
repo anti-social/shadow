@@ -2,12 +2,12 @@
 .\"     Title: suauth
 .\"    Author: Marek Micha\(/lkiewicz
 .\" Generator: DocBook XSL Stylesheets v1.79.1 <http://docbook.sf.net/>
-.\"      Date: 2016-03-16
+.\"      Date: 2016-09-18
 .\"    Manual: 文件格式和转化
-.\"    Source: shadow-utils 4.2
+.\"    Source: shadow-utils 4.4
 .\"  Language: Chinese Simplified
 .\"
-.TH "SUAUTH" "5" "2016-03-16" "shadow\-utils 4\&.2" "文件格式和转化"
+.TH "SUAUTH" "5" "2016-09-18" "shadow\-utils 4\&.4" "文件格式和转化"
 .\" -----------------------------------------------------------------
 .\" * Define some portability stuff
 .\" -----------------------------------------------------------------
@@ -41,7 +41,7 @@ suauth \- 详细的 su 控制文件
 .RS 4
 .\}
 .nf
-      1) su 到的用户
+      1) the user su is targeting
     
 .fi
 .if n \{\
@@ -67,12 +67,15 @@ suauth \- 详细的 su 控制文件
 \fIALL EXCEPT\fR
 后跟逗号分隔的用户名列表。
 .PP
-from\-id 格式和 to\-id 相同，但是可以多识别一个词
-\fIGROUP\fR。\fIALL EXCEPT GROUP\fR
-也是有效的。\fIGROUP\fR
-后边是一个或更多的组名称，使用逗号(,)分隔。不光要有相关主组的 ID，也需要在
+from\-id is formatted the same as to\-id except the extra word
+\fIGROUP\fR
+is recognized\&.
+\fIALL EXCEPT GROUP\fR
+is perfectly valid too\&. Following
+\fIGROUP\fR
+appears one or more group names, delimited by ","\&. It is not sufficient to have primary group id of the relevant group, an entry in
 \fB/etc/group\fR(5)
-中有一个条目。
+is necessary\&.
 .PP
 动作只可以使用如下当前支持的选项。
 .PP

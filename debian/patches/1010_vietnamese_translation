@@ -1,30 +1,37 @@
-Index: git/po/vi.po
+Index: shadow-4.4/po/vi.po
 ===================================================================
---- git.orig/po/vi.po
-+++ git/po/vi.po
-@@ -1,15 +1,17 @@
+--- shadow-4.4.orig/po/vi.po
++++ shadow-4.4/po/vi.po
+@@ -1,54 +1,56 @@
  # Vietnamese translation for Shadow.
 -# Copyright © 2009 Free Software Foundation, Inc.
 +# Bản dịch tiếng Việt dành cho shadow.
-+# Copyright © 2014 Free Software Foundation, Inc.
++# Copyright © 2015 Free Software Foundation, Inc.
  # Clytie Siddall <clytie@riverland.net.au>, 2005-2008.
-+# Trần Ngọc Quân <vnwildman@gmail.com>, 2014.
++# Trần Ngọc Quân <vnwildman@gmail.com>, 2014, 2015, 2016.
  #
  msgid ""
  msgstr ""
- "Project-Id-Version: shadow\n"
+-"Project-Id-Version: shadow\n"
++"Project-Id-Version: shadow master\n"
  "Report-Msgid-Bugs-To: pkg-shadow-devel@lists.alioth.debian.org\n"
- "POT-Creation-Date: 2012-05-20 19:52+0200\n"
+-"POT-Creation-Date: 2016-09-18 21:41-0500\n"
 -"PO-Revision-Date: 2012-01-08 18:13+0100\n"
 -"Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 -"Language-Team: Vietnamese <vi-VN@googlegroups.com>\n"
-+"PO-Revision-Date: 2014-04-11 15:01+0700\n"
++"POT-Creation-Date: 2016-09-18 14:03-0500\n"
++"PO-Revision-Date: 2016-10-04 07:07+0700\n"
 +"Last-Translator: Trần Ngọc Quân <vnwildman@gmail.com>\n"
 +"Language-Team: Vietnamese <debian-l10n-vietnamese@lists.debian.org>\n"
  "Language: vi\n"
  "MIME-Version: 1.0\n"
  "Content-Type: text/plain; charset=UTF-8\n"
-@@ -21,34 +23,34 @@
+ "Content-Transfer-Encoding: 8bit\n"
+ "Plural-Forms: nplurals=1; plural=0;\n"
+-"X-Generator: LocFactoryEditor 1.8\n"
++"X-Generator: Gtranslator 2.91.7\n"
+ 
+ #, c-format
  msgid ""
  "Multiple entries named '%s' in %s. Please fix this with pwck or grpck.\n"
  msgstr ""
@@ -35,7 +42,7 @@ Index: git/po/vi.po
  #, c-format
  msgid "crypt method not supported by libcrypt? (%s)\n"
 -msgstr "Phương pháp mã hoá không được libcrypt hỗ trợ ? (%s)\n"
-+msgstr "Phương pháp mã hoá không được thư viện libcrypt hỗ trợ? (%s)\n"
++msgstr "Phương pháp mã hóa không được thư viện libcrypt hỗ trợ? (%s)\n"
  
  #, c-format
  msgid "configuration error - cannot parse %s value: '%s'"
@@ -66,7 +73,7 @@ Index: git/po/vi.po
  
  #, c-format
  msgid "%s's Password: "
-@@ -56,212 +58,198 @@
+@@ -56,212 +58,198 @@ msgstr "Mật khẩu của %s: "
  
  #, c-format
  msgid "[libsemanage]: %s\n"
@@ -348,9 +355,12 @@ Index: git/po/vi.po
  
  msgid "  Choose a new password."
  msgstr "  Hãy chọn mật khẩu mới."
-@@ -291,13 +279,12 @@
+@@ -289,15 +277,14 @@ msgstr ""
+ 
+ #, c-format
  msgid "%s: failed to unlock %s\n"
- msgstr "%s: lỗi mở khoá %s\n"
+-msgstr "%s: lỗi mở khoá %s\n"
++msgstr "%s: gặp lỗi khi mở khóa %s\n"
  
 -#, fuzzy, c-format
 -#| msgid "%s: %s\n"
@@ -365,7 +375,7 @@ Index: git/po/vi.po
  
  msgid "Environment overflow\n"
  msgstr "Tràn môi trường\n"
-@@ -319,18 +306,19 @@
+@@ -319,18 +306,19 @@ msgstr[0] ""
  
  #, c-format
  msgid "%s: Invalid configuration: GID_MIN (%lu), GID_MAX (%lu)\n"
@@ -389,7 +399,7 @@ Index: git/po/vi.po
  
  #, c-format
  msgid "%s: Can't get unique system GID (no more available GIDs)\n"
-@@ -343,13 +331,15 @@
+@@ -343,13 +331,15 @@ msgstr "%s: Không thể lấy GID duy n
  
  #, c-format
  msgid "%s: Invalid configuration: UID_MIN (%lu), UID_MAX (%lu)\n"
@@ -406,7 +416,7 @@ Index: git/po/vi.po
  
  #, c-format
  msgid "%s: Can't get unique system UID (no more available UIDs)\n"
-@@ -379,7 +369,7 @@
+@@ -379,7 +369,7 @@ msgid "a palindrome"
  msgstr "từ đọc xuôi ngược đều giống như nhau"
  
  msgid "case changes only"
@@ -415,7 +425,7 @@ Index: git/po/vi.po
  
  msgid "too similar"
  msgstr "quá tương tự"
-@@ -403,10 +393,10 @@
+@@ -403,10 +393,10 @@ msgstr "passwd: pam_start() (mật khẩ
  
  #, c-format
  msgid "passwd: %s\n"
@@ -428,7 +438,7 @@ Index: git/po/vi.po
  
  msgid "passwd: password updated successfully\n"
  msgstr "passwd: mật khẩu đã được cập nhật\n"
-@@ -417,45 +407,42 @@
+@@ -417,50 +407,46 @@ msgstr "Mật khẩu không đúng cho %
  
  #, c-format
  msgid "%s: multiple --root options\n"
@@ -462,6 +472,13 @@ Index: git/po/vi.po
 -#, fuzzy, c-format
 -#| msgid "%s: cannot create directory %s\n"
 +#, c-format
+ msgid "%s: cannot chdir to chroot directory %s: %s\n"
+-msgstr "%s: không thể tạo thư mục %s\n"
++msgstr "%s: không thể chuyển sang thư mục chroot %s: %s\n"
+ 
+-#, fuzzy, c-format
+-#| msgid "%s: cannot create directory %s\n"
++#, c-format
  msgid "%s: unable to chroot to directory %s: %s\n"
 -msgstr "%s: không thể tạo thư mục %s\n"
 +msgstr "%s: không thể thay đổi thư mục gốc thành %s: %s\n"
@@ -472,7 +489,7 @@ Index: git/po/vi.po
  "Defaulting to DES.\n"
  msgstr ""
 -"Phương pháp mã hoá (ENCRYPT_METHOD) không hợp lệ: « %s »\n"
-+"Phương pháp mã hoá (ENCRYPT_METHOD) không hợp lệ: “%s”\n"
++"Phương pháp mã hóa (ENCRYPT_METHOD) không hợp lệ: “%s”\n"
  "nên hoàn nguyên về giá trị mặc định: DES.\n"
  
  #, c-format
@@ -486,7 +503,7 @@ Index: git/po/vi.po
  
  #, c-format
  msgid "Cannot execute %s"
-@@ -463,11 +450,11 @@
+@@ -468,11 +454,11 @@ msgstr "Không thể thực hiện %s"
  
  #, c-format
  msgid "Invalid root directory '%s'\n"
@@ -500,16 +517,31 @@ Index: git/po/vi.po
  
  msgid "Unable to determine your tty name."
  msgstr "Không thể quyết định tên TTY của bạn."
-@@ -481,7 +468,7 @@
+@@ -486,9 +472,9 @@ msgid ""
  "\n"
  "Options:\n"
  msgstr ""
 -"Sử dụng: %s [tuỳ_chọn ...] [ĐĂNG_NHẬP]\n"
 +"Cách dùng: %s [các_tuỳ_chọn] ĐĂNG_NHẬP\n"
  "\n"
- "Tuỳ chọn:\n"
+-"Tuỳ chọn:\n"
++"Tùy chọn:\n"
  
-@@ -529,12 +516,12 @@
+ msgid ""
+ "  -d, --lastday LAST_DAY        set date of last password change to "
+@@ -523,8 +509,9 @@ msgid ""
+ "  -m, --mindays MIN_DAYS        set minimum number of days before password\n"
+ "                                change to MIN_DAYS\n"
+ msgstr ""
+-"  -m, --mindays SỐ              đặt thành số này số tối thiểu các ngày trước "
+-"khi thay đổi mật khẩu\n"
++"  -m, --mindays SỐ              đặt thành số này số tối thiểu các ngày "
++"trước\n"
++"                                        khi thay đổi mật khẩu\n"
+ 
+ msgid ""
+ "  -M, --maxdays MAX_DAYS        set maximim number of days before password\n"
+@@ -534,12 +521,12 @@ msgstr ""
  "khi thay đổi mật khẩu\n"
  
  msgid "  -R, --root CHROOT_DIR         directory to chroot into\n"
@@ -524,7 +556,7 @@ Index: git/po/vi.po
  "về hết hạn dùng\n"
  
  msgid "Enter the new value, or press ENTER for the default"
-@@ -574,7 +561,7 @@
+@@ -579,7 +566,7 @@ msgid "Password inactive\t\t\t\t\t: "
  msgstr "Mật khẩu không hoạt động\t\t\t\t\t: "
  
  msgid "Account expires\t\t\t\t\t\t: "
@@ -533,7 +565,7 @@ Index: git/po/vi.po
  
  #, c-format
  msgid "Minimum number of days between password change\t\t: %ld\n"
-@@ -590,15 +577,15 @@
+@@ -595,15 +582,15 @@ msgstr "Số ngày cảnh báo trước
  
  #, c-format
  msgid "%s: invalid date '%s'\n"
@@ -552,7 +584,7 @@ Index: git/po/vi.po
  
  #, c-format
  msgid "%s: Permission denied.\n"
-@@ -606,12 +593,11 @@
+@@ -611,16 +598,15 @@ msgstr "%s: không đủ quyền.\n"
  
  #, c-format
  msgid "%s: Cannot determine your user name.\n"
@@ -568,7 +600,12 @@ Index: git/po/vi.po
  
  #, c-format
  msgid "%s: cannot lock %s; try again later.\n"
-@@ -627,15 +613,15 @@
+-msgstr "%s: Không thể khoá %s; hãy thử lại sau.\n"
++msgstr "%s: Không thể khóa %s; hãy thử lại sau.\n"
+ 
+ #, c-format
+ msgid "%s: cannot open %s\n"
+@@ -632,15 +618,15 @@ msgstr "%s: gặp lỗi trong khi ghi th
  
  #, c-format
  msgid "%s: failed to prepare the new %s entry '%s'\n"
@@ -587,7 +624,7 @@ Index: git/po/vi.po
  
  #, c-format
  msgid "Changing the aging information for %s\n"
-@@ -645,47 +631,45 @@
+@@ -650,50 +636,48 @@ msgstr "Đang thay đổi thông tin v�
  msgid "%s: error changing fields\n"
  msgstr "%s: gặp lỗi khi thay đổi trường\n"
  
@@ -603,9 +640,10 @@ Index: git/po/vi.po
  "Options:\n"
  msgstr ""
 -"Sử dụng: %s [tuỳ_chọn ...]\n"
-+"Cách dùng: %s [tuỳ_chọn ...] [ĐĂNG_NHẬP]\n"
++"Cách dùng: %s [tuỳ_chọn …] [ĐĂNG_NHẬP]\n"
  "\n"
- "Tuỳ chọn:\n"
+-"Tuỳ chọn:\n"
++"Tùy chọn:\n"
  
  msgid "  -f, --full-name FULL_NAME     change user's full name\n"
 -msgstr ""
@@ -644,8 +682,12 @@ Index: git/po/vi.po
 +msgstr "Số phòng"
  
  msgid "Work Phone"
- msgstr "Điện thoại chỗ làm"
-@@ -697,51 +681,51 @@
+-msgstr "Điện thoại chỗ làm"
++msgstr "Điện thoại nơi làm việc"
+ 
+ msgid "Home Phone"
+ msgstr "Điện thoại ở nhà"
+@@ -702,51 +686,51 @@ msgid "Other"
  msgstr "Khác"
  
  msgid "Cannot change ID to root.\n"
@@ -709,14 +751,15 @@ Index: git/po/vi.po
  
  #, c-format
  msgid "Changing the user information for %s\n"
-@@ -757,14 +741,13 @@
+@@ -762,14 +746,13 @@ msgid ""
  "\n"
  "Options:\n"
  msgstr ""
 -"Sử dụng: %s [tuỳ_chọn ...]\n"
-+"Cách dùng: %s [tuỳ_chọn ...]\n"
++"Cách dùng: %s [tuỳ_chọn …]\n"
  "\n"
- "Tuỳ chọn:\n"
+-"Tuỳ chọn:\n"
++"Tùy chọn:\n"
  
 -#, fuzzy, c-format
 -#| msgid "  -c, --crypt-method            the crypt method (one of %s)\n"
@@ -727,7 +770,24 @@ Index: git/po/vi.po
  
  msgid "  -e, --encrypted               supplied passwords are encrypted\n"
  msgstr ""
-@@ -789,11 +772,11 @@
+@@ -779,14 +762,14 @@ msgid ""
+ "  -m, --md5                     encrypt the clear text password using\n"
+ "                                the MD5 algorithm\n"
+ msgstr ""
+-"  -m, --md5                     mật mã hoá mật khẩu chữ thô, dùng thuật toán "
++"  -m, --md5                     mật mã hóa mật khẩu chữ thô, dùng thuật toán "
+ "MD5\n"
+ 
+ msgid ""
+ "  -s, --sha-rounds              number of SHA rounds for the SHA*\n"
+ "                                crypt algorithms\n"
+ msgstr ""
+-"  -s, --sha-rounds              số vòng SHA cho thuật toán mã hoá SHA*\n"
++"  -s, --sha-rounds              số vòng SHA cho thuật toán mã hóa SHA*\n"
+ 
+ #, c-format
+ msgid "%s: %s flag is only allowed with the %s flag\n"
+@@ -794,11 +777,11 @@ msgstr "%s: cho phép cờ %s chỉ cùn
  
  #, c-format
  msgid "%s: the -c, -e, and -m flags are exclusive\n"
@@ -737,11 +797,20 @@ Index: git/po/vi.po
  #, c-format
  msgid "%s: unsupported crypt method: %s\n"
 -msgstr "%s: phương pháp mã hoá không được hỗ trợ : %s\n"
-+msgstr "%s: phương pháp mã hoá không được hỗ trợ: %s\n"
++msgstr "%s: phương pháp mã hóa không được hỗ trợ: %s\n"
  
  #, c-format
  msgid "%s: line %d: line too long\n"
-@@ -805,11 +788,11 @@
+@@ -808,18 +791,17 @@ msgstr "%s: dòng %d: dòng quá dài\n"
+ msgid "%s: line %d: missing new password\n"
+ msgstr "%s: dòng %d: thiếu mật khẩu mới\n"
+ 
+-#, fuzzy, c-format
+-#| msgid "%s: failed to remove %s\n"
++#, c-format
+ msgid "%s: failed to crypt password with salt '%s': %s\n"
+-msgstr "%s: không gỡ bỏ được %s\n"
++msgstr "%s: gặp lỗi khi mã hóa mật khẩu với muối “%s”: %s\n"
  
  #, c-format
  msgid "%s: line %d: group '%s' does not exist\n"
@@ -755,7 +824,7 @@ Index: git/po/vi.po
  
  #, c-format
  msgid "%s: error detected, changes ignored\n"
-@@ -821,51 +804,51 @@
+@@ -831,51 +813,51 @@ msgstr "%s: (dòng %d, người dùng %s
  
  #, c-format
  msgid "%s: line %d: user '%s' does not exist\n"
@@ -823,7 +892,16 @@ Index: git/po/vi.po
  
  #, c-format
  msgid "%s: options %s and %s conflict\n"
-@@ -913,20 +896,20 @@
+@@ -894,7 +876,7 @@ msgid ""
+ "  -l, --lock-secs SEC           after failed login lock account for SEC "
+ "seconds\n"
+ msgstr ""
+-"  -l, --lock-secs GIÂY          sau khi không đăng nhập được thì khoá tài "
++"  -l, --lock-secs GIÂY          sau khi không đăng nhập được thì khóa tài "
+ "khoản trong vòng số GIÂY này\n"
+ 
+ msgid ""
+@@ -923,20 +905,20 @@ msgstr ""
  "đếm\n"
  "                                lần không đăng nhập được và các giới hạn như "
  "thế\n"
@@ -849,7 +927,7 @@ Index: git/po/vi.po
  
  #, c-format
  msgid " [%lds lock]"
-@@ -934,11 +917,11 @@
+@@ -944,28 +926,27 @@ msgstr " [%lds khóa]"
  
  #, c-format
  msgid "%s: Failed to reset fail count for UID %lu\n"
@@ -863,7 +941,15 @@ Index: git/po/vi.po
  
  #, c-format
  msgid "%s: Failed to set locktime for UID %lu\n"
-@@ -952,10 +935,9 @@
+-msgstr "%s: không đặt được thời gian khoá cho UID %lu\n"
++msgstr "%s: Gặp lỗi khi đặt thời gian khóa cho UID %lu\n"
+ 
+ #, c-format
+ msgid "%s: Unknown user or range: %s\n"
+-msgstr "%s: không nhận ra người dùng hay phạm vi: %s\n"
++msgstr "%s: Không nhận ra người dùng hay phạm vi: %s\n"
+ 
+ #, c-format
  msgid "%s: Cannot get the size of %s: %s\n"
  msgstr "%s: Không thể lấy kích cỡ của %s: %s\n"
  
@@ -876,16 +962,19 @@ Index: git/po/vi.po
  
  #, c-format
  msgid ""
-@@ -963,7 +945,7 @@
+@@ -973,9 +954,9 @@ msgid ""
  "\n"
  "Options:\n"
  msgstr ""
 -"Sử dụng: %s [tuỳ_chọn] NHÓM\n"
 +"Cách dùng: %s [tuỳ_chọn] NHÓM\n"
  "\n"
- "Tuỳ chọn:\n"
+-"Tuỳ chọn:\n"
++"Tùy chọn:\n"
  
-@@ -974,7 +956,7 @@
+ msgid "  -a, --add USER                add USER to GROUP\n"
+ msgstr "  -a, --add NGƯỜI_DÙNG          thêm người dùng này vào NHÓM\n"
+@@ -984,7 +965,7 @@ msgid "  -d, --delete USER             r
  msgstr "  -d, --delete NGƯỜI_DÙNG       gỡ bỏ người dùng này khỏi NHÓM\n"
  
  msgid "  -Q, --root CHROOT_DIR         directory to chroot into\n"
@@ -894,15 +983,28 @@ Index: git/po/vi.po
  
  msgid "  -r, --remove-password         remove the GROUP's password\n"
  msgstr "  -r, --remove-password         gỡ bỏ mật khẩu của NHÓM\n"
-@@ -997,18 +979,18 @@
+@@ -997,28 +978,28 @@ msgstr ""
+ 
+ msgid "  -M, --members USER,...        set the list of members of GROUP\n"
+ msgstr ""
+-"  -M, --members NGƯỜI_DÙNG,...  đặt danh sách các thành viên của NHÓM\n"
++"  -M, --members NGƯỜI_DÙNG,…    đặt danh sách các thành viên của NHÓM\n"
+ 
+ msgid ""
+ "  -A, --administrators ADMIN,...\n"
+ "                                set the list of administrators for GROUP\n"
+ msgstr ""
+-"  -A, --administrators QUẢN_TRỊ,...\n"
++"  -A, --administrators QUẢN_TRỊ,…\n"
  "                                đặt danh sách các quản trị cho NHÓM\n"
  
  msgid "Except for the -A and -M options, the options cannot be combined.\n"
 -msgstr "Trừ hai tuỳ chọn « -A » và « -M », không thể tổ hợp các tuỳ chọn.\n"
-+msgstr "Trừ hai tuỳ chọn “-A” và “-M”, không thể tổ hợp các tuỳ chọn.\n"
++msgstr "Trừ hai tùy chọn “-A” và “-M”, không thể tổ hợp các tùy chọn.\n"
  
  msgid "The options cannot be combined.\n"
- msgstr "Không thể tổ hợp các tuỳ chọn.\n"
+-msgstr "Không thể tổ hợp các tuỳ chọn.\n"
++msgstr "Không thể tổ hợp các tùy chọn.\n"
  
  #, c-format
  msgid "%s: shadow group passwords required for -A\n"
@@ -916,7 +1018,7 @@ Index: git/po/vi.po
  
  #, c-format
  msgid "%s: failure while closing read-only %s\n"
-@@ -1025,11 +1007,11 @@
+@@ -1035,11 +1016,11 @@ msgid "Re-enter new password: "
  msgstr "Nhập lại mật khẩu mới: "
  
  msgid "They don't match; try again"
@@ -930,7 +1032,7 @@ Index: git/po/vi.po
  
  #, c-format
  msgid "Adding user %s to group %s\n"
-@@ -1041,7 +1023,7 @@
+@@ -1051,7 +1032,7 @@ msgstr "Đang gỡ bỏ người dùng %
  
  #, c-format
  msgid "%s: user '%s' is not a member of '%s'\n"
@@ -939,16 +1041,18 @@ Index: git/po/vi.po
  
  #, c-format
  msgid "%s: Not a tty\n"
-@@ -1053,7 +1035,7 @@
+@@ -1063,25 +1044,25 @@ msgid ""
  "\n"
  "Options:\n"
  msgstr ""
 -"Sử dụng: %s [tuỳ_chọn ...] NHÓM\n"
-+"Cách dùng: %s [tuỳ_chọn ...] NHÓM\n"
++"Cách dùng: %s [tuỳ_chọn …] NHÓM\n"
  "\n"
- "Tuỳ chọn:\n"
+-"Tuỳ chọn:\n"
++"Tùy chọn:\n"
  
-@@ -1062,16 +1044,16 @@
+ msgid ""
+ "  -f, --force                   exit successfully if the group already "
  "exists,\n"
  "                                and cancel -g if the GID is already used\n"
  msgstr ""
@@ -964,12 +1068,12 @@ Index: git/po/vi.po
  msgstr ""
 -"  -K, --key KHOÁ=GIÁ_TRỊ        ghi đè lên các giá trị mặc định « /etc/login."
 -"defs »\n"
-+"  -K, --key KHOÁ=GIÁ_TRỊ        ghi đè lên các giá trị mặc định “/etc/login."
++"  -K, --key KHÓA=GIÁ_TRỊ        ghi đè lên các giá trị mặc định “/etc/login."
 +"defs”\n"
  
  msgid ""
  "  -o, --non-unique              allow to create groups with duplicate\n"
-@@ -1091,44 +1073,43 @@
+@@ -1101,53 +1082,50 @@ msgstr "  -r, --system
  
  #, c-format
  msgid "%s: '%s' is not a valid group name\n"
@@ -1003,6 +1107,17 @@ Index: git/po/vi.po
 -msgstr "%s: không thể quyết định tên người dùng của bạn.\n"
 +msgstr "%s: Không thể cài đặt dịch vụ dọn dẹp.\n"
  
+-#, fuzzy
+-#| msgid ""
+-#| "  -r, --reset                   reset the counters of login failures\n"
+ msgid ""
+ "  -f, --force                   delete group even if it is the primary group "
+ "of a user\n"
+ msgstr ""
+-"  -r, --reset                   đặt lại các bộ đếm lần không đăng nhập được\n"
++"  -f, --force                   xóa nhóm ngay cả khi nó là nhóm chính của "
++"người dùng\n"
+ 
  #, c-format
  msgid "%s: cannot remove entry '%s' from %s\n"
 -msgstr "%s: không thể gỡ bỏ mục nhập « %s » khỏi %s\n"
@@ -1025,7 +1140,7 @@ Index: git/po/vi.po
  
  #, c-format
  msgid "%s: %s is the NIS master\n"
-@@ -1136,11 +1117,11 @@
+@@ -1155,11 +1133,11 @@ msgstr "%s: %s là NIS chủ\n"
  
  #, c-format
  msgid "%s: user '%s' is already a member of '%s'\n"
@@ -1039,16 +1154,18 @@ Index: git/po/vi.po
  
  #, c-format
  msgid ""
-@@ -1148,7 +1129,7 @@
+@@ -1167,23 +1145,23 @@ msgid ""
  "\n"
  "Options:\n"
  msgstr ""
 -"Sử dụng: %s [tuỳ_chọn ...] [hành_vi]\n"
-+"Cách dùng: %s [tuỳ_chọn ...] [hành_vi]\n"
++"Cách dùng: %s [tuỳ_chọn …] [hành_vi]\n"
  "\n"
- "Tuỳ chọn:\n"
+-"Tuỳ chọn:\n"
++"Tùy chọn:\n"
  
-@@ -1157,14 +1138,14 @@
+ msgid ""
+ "  -g, --group groupname         change groupname instead of the user's "
  "group\n"
  "                                (root only)\n"
  msgstr ""
@@ -1066,16 +1183,16 @@ Index: git/po/vi.po
  
  msgid ""
  "  -a, --add username            add username to the members of the group\n"
-@@ -1187,7 +1168,7 @@
+@@ -1206,7 +1184,7 @@ msgstr "%s: tên nhóm của bạn khôn
  
  #, c-format
  msgid "%s: only root can use the -g/--group option\n"
 -msgstr "%s: chỉ người chủ có quyền sử dụng tuỳ chọn « -g/--group »\n"
-+msgstr "%s: chỉ siêu quản trị có quyền sử dụng tuỳ chọn “-g/--group”\n"
++msgstr "%s: chỉ siêu quản trị có quyền sử dụng tùy chọn “-g/--group”\n"
  
  msgid "  -g, --gid GID                 change the group ID to GID\n"
  msgstr "  -g, --gid GID                 thay đổi mã số nhóm sang GID này\n"
-@@ -1210,7 +1191,7 @@
+@@ -1229,7 +1207,7 @@ msgstr ""
  
  #, c-format
  msgid "%s: invalid group name '%s'\n"
@@ -1084,7 +1201,7 @@ Index: git/po/vi.po
  
  #, c-format
  msgid "%s: group %s is a NIS group\n"
-@@ -1220,70 +1201,57 @@
+@@ -1239,70 +1217,57 @@ msgstr "%s: nhóm %s là một nhóm ki�
  msgid "%s: unknown user %s\n"
  msgstr "%s: không rõ người dùng %s\n"
  
@@ -1102,7 +1219,8 @@ Index: git/po/vi.po
 -"Sử dụng: %s [tuỳ_chọn ...]\n"
 +"Cách dùng: %s [các_tuỳ_chọn] [group [gshadow]]\n"
  "\n"
- "Tuỳ chọn:\n"
+-"Tuỳ chọn:\n"
++"Tùy chọn:\n"
  
 -#, fuzzy, c-format
 -#| msgid ""
@@ -1118,7 +1236,8 @@ Index: git/po/vi.po
 -"Sử dụng: %s [tuỳ_chọn ...]\n"
 +"Cách dùng: %s [các_tuỳ_chọn] [group]\n"
  "\n"
- "Tuỳ chọn:\n"
+-"Tuỳ chọn:\n"
++"Tùy chọn:\n"
  
 -#, fuzzy
 -#| msgid ""
@@ -1168,7 +1287,7 @@ Index: git/po/vi.po
  
  #, c-format
  msgid "group %s: no user %s\n"
-@@ -1291,40 +1259,40 @@
+@@ -1310,40 +1275,40 @@ msgstr "nhóm %s: không có người d�
  
  #, c-format
  msgid "delete member '%s'? "
@@ -1219,8 +1338,12 @@ Index: git/po/vi.po
  
  #, c-format
  msgid "%s: the files have been updated\n"
-@@ -1339,10 +1307,10 @@
- msgstr "%s: không thể xoá %s\n"
+@@ -1355,13 +1320,13 @@ msgstr "%s: chưa thay đổi gì\n"
+ 
+ #, c-format
+ msgid "%s: cannot delete %s\n"
+-msgstr "%s: không thể xoá %s\n"
++msgstr "%s: không thể xóa %s\n"
  
  msgid "Usage: id [-a]\n"
 -msgstr "Sử dụng: id [-a]\n"
@@ -1232,7 +1355,7 @@ Index: git/po/vi.po
  
  msgid " groups="
  msgstr " nhóm="
-@@ -1350,7 +1318,8 @@
+@@ -1369,35 +1334,30 @@ msgstr " nhóm="
  msgid ""
  "  -b, --before DAYS             print only lastlog records older than DAYS\n"
  msgstr ""
@@ -1241,8 +1364,32 @@ Index: git/po/vi.po
 +"ngày\n"
  "                                cũ hơn số ngày này (_trước_)\n"
  
+-#, fuzzy
+-#| msgid ""
+-#| "  -a, --all                     display faillog records for all users\n"
  msgid ""
-@@ -1358,7 +1327,7 @@
+ "  -C, --clear                   clear lastlog record of an user (usable only "
+ "with -u)\n"
+ msgstr ""
+-"  -a, --all                     hiển thị các mục ghi faillog cho mọi người "
+-"dùng\n"
++"  -C, --clear                   xóa bản ghi lastlog của người dùng (chỉ dùng "
++"được với -u)\n"
+ 
+-#, fuzzy
+-#| msgid ""
+-#| "  -a, --all                     display faillog records for all users\n"
+ msgid ""
+ "  -S, --set                     set lastlog record to current time (usable "
+ "only with -u)\n"
+ msgstr ""
+-"  -a, --all                     hiển thị các mục ghi faillog cho mọi người "
+-"dùng\n"
++"  -S, --set                     đặt bản ghi lastlog thành thời điểm hiện tại "
++"(chỉ dùng được với -u)\n"
+ 
+ msgid ""
+ "  -t, --time DAYS               print only lastlog records more recent than "
  "DAYS\n"
  msgstr ""
  "  -t, --time SỐ                 hiển thị chỉ những mục ghi lastlog\n"
@@ -1251,7 +1398,7 @@ Index: git/po/vi.po
  
  msgid ""
  "  -u, --user LOGIN              print lastlog record of the specified LOGIN\n"
-@@ -1367,17 +1336,17 @@
+@@ -1406,35 +1366,33 @@ msgstr ""
  "tên này\n"
  
  msgid "Username         Port     From             Latest"
@@ -1265,6 +1412,30 @@ Index: git/po/vi.po
  msgid "**Never logged in**"
  msgstr "**Chưa bao giờ đăng nhập**"
  
+-#, fuzzy, c-format
+-#| msgid "%s: Failed to get the entry for UID %lu\n"
++#, c-format
+ msgid "%s: Failed to update the entry for UID %lu\n"
+-msgstr "%s: Không lấy được mục nhập cho UID %lu\n"
++msgstr "%s: Gặp lỗi khi cập nhật mục tin cho UID %lu\n"
+ 
+-#, fuzzy, c-format
+-#| msgid "%s: failed to reset the lastlog entry of UID %lu: %s\n"
++#, c-format
+ msgid "%s: Failed to update the lastlog file\n"
+-msgstr "%s: không đặt lại được mục nhập lastlog của UID %lu: %s\n"
++msgstr "%s: Gặp lỗi khi cập nhật tập tin lastlog\n"
+ 
+ #, c-format
+ msgid "%s: Option -C cannot be used together with option -S\n"
+-msgstr ""
++msgstr "%s: Tùy chọn -C không thể dùng cùng với -S\n"
+ 
+ #, c-format
+ msgid "%s: Options -C and -S require option -u to specify the user\n"
+-msgstr ""
++msgstr "%s: Các tùy chọn -C và -S cần tùy chọn -u để chỉ định người dùng\n"
+ 
  #, c-format
  msgid "Usage: %s [-p] [name]\n"
 -msgstr "Sử dụng: %s [-p] [tên]\n"
@@ -1272,7 +1443,7 @@ Index: git/po/vi.po
  
  #, c-format
  msgid "       %s [-p] [-h host] [-f name]\n"
-@@ -1389,7 +1358,7 @@
+@@ -1446,7 +1404,7 @@ msgstr "       %s [-p] -r máy\n"
  
  #, c-format
  msgid "configuration error - cannot parse %s value: '%d'"
@@ -1281,7 +1452,7 @@ Index: git/po/vi.po
  
  msgid "Invalid login time"
  msgstr "Thời gian đăng nhập không hợp lệ"
-@@ -1406,7 +1375,7 @@
+@@ -1463,7 +1421,7 @@ msgid ""
  "[Disconnect bypassed -- root login allowed.]"
  msgstr ""
  "\n"
@@ -1289,8 +1460,8 @@ Index: git/po/vi.po
 +"[Chức năng ngắt kết nối đã bị vòng: cho phép siêu quản trị đăng nhập.]"
  
  #, c-format
- msgid ""
-@@ -1422,12 +1391,12 @@
+ msgid "%s: Cannot possibly work without effective root\n"
+@@ -1471,8 +1429,8 @@ msgstr "%s: Không thể làm việc mà
  
  msgid "No utmp entry.  You must exec \"login\" from the lowest level \"sh\""
  msgstr ""
@@ -1300,13 +1471,17 @@ Index: git/po/vi.po
 +"“sh” (hệ vỏ) cấp dưới cùng."
  
  #, c-format
+ msgid ""
+@@ -1484,7 +1442,7 @@ msgstr ""
+ 
+ #, c-format
  msgid "login: PAM Failure, aborting: %s\n"
 -msgstr "login: (đăng nhập) PAM bị lỗi nên hủy bỏ : %s\n"
 +msgstr "login: (đăng nhập) PAM bị lỗi nên hủy bỏ: %s\n"
  
  #, c-format
  msgid "%s login: "
-@@ -1446,10 +1415,9 @@
+@@ -1503,10 +1461,9 @@ msgstr "login: (đăng nhập) PAM đã
  msgid "Login incorrect"
  msgstr "Đăng nhập không đúng"
  
@@ -1319,16 +1494,16 @@ Index: git/po/vi.po
  
  #, c-format
  msgid ""
-@@ -1468,7 +1436,7 @@
+@@ -1525,7 +1482,7 @@ msgid "TIOCSCTTY failed on %s"
  msgstr "TIOCSCTTY bị lỗi vào %s"
  
  msgid "Warning: login re-enabled after temporary lockout."
 -msgstr "Cảnh báo : đăng nhập đã bật lại sau bị khoá ra tạm thời."
-+msgstr "Cảnh báo: đăng nhập đã bật lại sau bị khoá ra tạm thời."
++msgstr "Cảnh báo: đăng nhập đã bật lại sau bị khóa ra tạm thời."
  
  #, c-format
  msgid "Last login: %s on %s"
-@@ -1490,16 +1458,16 @@
+@@ -1547,22 +1504,21 @@ msgstr ""
  "\n"
  
  msgid "Usage: logoutd\n"
@@ -1347,8 +1522,16 @@ Index: git/po/vi.po
 +"Cách dùng: sg group [[-c] lệnh]\n"
  "[group: nhóm]\n"
  
+-#, fuzzy, c-format
+-#| msgid "%s: failed to remove %s\n"
++#, c-format
+ msgid "%s: failed to crypt password with previous salt: %s\n"
+-msgstr "%s: không gỡ bỏ được %s\n"
++msgstr "%s: gặp lỗi khi mã hóa mật khẩu bằng muối trước đó: %s\n"
+ 
  msgid "Invalid password.\n"
-@@ -1511,7 +1479,7 @@
+ msgstr "Mật khẩu không hợp lệ.\n"
+@@ -1573,7 +1529,7 @@ msgstr "%s: lỗi tạo tiến trình co
  
  #, c-format
  msgid "%s: GID '%lu' does not exist\n"
@@ -1357,7 +1540,7 @@ Index: git/po/vi.po
  
  msgid "too many groups\n"
  msgstr "quá nhiều nhóm\n"
-@@ -1522,15 +1490,15 @@
+@@ -1584,15 +1540,15 @@ msgstr "  -r, --system
  #, c-format
  msgid "%s: group '%s' is a shadow group, but does not exist in /etc/group\n"
  msgstr ""
@@ -1376,7 +1559,7 @@ Index: git/po/vi.po
  
  #, c-format
  msgid "%s: line %d: invalid line\n"
-@@ -1539,7 +1507,7 @@
+@@ -1601,7 +1557,7 @@ msgstr "%s: dòng %d: dòng không hợp
  #, c-format
  msgid "%s: cannot update the entry of user %s (not in the passwd database)\n"
  msgstr ""
@@ -1385,7 +1568,7 @@ Index: git/po/vi.po
  "liệu mật khẩu passwd)\n"
  
  #, c-format
-@@ -1552,7 +1520,7 @@
+@@ -1614,7 +1570,7 @@ msgstr "%s: dòng %d: không thể tạo
  
  #, c-format
  msgid "%s: line %d: user '%s' does not exist in %s\n"
@@ -1394,17 +1577,79 @@ Index: git/po/vi.po
  
  #, c-format
  msgid "%s: line %d: can't update password\n"
-@@ -1568,7 +1536,7 @@
+@@ -1630,22 +1586,19 @@ msgstr "%s: dòng %d: lỗi chown (thay
  
  #, c-format
  msgid "%s: line %d: can't update entry\n"
 -msgstr "%s: dòng %d: không thể cập nhật mục nhập\n"
 +msgstr "%s: dòng %d: không thể cập nhật mục tin\n"
  
+-#, fuzzy, c-format
+-#| msgid "%s: failed to prepare the new %s entry '%s'\n"
++#, c-format
+ msgid "%s: failed to prepare new %s entry\n"
+-msgstr "%s: lỗi chuẩn bị mục nhập %s mới « %s »\n"
++msgstr "%s: gặp lỗi khi chuẩn bị mục tin mới “%s”\n"
+ 
+-#, fuzzy, c-format
+-#| msgid "%s: can't create user\n"
++#, c-format
+ msgid "%s: can't find subordinate user range\n"
+-msgstr "%s: không thể tạo người dùng\n"
++msgstr "%s: không thể tìm thấy vùng người dùng lệ thuộc\n"
+ 
+-#, fuzzy, c-format
+-#| msgid "%s: can't create group\n"
++#, c-format
+ msgid "%s: can't find subordinate group range\n"
+-msgstr "%s: không thể tạo nhóm\n"
++msgstr "%s: không thể tìm thấy vùng nhóm phụ thuộc\n"
+ 
  msgid ""
  "  -a, --all                     report password status on all accounts\n"
-@@ -1642,7 +1610,7 @@
- "khi thay đổi được mật khẩu\n"
+@@ -1655,7 +1608,7 @@ msgstr ""
+ 
+ msgid ""
+ "  -d, --delete                  delete the password for the named account\n"
+-msgstr "  -d, --delete                  xoá mật khẩu cho tài khoản đặt tên\n"
++msgstr "  -d, --delete                  xóa mật khẩu cho tài khoản đặt tên\n"
+ 
+ msgid ""
+ "  -e, --expire                  force expire the password for the named "
+@@ -1678,14 +1631,14 @@ msgstr ""
+ 
+ msgid ""
+ "  -l, --lock                    lock the password of the named account\n"
+-msgstr "  -l, --lock                    khoá mật khẩu của tài khoản đặt tên\n"
++msgstr "  -l, --lock                    khóa mật khẩu của tài khoản đặt tên\n"
+ 
+ msgid ""
+ "  -n, --mindays MIN_DAYS        set minimum number of days before password\n"
+ "                                change to MIN_DAYS\n"
+ msgstr ""
+-"  -n, --mindays SỐ              đặt thành số này số tối thiểu các ngày trước "
+-"khi mật khẩu thay đổi được\n"
++"  -n, --mindays SỐ              đặt thành số này số tối thiểu các ngày\n"
++"                                        trước khi mật khẩu thay đổi được\n"
+ 
+ msgid "  -q, --quiet                   quiet mode\n"
+ msgstr "  -q, --quiet                   chế độ không xuất chi tiết\n"
+@@ -1703,7 +1656,7 @@ msgstr ""
+ msgid ""
+ "  -u, --unlock                  unlock the password of the named account\n"
+ msgstr ""
+-"  -u, --unlock                  mở khoá mật khẩu của tài khoản đặt tên\n"
++"  -u, --unlock                  mở khóa mật khẩu của tài khoản đặt tên\n"
+ 
+ msgid ""
+ "  -w, --warndays WARN_DAYS      set expiration warning days to WARN_DAYS\n"
+@@ -1716,10 +1669,11 @@ msgid ""
+ "                                change to MAX_DAYS\n"
+ msgstr ""
+ "  -x, --maxdays NGÀY            đặt thành số này số tối đa các ngày trước "
+-"khi thay đổi được mật khẩu\n"
++"khi\n"
++"                                        thay đổi được mật khẩu\n"
  
  msgid "Old password: "
 -msgstr "Mật khẩu cũ : "
@@ -1412,27 +1657,33 @@ Index: git/po/vi.po
  
  #, c-format
  msgid ""
-@@ -1671,7 +1639,7 @@
+@@ -1748,10 +1702,10 @@ msgid ""
  "Warning: weak password (enter it again to use it anyway)."
  msgstr ""
  "\n"
 -"Cảnh báo : mật khẩu yếu (nhập lại để vẫn chọn)"
-+"Cảnh báo: mật khẩu yếu (nhập lại để vẫn chọn)"
++"Cảnh báo: mật khẩu yếu (nhập lại để vẫn dùng nó)"
  
  msgid "They don't match; try again.\n"
- msgstr "Hai mật khẩu không trùng: hãy thử lại.\n"
-@@ -1691,8 +1659,8 @@
+-msgstr "Hai mật khẩu không trùng: hãy thử lại.\n"
++msgstr "Hai mật khẩu không trùng nhau: hãy thử lại.\n"
+ 
+ #, c-format
+ msgid "The password for %s cannot be changed.\n"
+@@ -1767,9 +1721,9 @@ msgid ""
+ "You should set a password with usermod -p to unlock the password of this "
  "account.\n"
  msgstr ""
- "%s: mở khoá mật khẩu thì gây ra một tài khoản không có mật khẩu.\n"
+-"%s: mở khoá mật khẩu thì gây ra một tài khoản không có mật khẩu.\n"
 -"Bạn nên đặt một mật khẩu dùng câu lệnh « usermod -p » để mở khoá mật khẩu "
 -"của tài khoản này.\n"
-+"Bạn nên đặt một mật khẩu dùng câu lệnh “usermod -p” để mở khoá mật khẩu của "
++"%s: mở khóa mật khẩu thì gây ra một tài khoản không có mật khẩu.\n"
++"Bạn nên đặt một mật khẩu dùng câu lệnh “usermod -p” để mở khóa mật khẩu của "
 +"tài khoản này.\n"
  
  #, c-format
  msgid "%s: repository %s not supported\n"
-@@ -1723,109 +1691,96 @@
+@@ -1800,109 +1754,96 @@ msgstr "%s: mật khẩu đã thay đổ
  msgid "%s: password expiry information changed.\n"
  msgstr "%s: thông tin đã thay đổi về sự hết hạn sử dụng mật khẩu.\n"
  
@@ -1450,7 +1701,8 @@ Index: git/po/vi.po
 -"Sử dụng: %s [tuỳ_chọn ...]\n"
 +"Cách dùng: %s [các_tuỳ_chọn] [passwd]\n"
  "\n"
- "Tuỳ chọn:\n"
+-"Tuỳ chọn:\n"
++"Tùy chọn:\n"
  
 -#, fuzzy, c-format
 -#| msgid ""
@@ -1466,7 +1718,8 @@ Index: git/po/vi.po
 -"Sử dụng: %s [tuỳ_chọn ...]\n"
 +"Cách dùng: %s [các_tuỳ_chọn] [passwd [shadow]]\n"
  "\n"
- "Tuỳ chọn:\n"
+-"Tuỳ chọn:\n"
++"Tùy chọn:\n"
  
 -#, fuzzy
 -#| msgid "  -g, --gid GID                 use GID for the new group\n"
@@ -1569,7 +1822,7 @@ Index: git/po/vi.po
  
  #, c-format
  msgid "user %s: last password change in the future\n"
-@@ -1833,18 +1788,18 @@
+@@ -1910,18 +1851,18 @@ msgstr "người dùng %s: lần thay đ
  
  #, c-format
  msgid "%s: cannot sort entries in %s\n"
@@ -1591,16 +1844,9 @@ Index: git/po/vi.po
  
  msgid "Password authentication bypassed.\n"
  msgstr "Xác thực mật khẩu bị đi vòng.\n"
-@@ -1853,33 +1808,32 @@
+@@ -1929,32 +1870,29 @@ msgstr "Xác thực mật khẩu bị đ
+ msgid "Please enter your OWN password as authentication.\n"
  msgstr "Hãy nhập mật khẩu của MÌNH để xác thực.\n"
- 
- msgid " ...killed.\n"
--msgstr ""
-+msgstr " ...đã chết.\n"
- 
- msgid " ...waiting for child to terminate.\n"
--msgstr ""
-+msgstr " ...đang đợi tiến con chấm dứt.\n"
  
 -#, fuzzy, c-format
 -#| msgid "%s: Cannot determine your user name.\n"
@@ -1621,30 +1867,36 @@ Index: git/po/vi.po
  
  msgid "Session terminated, terminating shell..."
 -msgstr ""
-+msgstr "Phiên làm việc đã kết thúc, nên kết thúc hệ vỏ..."
++msgstr "Phiên làm việc đã kết thúc, nên kết thúc hệ vỏ…"
  
- #, c-format
- msgid "%s: %s\n"
- msgstr "%s: %s\n"
+-#, c-format
+ msgid " ...killed.\n"
+-msgstr ""
++msgstr " …đã chết.\n"
+ 
+-#, c-format
+ msgid " ...waiting for child to terminate.\n"
+-msgstr ""
++msgstr " …đang đợi tiến con chấm dứt.\n"
  
  msgid " ...terminated.\n"
 -msgstr ""
-+msgstr " ...đã chấm dứt.\n"
++msgstr " …đã chấm dứt.\n"
  
- msgid ""
- "Usage: su [options] [LOGIN]\n"
-@@ -1894,20 +1848,20 @@
+ #, c-format
+ msgid "%s: %s\n"
+@@ -1973,20 +1911,20 @@ msgid ""
  "  -s, --shell SHELL             use SHELL instead of the default in passwd\n"
  "\n"
  msgstr ""
 -"Sử dụng: su [tùy_chọn...] [đăng_nhập]\n"
-+"Cách dùng: su [tùy_chọn...] [đăng_nhập]\n"
++"Cách dùng: su [tùy_chọn…] [đăng_nhập]\n"
  "\n"
  "[su: siêu người dùng]\n"
  "\n"
  "Tùy chọn:\n"
 -"  -c, --command LỆNH            gởi lệnh này qua cho trình bao đã gọi\n"
-+"  -c, --command LỆNH            gởi lệnh này qua cho hệ vỏ đã gọi\n"
++"  -c, --command LỆNH            gửi lệnh này qua cho hệ vỏ đã gọi\n"
  "  -h, --help                    hiển thị _trợ giúp_ này rồi thoát\n"
 -"  -, -l, --login                lập trình bao là trình bao _đăng nhập_\n"
 +"  -, -l, --login                lập hệ vỏ là hệ vỏ _đăng nhập_\n"
@@ -1661,7 +1913,7 @@ Index: git/po/vi.po
  "\n"
  
  #, c-format
-@@ -1916,11 +1870,11 @@
+@@ -1995,11 +1933,11 @@ msgid ""
  "(Ignored)\n"
  msgstr ""
  "%s: %s\n"
@@ -1675,7 +1927,7 @@ Index: git/po/vi.po
  
  msgid "(Enter your own password)"
  msgstr "(Nhập mật khẩu của mình)"
-@@ -1932,12 +1886,11 @@
+@@ -2011,12 +1949,11 @@ msgstr "%s: lỗi xác thực\n"
  #, c-format
  msgid "%s: You are not authorized to su at that time\n"
  msgstr ""
@@ -1687,11 +1939,11 @@ Index: git/po/vi.po
 +#, c-format
  msgid "No passwd entry for user '%s'\n"
 -msgstr "Không có mục nhập mật khẩu cho « root » (người chủ)"
-+msgstr "Không có mục tin mật khẩu cho tài khoản '%s'\n"
++msgstr "Không có mục tin mật khẩu cho tài khoản “%s”\n"
  
  #, c-format
  msgid "%s: must be run from a terminal\n"
-@@ -1947,15 +1900,13 @@
+@@ -2026,15 +1963,13 @@ msgstr "%s: phải chạy từ thiết b
  msgid "%s: pam_start: error %d\n"
  msgstr "%s: pam_start: (pam bắt đầu) lỗi %d\n"
  
@@ -1711,7 +1963,7 @@ Index: git/po/vi.po
  
  msgid "No password file"
  msgstr "Không có tập tin mật khẩu"
-@@ -1964,7 +1915,7 @@
+@@ -2043,7 +1978,7 @@ msgid "TIOCSCTTY failed"
  msgstr "TIOCSCTTY bị lỗi"
  
  msgid "No password entry for 'root'"
@@ -1720,7 +1972,7 @@ Index: git/po/vi.po
  
  msgid ""
  "\n"
-@@ -1973,14 +1924,14 @@
+@@ -2052,14 +1987,14 @@ msgid ""
  msgstr ""
  "\n"
  "Hãy gõ tổ hợp phím Ctrl-D để tiếp tục khởi động bình thường,\n"
@@ -1737,9 +1989,12 @@ Index: git/po/vi.po
  
  #, c-format
  msgid "%s: the %s configuration in %s will be ignored\n"
-@@ -1998,10 +1949,9 @@
+@@ -2075,12 +2010,11 @@ msgstr "%s: không thể mở tập tin
+ 
+ #, c-format
  msgid "%s: line too long in %s: %s..."
- msgstr "%s: dòng quá dài trong %s: %s..."
+-msgstr "%s: dòng quá dài trong %s: %s..."
++msgstr "%s: dòng quá dài trong %s: %s…"
  
 -#, fuzzy, c-format
 -#| msgid "%s: cannot create directory %s\n"
@@ -1750,7 +2005,7 @@ Index: git/po/vi.po
  
  #, c-format
  msgid "%s: rename: %s: %s\n"
-@@ -2009,17 +1959,13 @@
+@@ -2088,17 +2022,13 @@ msgstr "%s: thay tên: %s: %s\n"
  
  #, c-format
  msgid "%s: group '%s' is a NIS group.\n"
@@ -1770,18 +2025,20 @@ Index: git/po/vi.po
  msgid ""
  "Usage: %s [options] LOGIN\n"
  "       %s -D\n"
-@@ -2027,7 +1973,9 @@
+@@ -2106,72 +2036,73 @@ msgid ""
  "\n"
  "Options:\n"
  msgstr ""
 -"Sử dụng: %s [tuỳ_chọn ...]\n"
-+"Cách dùng: %s [các_tuỳ_chọn] LOGIN\n"
++"Cách dùng: %s [các_tuỳ_chọn] ĐĂNG_NHẬP\n"
 +"       %s -D\n"
 +"       %s -D [các-tùy-chọn]\n"
  "\n"
- "Tuỳ chọn:\n"
+-"Tuỳ chọn:\n"
++"Tùy chọn:\n"
  
-@@ -2036,63 +1984,62 @@
+ msgid ""
+ "  -b, --base-dir BASE_DIR       base directory for the home directory of "
  "the\n"
  "                                new account\n"
  msgstr ""
@@ -1858,7 +2115,7 @@ Index: git/po/vi.po
  
  msgid ""
  "  -N, --no-user-group           do not create a group with the same name as\n"
-@@ -2104,16 +2051,15 @@
+@@ -2183,16 +2114,15 @@ msgid ""
  "  -o, --non-unique              allow to create users with duplicate\n"
  "                                (non-unique) UID\n"
  msgstr ""
@@ -1878,7 +2135,7 @@ Index: git/po/vi.po
  
  msgid "  -u, --uid UID                 user ID of the new account\n"
  msgstr "  -u, --uid UID                 mã số người dùng của tài khoản mới\n"
-@@ -2127,48 +2073,48 @@
+@@ -2206,53 +2136,52 @@ msgid ""
  "  -Z, --selinux-user SEUSER     use a specific SEUSER for the SELinux user "
  "mapping\n"
  msgstr ""
@@ -1925,7 +2182,7 @@ Index: git/po/vi.po
  #, c-format
  msgid "%s: -Z requires SELinux enabled kernel\n"
 -msgstr "%s: « -Z » yêu cầu hạt nhân hiệu lực SELinux\n"
-+msgstr "%s: “-Z” yêu cầu nhân bật tính năng hỗ trợ SELinux\n"
++msgstr "%s: “-Z” yêu cầu hạt nhân bật tính năng hỗ trợ SELinux\n"
  
  #, c-format
  msgid "%s: failed to reset the faillog entry of UID %lu: %s\n"
@@ -1937,9 +2194,16 @@ Index: git/po/vi.po
 -msgstr "%s: không đặt lại được mục nhập lastlog của UID %lu: %s\n"
 +msgstr "%s: gặp lỗi khi đặt lại mục tin lastlog của UID %lu: %s\n"
  
+-#, fuzzy, c-format
+-#| msgid "%s: failed to prepare the new %s entry '%s'\n"
++#, c-format
+ msgid "%s: failed to prepare the new %s entry\n"
+-msgstr "%s: lỗi chuẩn bị mục nhập %s mới « %s »\n"
++msgstr "%s: gặp lỗi khi chuẩn bị %s mục tin mới\n"
+ 
  #, c-format
  msgid "%s: cannot create directory %s\n"
-@@ -2180,21 +2126,20 @@
+@@ -2264,21 +2193,20 @@ msgstr "Đang tạo tập tin hộp thư
  msgid ""
  "Group 'mail' not found. Creating the user mailbox file with 0600 mode.\n"
  msgstr ""
@@ -1965,7 +2229,7 @@ Index: git/po/vi.po
  
  #, c-format
  msgid "%s: can't create user\n"
-@@ -2204,10 +2149,9 @@
+@@ -2288,37 +2216,34 @@ msgstr "%s: không thể tạo người
  msgid "%s: UID %lu is not unique\n"
  msgstr "%s: UID %lu không phải duy nhất\n"
  
@@ -1978,7 +2242,24 @@ Index: git/po/vi.po
  
  #, c-format
  msgid "%s: can't create group\n"
-@@ -2218,59 +2162,55 @@
+ msgstr "%s: không thể tạo nhóm\n"
+ 
+-#, fuzzy, c-format
+-#| msgid "%s: can't create user\n"
++#, c-format
+ msgid "%s: can't create subordinate user IDs\n"
+-msgstr "%s: không thể tạo người dùng\n"
++msgstr "%s: không thể tạo mã số người dùng lệ thuộc\n"
+ 
+-#, fuzzy, c-format
+-#| msgid "%s: can't create group\n"
++#, c-format
+ msgid "%s: can't create subordinate group IDs\n"
+-msgstr "%s: không thể tạo nhóm\n"
++msgstr "%s: không thể tạo mã nhóm phụ thuộc\n"
+ 
+ #, c-format
+ msgid ""
  "%s: warning: the home directory already exists.\n"
  "Not copying any file from skel directory into it.\n"
  msgstr ""
@@ -1995,11 +2276,7 @@ Index: git/po/vi.po
  
  msgid ""
  "  -f, --force                   force removal of files,\n"
- "                                even if not owned by user\n"
- msgstr ""
- "  -f, --force                   ép buộc gỡ bỏ tập tin, thậm chí nếu không\n"
--"                                được sở hữu bởi người dùng\n"
-+"                                  được sở hữu bởi người dùng\n"
+@@ -2329,47 +2254,42 @@ msgstr ""
  
  msgid "  -r, --remove                  remove home directory and mail spool\n"
  msgstr ""
@@ -2040,6 +2317,13 @@ Index: git/po/vi.po
  "%s: nhóm %s là nhóm chính của một người dùng khác thì không bị gỡ bỏ.\n"
  
 -#, fuzzy, c-format
+-#| msgid "%s: cannot remove entry '%s' from %s\n"
++#, c-format
+ msgid "%s: cannot remove entry %lu from %s\n"
+-msgstr "%s: không thể gỡ bỏ mục nhập « %s » khỏi %s\n"
++msgstr "%s: không thể gỡ bỏ %lu mục tin khỏi %s\n"
+ 
+-#, fuzzy, c-format
 -#| msgid "%s: %s home directory (%s) not found\n"
 +#, c-format
  msgid "%s: %s mail spool (%s) not found\n"
@@ -2053,7 +2337,7 @@ Index: git/po/vi.po
  
  #, c-format
  msgid "%s: %s not owned by %s, not removing\n"
-@@ -2278,22 +2218,19 @@
+@@ -2377,22 +2297,19 @@ msgstr "%s: %s không phải được %s
  
  #, c-format
  msgid "%s: Can't allocate memory, tcb entry for %s not removed.\n"
@@ -2083,7 +2367,7 @@ Index: git/po/vi.po
  
  #, c-format
  msgid "%s: user %s is a NIS user\n"
-@@ -2301,23 +2238,21 @@
+@@ -2400,23 +2317,21 @@ msgstr "%s: người dùng %s là ngư�
  
  #, c-format
  msgid "%s: %s home directory (%s) not found\n"
@@ -2111,7 +2395,7 @@ Index: git/po/vi.po
  
  msgid "  -c, --comment COMMENT         new value of the GECOS field\n"
  msgstr "  -c, --comment GHI_LƯU         giá trị mới của trường GECOS\n"
-@@ -2325,7 +2260,7 @@
+@@ -2424,7 +2339,7 @@ msgstr "  -c, --comment GHI_LƯU
  msgid ""
  "  -d, --home HOME_DIR           new home directory for the user account\n"
  msgstr ""
@@ -2120,18 +2404,24 @@ Index: git/po/vi.po
  
  msgid ""
  "  -e, --expiredate EXPIRE_DATE  set account expiration date to EXPIRE_DATE\n"
-@@ -2353,8 +2288,8 @@
+@@ -2452,23 +2367,23 @@ msgid ""
  "                                mentioned by the -G option without removing\n"
  "                                him/her from other groups\n"
  msgstr ""
 -"  -a, --append                  phụ thêm người dùng vào các nhóm phụ\n"
 -"                                đưa ra bởi tuỳ chọn « -G » mà không gỡ bỏ ta "
 +"  -a, --append                  thêm người dùng vào các nhóm phụ\n"
-+"                                đưa ra bởi tuỳ chọn “-G” mà không gỡ bỏ ta "
++"                                đưa ra bởi tùy chọn “-G” mà không gỡ bỏ ta "
  "khỏi nhóm khác\n"
  
  msgid "  -l, --login NEW_LOGIN         new value of the login name\n"
-@@ -2367,9 +2302,9 @@
+ msgstr "  -l, --login ĐĂNG_NHẬP         giá trị mới của tên đăng nhập\n"
+ 
+ msgid "  -L, --lock                    lock the user account\n"
+-msgstr "  -L, --lock                    khoá tài khoản người dùng\n"
++msgstr "  -L, --lock                    khóa tài khoản người dùng\n"
+ 
+ msgid ""
  "  -m, --move-home               move contents of the home directory to the\n"
  "                                new location (use only with -d)\n"
  msgstr ""
@@ -2143,9 +2433,35 @@ Index: git/po/vi.po
  
  msgid ""
  "  -o, --non-unique              allow using duplicate (non-unique) UID\n"
-@@ -2386,16 +2321,11 @@
+@@ -2477,82 +2392,73 @@ msgstr ""
+ 
+ msgid ""
+ "  -p, --password PASSWORD       use encrypted password for the new password\n"
+-msgstr "  -p, --password MẬT_KHẨU       mật mã hoá mật khẩu mới\n"
++msgstr "  -p, --password MẬT_KHẨU       mật mã hóa mật khẩu mới\n"
+ 
+ msgid "  -u, --uid UID                 new UID for the user account\n"
+ msgstr "  -u, --uid UID                 UID mới cho tài khoản người dùng\n"
+ 
  msgid "  -U, --unlock                  unlock the user account\n"
- msgstr "  -U, --unlock                  mở khoá tài khoản người dùng\n"
+-msgstr "  -U, --unlock                  mở khoá tài khoản người dùng\n"
++msgstr "  -U, --unlock                  mở khóa tài khoản người dùng\n"
+ 
+ msgid "  -v, --add-subuids FIRST-LAST  add range of subordinate uids\n"
+-msgstr ""
++msgstr "  -v, --add-subuids ĐẦU-CUỐI    thêm vùng mã người dùng lệ thuộc\n"
+ 
+ msgid "  -V, --del-subuids FIRST-LAST  remove range of subordinate uids\n"
+-msgstr ""
++msgstr "  -V, --del-subuids ĐẦU-CUỐI    xóa vùng mã người dùng lệ thuộc\n"
+ 
+ msgid "  -w, --add-subgids FIRST-LAST  add range of subordinate gids\n"
+-msgstr ""
++msgstr "  -w, --add-subgids ĐẦU-CUỐI    thêm vùng mã nhóm lệ thuộc\n"
+ 
+ msgid "  -W, --del-subgids FIRST-LAST  remove range of subordinate gids\n"
+-msgstr ""
++msgstr "  -W, --del-subgids ĐẦU-CUỐI    xóa vùng mã nhóm lệ thuộc\n"
  
 -#, fuzzy
 -#| msgid ""
@@ -2161,18 +2477,34 @@ Index: git/po/vi.po
  
  #, c-format
  msgid ""
-@@ -2404,29 +2334,28 @@
+ "%s: unlocking the user's password would result in a passwordless account.\n"
+ "You should set a password with usermod -p to unlock this user's password.\n"
  msgstr ""
- "%s: mở khoá mật khẩu của người dùng thì gây ra một tài khoản không có mật "
+-"%s: mở khoá mật khẩu của người dùng thì gây ra một tài khoản không có mật "
++"%s: mở khóa mật khẩu của người dùng thì gây ra một tài khoản không có mật "
  "khẩu.\n"
 -"Bạn nên đặt một mật khẩu dùng « usermod -p » để mở khoá mật khẩu của người "
-+"Bạn nên đặt một mật khẩu dùng “usermod -p” để mở khoá mật khẩu của người "
++"Bạn nên đặt một mật khẩu dùng “usermod -p” để mở khóa mật khẩu của người "
  "dùng này.\n"
  
  #, c-format
  msgid "%s: user '%s' already exists in %s\n"
 -msgstr "%s: người dùng « %s » đã có trong %s\n"
 +msgstr "%s: người dùng “%s” đã có trong %s\n"
+ 
+-#, fuzzy, c-format
+-#| msgid "%s: invalid date '%s'\n"
++#, c-format
+ msgid "%s: invalid subordinate uid range '%s'\n"
+-msgstr "%s: ngày không hợp lệ « %s »\n"
++msgstr "%s: vùng mã số người dùng lệ thuộc không hợp lệ “%s”\n"
+ 
+-#, fuzzy, c-format
+-#| msgid "%s: invalid date '%s'\n"
++#, c-format
+ msgid "%s: invalid subordinate gid range '%s'\n"
+-msgstr "%s: ngày không hợp lệ « %s »\n"
++msgstr "%s: vùng mã số nhóm lệ thuộc không hợp lệ “%s”\n"
  
 -#, fuzzy, c-format
 -#| msgid "%s: cannot open %s\n"
@@ -2196,9 +2528,16 @@ Index: git/po/vi.po
 -msgstr "%s: UID « %lu » đã có\n"
 +msgstr "%s: UID “%lu” đã có\n"
  
+-#, fuzzy, c-format
+-#| msgid "%s: %s is not authorized to change the password of %s\n"
++#, c-format
+ msgid "%s: %s does not exist, you cannot use the flags %s or %s\n"
+-msgstr "%s: %s không có quyền thay đổi mật khẩu của %s\n"
++msgstr "%s: %s không tồn tại, bạn không thể dùng cờ %s hay %s\n"
+ 
  #, c-format
  msgid "%s: directory %s exists\n"
-@@ -2437,15 +2366,16 @@
+@@ -2563,15 +2469,16 @@ msgid ""
  "%s: The previous home directory (%s) was not a directory. It is not removed "
  "and no home directories are created.\n"
  msgstr ""
@@ -2219,7 +2558,7 @@ Index: git/po/vi.po
  
  #, c-format
  msgid "%s: cannot rename directory %s to %s\n"
-@@ -2454,24 +2384,24 @@
+@@ -2580,44 +2487,40 @@ msgstr "%s: không thể thay đổi l�
  #, c-format
  msgid "%s: failed to copy the lastlog entry of user %lu to user %lu: %s\n"
  msgstr ""
@@ -2241,15 +2580,43 @@ Index: git/po/vi.po
  
  msgid "failed to change mailbox owner"
 -msgstr "lỗi thay đổi chủ hộp thư"
-+msgstr "gặp lỗi khi thay đổi chủ hộp thư"
++msgstr "gặp lỗi khi đổi chủ sở hữu hộp thư"
  
  msgid "failed to rename mailbox"
 -msgstr "lỗi thay đổi tên của hộp thư"
-+msgstr "gặp lỗi khi thay đổi tên của hộp thư"
++msgstr "gặp lỗi khi đổi tên của hộp thư"
+ 
+-#, fuzzy, c-format
+-#| msgid "%s: failed to prepare the new %s entry '%s'\n"
++#, c-format
+ msgid "%s: failed to remove uid range %lu-%lu from '%s'\n"
+-msgstr "%s: lỗi chuẩn bị mục nhập %s mới « %s »\n"
++msgstr "%s: gặp lỗi khi xóa bỏ vùng mã người dùng %lu-%lu khỏi “%s”\n"
+ 
+-#, fuzzy, c-format
+-#| msgid "%s: failed to prepare the new %s entry '%s'\n"
++#, c-format
+ msgid "%s: failed to add uid range %lu-%lu from '%s'\n"
+-msgstr "%s: lỗi chuẩn bị mục nhập %s mới « %s »\n"
++msgstr "%s: gặp lỗi khi thêm vùng mã người dùng %lu-%lu vào “%s”\n"
+ 
+-#, fuzzy, c-format
+-#| msgid "%s: failed to prepare the new %s entry '%s'\n"
++#, c-format
+ msgid "%s: failed to remove gid range %lu-%lu from '%s'\n"
+-msgstr "%s: lỗi chuẩn bị mục nhập %s mới « %s »\n"
++msgstr "%s: gặp lỗi khi gỡ bỏ vùng mã số nhóm %lu-%lu khỏi “%s”\n"
+ 
+-#, fuzzy, c-format
+-#| msgid "%s: failed to prepare the new %s entry '%s'\n"
++#, c-format
+ msgid "%s: failed to add gid range %lu-%lu from '%s'\n"
+-msgstr "%s: lỗi chuẩn bị mục nhập %s mới « %s »\n"
++msgstr "%s: gặp lỗi khi thêm vùng mã số nhóm %lu-%lu vào “%s”\n"
  
  #, c-format
  msgid ""
-@@ -2481,7 +2411,7 @@
+@@ -2627,7 +2530,7 @@ msgid ""
  msgstr ""
  "Bạn đã sửa đổi %s.\n"
  "Để thống nhất thì bạn cũng có thể cần sửa đổi %s.\n"
@@ -2258,7 +2625,7 @@ Index: git/po/vi.po
  
  msgid "  -g, --group                   edit group database\n"
  msgstr "  -g, --group                   sửa đổi cơ sở dữ liệu nhóm\n"
-@@ -2493,28 +2423,22 @@
+@@ -2639,28 +2542,22 @@ msgid "  -s, --shadow                  e
  msgstr ""
  "  -s, --shadow                  sửa đổi cơ sở dữ liệu shadow hay gshadow\n"
  
@@ -2291,7 +2658,7 @@ Index: git/po/vi.po
  
  msgid "Couldn't get file context"
  msgstr "Không thể lấy ngữ cảnh tập tin"
-@@ -2522,10 +2446,8 @@
+@@ -2668,63 +2565,49 @@ msgstr "Không thể lấy ngữ cảnh
  msgid "setfscreatecon () failed"
  msgstr "setfscreatecon () bị lỗi"
  
@@ -2302,10 +2669,28 @@ Index: git/po/vi.po
 +msgstr "gặp lỗi khi cấp đặc quyền"
  
  msgid "Couldn't lock file"
- msgstr "Không thể khoá tập tin"
-@@ -2533,39 +2455,28 @@
+-msgstr "Không thể khoá tập tin"
++msgstr "Không thể khóa tập tin"
+ 
  msgid "Couldn't make backup"
  msgstr "Không thể sao lưu"
+ 
+-#, fuzzy, c-format
+-#| msgid "%s: %s\n"
++#, c-format
+ msgid "%s: %s: %s\n"
+-msgstr "%s: %s\n"
++msgstr "%s: %s: %s\n"
+ 
+ #, c-format
+ msgid "%s: %s returned with status %d\n"
+-msgstr ""
++msgstr "%s: %s trả về với trạng thái là %d\n"
+ 
+ #, c-format
+ msgid "%s: %s killed by signal %d\n"
+-msgstr ""
++msgstr "%s: %s bị giết bởi tín hiệu %d\n"
  
 -#, fuzzy
 -#| msgid "failed to rename mailbox"
@@ -2350,25 +2735,31 @@ Index: git/po/vi.po
  
  #~ msgid "  -c, --crypt-method            the crypt method (one of %s)\n"
  #~ msgstr "  -c, --crypt-method            phương pháp mật mã (một của %s)\n"
-@@ -2575,7 +2486,7 @@
+@@ -2734,9 +2617,9 @@ msgstr "%s: thư mục cơ ban không h�
  #~ "\n"
  #~ "Options:\n"
  #~ msgstr ""
 -#~ "Sử dụng: vipw [tuỳ_chọn ...]\n"
-+#~ "Cách dùng: vipw [tuỳ_chọn ...]\n"
++#~ "Cách dùng: vipw [tuỳ_chọn …]\n"
  #~ "\n"
- #~ "Tuỳ chọn:\n"
+-#~ "Tuỳ chọn:\n"
++#~ "Tùy chọn:\n"
  
-@@ -2603,7 +2514,7 @@
+ #~ msgid "malloc(%d) failed\n"
+ #~ msgstr "malloc(%d) (cấp phát bộ nhớ) bị lỗi\n"
+@@ -2762,9 +2645,9 @@ msgstr "%s: thư mục cơ ban không h�
  #~ "  -W, --warndays WARN_DAYS      set expiration warning days to WARN_DAYS\n"
  #~ "\n"
  #~ msgstr ""
 -#~ "Sử dụng: chage [tuỳ_chọn ...] [ĐĂNG_NHẬP]\n"
-+#~ "Cách dùng: chage [tuỳ_chọn ...] [ĐĂNG_NHẬP]\n"
++#~ "Cách dùng: chage [tuỳ_chọn …] [ĐĂNG_NHẬP]\n"
  #~ "\n"
- #~ "Tuỳ chọn:\n"
+-#~ "Tuỳ chọn:\n"
++#~ "Tùy chọn:\n"
  #~ "  -d, --lastday NGÀY_CUỐI        đặt ngày thay đổi mật khẩu cuối cùng "
-@@ -2631,12 +2542,12 @@
+ #~ "thành ngày này\n"
+ #~ "  -E, --expiredate NGÀY_HẾT_HẠN    đặt ngày hết hạn dùng tài khoản thành "
+@@ -2790,12 +2673,12 @@ msgstr "%s: thư mục cơ ban không h�
  #~ "Usage: %s [-f full_name] [-r room_no] [-w work_ph]\n"
  #~ "\t[-h home_ph] [-o other] [user]\n"
  #~ msgstr ""
@@ -2383,7 +2774,7 @@ Index: git/po/vi.po
  #~ "\t[-h điện_thoại_ở_nhà]\n"
  
  #~ msgid ""
-@@ -2650,7 +2561,7 @@
+@@ -2809,13 +2692,13 @@ msgstr "%s: thư mục cơ ban không h�
  #~ "                                the MD5 algorithm\n"
  #~ "%s\n"
  #~ msgstr ""
@@ -2391,13 +2782,22 @@ Index: git/po/vi.po
 +#~ "Cách dùng: %s [tùy_chọn]\n"
  #~ "\n"
  #~ "Tùy chọn:\n"
- #~ "  -c, --crypt-method            phương pháp mã hoá (một của %s)\n"
-@@ -2667,21 +2578,21 @@
+-#~ "  -c, --crypt-method            phương pháp mã hoá (một của %s)\n"
+-#~ "  -e, --encrypted               mã hoá mỗi mật khẩu đã cung cấp\n"
++#~ "  -c, --crypt-method            phương pháp mã hóa (một của %s)\n"
++#~ "  -e, --encrypted               mã hóa mỗi mật khẩu đã cung cấp\n"
+ #~ "  -h, --help                    hiển thị trợ giúp này rồi thoát\n"
+-#~ "  -m, --md5           mã hoá mật khẩu nhập thô, dùng thuật toán MD5\n"
++#~ "  -m, --md5           mã hóa mật khẩu nhập thô, dùng thuật toán MD5\n"
+ #~ "%s\n"
+ 
+ #~ msgid ""
+@@ -2826,21 +2709,21 @@ msgstr "%s: thư mục cơ ban không h�
  #~ "  -s, --shell SHELL             new login shell for the user account\n"
  #~ "\n"
  #~ msgstr ""
 -#~ "Sử dụng: chsh [tùy_chọn...] [ĐĂNG_NHẬP]\n"
-+#~ "Cách dùng: chsh [tùy_chọn...] [ĐĂNG_NHẬP]\n"
++#~ "Cách dùng: chsh [tùy_chọn…] [ĐĂNG_NHẬP]\n"
  #~ "\n"
  #~ "Tùy chọn:\n"
  #~ "  -h, --help                    hiện _trợ giúp_ này rồi thoát\n"
@@ -2418,13 +2818,14 @@ Index: git/po/vi.po
  
  #~ msgid "faillog: Cannot open %s: %s\n"
  #~ msgstr "faillog: không thể mở %s: %s\n"
-@@ -2691,23 +2602,23 @@
+@@ -2850,23 +2733,23 @@ msgstr "%s: thư mục cơ ban không h�
  
  #~ msgid "Usage: groupdel group\n"
  #~ msgstr ""
 -#~ "Sử dụng: groupdel nhóm\n"
+-#~ "[groupdel: xoá nhóm]\n"
 +#~ "Cách dùng: groupdel nhóm\n"
- #~ "[groupdel: xoá nhóm]\n"
++#~ "[groupdel: xóa nhóm]\n"
  
  #~ msgid "Usage: %s [-r] [-s] [group [gshadow]]\n"
 -#~ msgstr "Sử dụng: %s [-r] [-s] [nhóm [gshadow]]\n"
@@ -2448,25 +2849,46 @@ Index: git/po/vi.po
  
  #~ msgid ""
  #~ "Usage: lastlog [options]\n"
-@@ -2722,7 +2633,7 @@
+@@ -2881,7 +2764,7 @@ msgstr "%s: thư mục cơ ban không h�
  #~ "LOGIN\n"
  #~ "\n"
  #~ msgstr ""
 -#~ "Sử dụng: lastlog [tùy_chọn...]\n"
-+#~ "Cách dùng: lastlog [tùy_chọn...]\n"
++#~ "Cách dùng: lastlog [tùy_chọn…]\n"
  #~ "\n"
  #~ "[lastlog: bản ghi cuối cùng]\n"
  #~ "\n"
-@@ -2764,7 +2675,7 @@
+@@ -2923,11 +2806,11 @@ msgstr "%s: thư mục cơ ban không h�
  #~ "                                change to MAX_DAYS\n"
  #~ "\n"
  #~ msgstr ""
 -#~ "Sử dụng: passwd [tuỳ_chọn ...] [ĐĂNG_NHẬP]\n"
-+#~ "Cách dùng: passwd [tuỳ_chọn ...] [ĐĂNG_NHẬP]\n"
++#~ "Cách dùng: passwd [tuỳ_chọn …] [ĐĂNG_NHẬP]\n"
  #~ "\n"
- #~ "Tuỳ chọn:\n"
+-#~ "Tuỳ chọn:\n"
++#~ "Tùy chọn:\n"
  #~ "  -a, --all\t\t\tthông báo trạng thái mật khẩu về mọi tài khoản\n"
-@@ -2789,218 +2700,3 @@
+-#~ "  -d, --delete           \txoá mật khẩu cho tài khoản đặt tên\n"
++#~ "  -d, --delete           \txóa mật khẩu cho tài khoản đặt tên\n"
+ #~ "  -e, --expire         \tép buộc hết hạn dùng mật khẩu cho tài khoản đặt "
+ #~ "tên\n"
+ #~ "  -h, --help                  \thiển thị trợ giúp này, sau đó thoát\n"
+@@ -2935,231 +2818,16 @@ msgstr "%s: thư mục cơ ban không h�
+ #~ "  -i, --inactive INACTIVE\tđặt thành INACTIVE mật khẩu không còn hoạt "
+ #~ "động lại\n"
+ #~ "\t\t\t\t\tsau khi hết hạn dùng\n"
+-#~ "  -l, --lock                  \tkhoá mật khẩu của tài khoản đặt tên\n"
++#~ "  -l, --lock                  \tkhóa mật khẩu của tài khoản đặt tên\n"
+ #~ "  -n, --mindays SỐ\tđặt thành số này số tối thiểu các ngày trước khi mật "
+ #~ "khẩu thay đổi được\n"
+ #~ "  -q, --quiet                 \tchế độ không xuất chi tiết\n"
+ #~ "  -r, --repository KHO\t\tthay đổi mật khẩu trong kho lưu này\n"
+ #~ "  -S, --status          \tthông báo trạng thái mật khẩu về tài khoản đặt "
+ #~ "tên\n"
+-#~ "  -u, --unlock\t\tmở khoá mật khẩu của tài khoản đặt tên\n"
++#~ "  -u, --unlock\t\tmở khóa mật khẩu của tài khoản đặt tên\n"
+ #~ "  -w, --warndays NGÀY\tđặt thành số này số các ngày cảnh báo về hết hạn "
+ #~ "dùng\n"
  #~ "  -x, --maxdays NGÀY\tđặt thành số này số tối đa các ngày trước khi thay "
  #~ "đổi được mật khẩu\n"
  #~ "\n"

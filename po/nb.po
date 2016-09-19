@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: shadow 4.0.17\n"
 "Report-Msgid-Bugs-To: pkg-shadow-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2016-03-16 17:19-0700\n"
+"POT-Creation-Date: 2016-09-18 21:41-0500\n"
 "PO-Revision-Date: 2012-01-18 17:19+0100\n"
 "Last-Translator: Bjørn Steensrud <bjornst@skogkatt.homelinux.org>\n"
 "Language-Team: Norwegian Bokmål <i18n-nb@lister.ping.uio.no>\n"
@@ -1477,19 +1477,19 @@ msgstr ""
 "[Frakobling omgått - root-innlogging tillatt.]"
 
 #, c-format
+msgid "%s: Cannot possibly work without effective root\n"
+msgstr "%s: Kan umulig virke uten effektiv root\n"
+
+msgid "No utmp entry.  You must exec \"login\" from the lowest level \"sh\""
+msgstr "Ingen oppføring i utmp. Du må kjøre «login» fra «sh» på laveste nivå"
+
+#, c-format
 msgid ""
 "\n"
 "Login timed out after %u seconds.\n"
 msgstr ""
 "\n"
 "Innlogging avbrutt på tid etter %u sekunder.\n"
-
-#, c-format
-msgid "%s: Cannot possibly work without effective root\n"
-msgstr "%s: Kan umulig virke uten effektiv root\n"
-
-msgid "No utmp entry.  You must exec \"login\" from the lowest level \"sh\""
-msgstr "Ingen oppføring i utmp. Du må kjøre «login» fra «sh» på laveste nivå"
 
 #, c-format
 msgid "login: PAM Failure, aborting: %s\n"
@@ -1935,12 +1935,6 @@ msgstr "Passordautentisering forbi-koblet.\n"
 msgid "Please enter your OWN password as authentication.\n"
 msgstr "Oppgi ditt EGET passord som autentisering.\n"
 
-msgid " ...killed.\n"
-msgstr " … drept.\n"
-
-msgid " ...waiting for child to terminate.\n"
-msgstr " ... venter på at barneprosess avslutter.\n"
-
 #, c-format
 msgid "%s: Cannot fork user shell\n"
 msgstr "%s: Kan ikke spalte ut brukerskall\n"
@@ -1955,6 +1949,14 @@ msgstr "%s: funksjonsfeil ved signalmasking\n"
 
 msgid "Session terminated, terminating shell..."
 msgstr "Økt avsluttet, avslutter skall ..."
+
+#, c-format
+msgid " ...killed.\n"
+msgstr " … drept.\n"
+
+#, c-format
+msgid " ...waiting for child to terminate.\n"
+msgstr " ... venter på at barneprosess avslutter.\n"
 
 msgid " ...terminated.\n"
 msgstr " … avsluttet.\n"

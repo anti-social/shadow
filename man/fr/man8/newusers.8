@@ -2,12 +2,12 @@
 .\"     Title: newusers
 .\"    Author: Julianne Frances Haugh
 .\" Generator: DocBook XSL Stylesheets v1.79.1 <http://docbook.sf.net/>
-.\"      Date: 16/03/2016
+.\"      Date: 18/09/2016
 .\"    Manual: Commandes de gestion du syst\(`eme
-.\"    Source: shadow-utils 4.2
+.\"    Source: shadow-utils 4.4
 .\"  Language: French
 .\"
-.TH "NEWUSERS" "8" "16/03/2016" "shadow\-utils 4\&.2" "Commandes de gestion du syst\(`em"
+.TH "NEWUSERS" "8" "18/09/2016" "shadow\-utils 4\&.4" "Commandes de gestion du syst\(`em"
 .\" -----------------------------------------------------------------
 .\" * Define some portability stuff
 .\" -----------------------------------------------------------------
@@ -45,8 +45,8 @@ pw_name:pw_passwd:pw_uid:pw_gid:pw_gecos:pw_dir:pw_shell
 .RS 4
 C\*(Aqest le nom de l\*(Aqutilisateur\&.
 .sp
-Il peut s\*(Aqagir du nom d\*(Aqun nouvel utilisateur ou du nom d\*(Aqun utilisateur existant (ou d\*(Aqun utilisateur cr\('e\('e pr\('ec\('edemment par
-\fBnewusers\fR)\&. Dans le cas d\*(Aqun utilisateur existant, les informations de l\*(Aqutilisateur seront modifi\('ees, sinon un nouvel utilisateur sera cr\('e\('e\&.
+It can be the name of a new user or the name of an existing user (or a user created before by
+\fBnewusers\fR)\&. In case of an existing user, the user\*(Aqs information will be changed, otherwise a new user will be created\&.
 .RE
 .PP
 \fIpw_passwd\fR
@@ -58,13 +58,13 @@ Ce champ sera chiffr\('e et utilis\('e comme nouvelle valeur du mot de passe chi
 .RS 4
 Ce champ est utilis\('e pour d\('efinir l\*(AqUID de l\*(Aqutilisateur\&.
 .sp
-Si ce champ est vide, un nouvel UID (non utilis\('e) sera d\('efini automatiquement par
+If the field is empty, a new (unused) UID will be defined automatically by
 \fBnewusers\fR\&.
 .sp
 Si ce champ contient un nombre, ce nombre sera utilis\('e comme UID\&.
 .sp
-Si ce champ contient le nom d\*(Aqun utilisateur existant (ou le nom d\*(Aqun utilisateur cr\('e\('e pr\('ec\('edemment par
-\fBnewusers\fR), l\*(AqUID de l\*(Aqutilisateur indiqu\('e sera utilis\('e\&.
+If this field contains the name of an existing user (or the name of a user created before by
+\fBnewusers\fR), the UID of the specified user will be used\&.
 .sp
 Si l\*(AqUID d\*(Aqun utilisateur existant est modifi\('e, vous devrez configurer vous\-m\(^eme le propri\('etaire des fichiers de l\*(Aqutilisateur\&.
 .RE

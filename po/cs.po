@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: shadow 4.0.18\n"
 "Report-Msgid-Bugs-To: pkg-shadow-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2016-03-16 17:19-0700\n"
+"POT-Creation-Date: 2016-09-18 21:41-0500\n"
 "PO-Revision-Date: 2011-11-26 18:41+0100\n"
 "Last-Translator: Miroslav Kure <kurem@debian.cz>\n"
 "Language-Team: Czech <debian-l10n-czech@lists.debian.org>\n"
@@ -1429,19 +1429,19 @@ msgstr ""
 "[Odpojení přeskočeno -- uživatel root smí být přihlášen.]"
 
 #, c-format
+msgid "%s: Cannot possibly work without effective root\n"
+msgstr "%s: Bez efektivních oprávnění uživatele root nelze pracovat\n"
+
+msgid "No utmp entry.  You must exec \"login\" from the lowest level \"sh\""
+msgstr "utmp záznam neexistuje. Musíte spustit „login“ z nejnižšího „sh“"
+
+#, c-format
 msgid ""
 "\n"
 "Login timed out after %u seconds.\n"
 msgstr ""
 "\n"
 "Vypršel časový limit pro přihlášení (%u sekund).\n"
-
-#, c-format
-msgid "%s: Cannot possibly work without effective root\n"
-msgstr "%s: Bez efektivních oprávnění uživatele root nelze pracovat\n"
-
-msgid "No utmp entry.  You must exec \"login\" from the lowest level \"sh\""
-msgstr "utmp záznam neexistuje. Musíte spustit „login“ z nejnižšího „sh“"
 
 #, c-format
 msgid "login: PAM Failure, aborting: %s\n"
@@ -1869,12 +1869,6 @@ msgstr "Ověřování heslem vynecháno.\n"
 msgid "Please enter your OWN password as authentication.\n"
 msgstr "Pro ověření zadejte VAŠE vlastní heslo.\n"
 
-msgid " ...killed.\n"
-msgstr " ...zabit.\n"
-
-msgid " ...waiting for child to terminate.\n"
-msgstr " ...čeká na ukončení potomka.\n"
-
 #, c-format
 msgid "%s: Cannot fork user shell\n"
 msgstr "%s: Nelze rozdvojit uživatelský shell\n"
@@ -1889,6 +1883,14 @@ msgstr "%s: chyba maskování signálu\n"
 
 msgid "Session terminated, terminating shell..."
 msgstr "Sezení skončeno, ukončuji shell..."
+
+#, c-format
+msgid " ...killed.\n"
+msgstr " ...zabit.\n"
+
+#, c-format
+msgid " ...waiting for child to terminate.\n"
+msgstr " ...čeká na ukončení potomka.\n"
 
 msgid " ...terminated.\n"
 msgstr " ...ukončen.\n"

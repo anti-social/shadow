@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: shadow 4.1.5.1-1\n"
 "Report-Msgid-Bugs-To: pkg-shadow-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2016-03-16 17:19-0700\n"
+"POT-Creation-Date: 2016-09-18 21:41-0500\n"
 "PO-Revision-Date: 2013-07-29 10:42+0400\n"
 "Last-Translator: Yuri Kozlov <yuray@komyakino.ru>\n"
 "Language-Team: Russian <debian-l10n-russian@lists.debian.org>\n"
@@ -1451,20 +1451,20 @@ msgstr ""
 "[Отключение не выполнено — вход в систему для суперпользователя разрешён.]"
 
 #, c-format
-msgid ""
-"\n"
-"Login timed out after %u seconds.\n"
-msgstr ""
-"\n"
-"Время выполнения входа в систему истекло (%u секунд).\n"
-
-#, c-format
 msgid "%s: Cannot possibly work without effective root\n"
 msgstr "%s: невозможно выполнить без прав суперпользователя\n"
 
 msgid "No utmp entry.  You must exec \"login\" from the lowest level \"sh\""
 msgstr ""
 "Нет записи в utmp. Вы должны запускать «login» из самого первого уровня «sh»"
+
+#, c-format
+msgid ""
+"\n"
+"Login timed out after %u seconds.\n"
+msgstr ""
+"\n"
+"Время выполнения входа в систему истекло (%u секунд).\n"
 
 #, c-format
 msgid "login: PAM Failure, aborting: %s\n"
@@ -1898,12 +1898,6 @@ msgstr "Проверка подлинности по паролю пропуще
 msgid "Please enter your OWN password as authentication.\n"
 msgstr "Введите ваш СОБСТВЕННЫЙ пароль для аутентификации.\n"
 
-msgid " ...killed.\n"
-msgstr " … завершён.\n"
-
-msgid " ...waiting for child to terminate.\n"
-msgstr " … ожидает завершения потомка.\n"
-
 #, c-format
 msgid "%s: Cannot fork user shell\n"
 msgstr "%s: невозможно выполнить fork пользовательской оболочки\n"
@@ -1918,6 +1912,14 @@ msgstr "%s: неисправность в маскировке сигналов\
 
 msgid "Session terminated, terminating shell..."
 msgstr "Сеанс завершён, выполняется завершение оболочки…"
+
+#, c-format
+msgid " ...killed.\n"
+msgstr " … завершён.\n"
+
+#, c-format
+msgid " ...waiting for child to terminate.\n"
+msgstr " … ожидает завершения потомка.\n"
 
 msgid " ...terminated.\n"
 msgstr " … завершён.\n"
